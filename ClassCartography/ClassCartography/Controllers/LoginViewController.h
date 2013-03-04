@@ -11,5 +11,6 @@
 @interface LoginViewController : UIViewController
 
 - (IBAction)getTest:(id)sender;
+- (IBAction)inBloomLogin:(id)sender;
 
 @end
