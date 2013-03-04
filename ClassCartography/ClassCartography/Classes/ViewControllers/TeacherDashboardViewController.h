@@ -12,6 +12,7 @@
 #import "FeedbackView.h"
 #import "CommentView.h"
 #import "NotificationView.h"
+#import <ShinobiCharts/ShinobiChart.h>
 
 @interface TeacherDashboardViewController : DashboardViewController {
     
