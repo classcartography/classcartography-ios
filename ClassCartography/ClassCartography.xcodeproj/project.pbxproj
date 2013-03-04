@@ -9,14 +9,6 @@
 /* Begin PBXBuildFile section */
 		5923429516E5545C008E4AEE /* ClassCartographyTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */; };
 		5923429716E5545C008E4AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5923429316E5545C008E4AEE /* InfoPlist.strings */; };
-		592342A716E556C3008E4AEE /* Adamas-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5923429E16E556C3008E4AEE /* Adamas-Regular.otf */; };
-		592342A816E556C3008E4AEE /* Quicksand_Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5923429F16E556C3008E4AEE /* Quicksand_Book.otf */; };
-		592342A916E556C3008E4AEE /* Quicksand_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 592342A016E556C3008E4AEE /* Quicksand_Light.otf */; };
-		592342AA16E556C3008E4AEE /* classcart-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 592342A216E556C3008E4AEE /* classcart-logo.png */; };
-		592342AB16E556C3008E4AEE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 592342A316E556C3008E4AEE /* Default-568h@2x.png */; };
-		592342AC16E556C3008E4AEE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 592342A416E556C3008E4AEE /* Default.png */; };
-		592342AD16E556C3008E4AEE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 592342A516E556C3008E4AEE /* Default@2x.png */; };
-		592342AE16E556C3008E4AEE /* login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 592342A616E556C3008E4AEE /* login-logo.png */; };
 		592342BD16E557C0008E4AEE /* ClassCartography.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 592342B916E557C0008E4AEE /* ClassCartography.xcdatamodeld */; };
 		592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 592342C016E5586C008E4AEE /* ClassCartography-Info.plist */; };
 		592342C416E5586C008E4AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342C216E5586C008E4AEE /* main.m */; };
@@ -66,6 +58,14 @@
 		7CAF48CE16E55D89004931D5 /* FeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48CD16E55D89004931D5 /* FeedbackView.m */; };
 		7CAF48D116E55D9A004931D5 /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48D016E55D9A004931D5 /* CommentView.m */; };
 		7CAF48D416E55DA6004931D5 /* NotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48D316E55DA6004931D5 /* NotificationView.m */; };
+		7CAF48DF16E55E88004931D5 /* Adamas-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48D616E55E88004931D5 /* Adamas-Regular.otf */; };
+		7CAF48E016E55E88004931D5 /* Quicksand_Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48D716E55E88004931D5 /* Quicksand_Book.otf */; };
+		7CAF48E116E55E88004931D5 /* Quicksand_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48D816E55E88004931D5 /* Quicksand_Light.otf */; };
+		7CAF48E216E55E88004931D5 /* classcart-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DA16E55E88004931D5 /* classcart-logo.png */; };
+		7CAF48E316E55E88004931D5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DB16E55E88004931D5 /* Default-568h@2x.png */; };
+		7CAF48E416E55E88004931D5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DC16E55E88004931D5 /* Default.png */; };
+		7CAF48E516E55E88004931D5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DD16E55E88004931D5 /* Default@2x.png */; };
+		7CAF48E616E55E88004931D5 /* login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DE16E55E88004931D5 /* login-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,14 +81,6 @@
 /* Begin PBXFileReference section */
 		5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClassCartographyTests-Info.plist"; sourceTree = "<group>"; };
 		5923429416E5545C008E4AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5923429E16E556C3008E4AEE /* Adamas-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adamas-Regular.otf"; sourceTree = "<group>"; };
-		5923429F16E556C3008E4AEE /* Quicksand_Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Book.otf; sourceTree = "<group>"; };
-		592342A016E556C3008E4AEE /* Quicksand_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light.otf; sourceTree = "<group>"; };
-		592342A216E556C3008E4AEE /* classcart-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classcart-logo.png"; sourceTree = "<group>"; };
-		592342A316E556C3008E4AEE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		592342A416E556C3008E4AEE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		592342A516E556C3008E4AEE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		592342A616E556C3008E4AEE /* login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo.png"; sourceTree = "<group>"; };
 		592342BA16E557C0008E4AEE /* ClassCartography.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassCartography.xcdatamodel; sourceTree = "<group>"; };
 		592342C016E5586C008E4AEE /* ClassCartography-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClassCartography-Info.plist"; sourceTree = "<group>"; };
 		592342C116E5586C008E4AEE /* ClassCartography-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClassCartography-Prefix.pch"; sourceTree = "<group>"; };
@@ -171,6 +163,14 @@
 		7CAF48D016E55D9A004931D5 /* CommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
 		7CAF48D216E55DA6004931D5 /* NotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationView.h; sourceTree = "<group>"; };
 		7CAF48D316E55DA6004931D5 /* NotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationView.m; sourceTree = "<group>"; };
+		7CAF48D616E55E88004931D5 /* Adamas-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adamas-Regular.otf"; sourceTree = "<group>"; };
+		7CAF48D716E55E88004931D5 /* Quicksand_Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Book.otf; sourceTree = "<group>"; };
+		7CAF48D816E55E88004931D5 /* Quicksand_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light.otf; sourceTree = "<group>"; };
+		7CAF48DA16E55E88004931D5 /* classcart-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classcart-logo.png"; sourceTree = "<group>"; };
+		7CAF48DB16E55E88004931D5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7CAF48DC16E55E88004931D5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7CAF48DD16E55E88004931D5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7CAF48DE16E55E88004931D5 /* login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,32 +218,10 @@
 		5923429C16E5569E008E4AEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5923429D16E556C3008E4AEE /* fonts */,
-				592342A116E556C3008E4AEE /* images */,
+				7CAF48D516E55E88004931D5 /* fonts */,
+				7CAF48D916E55E88004931D5 /* images */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		5923429D16E556C3008E4AEE /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				5923429E16E556C3008E4AEE /* Adamas-Regular.otf */,
-				5923429F16E556C3008E4AEE /* Quicksand_Book.otf */,
-				592342A016E556C3008E4AEE /* Quicksand_Light.otf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
-		592342A116E556C3008E4AEE /* images */ = {
-			isa = PBXGroup;
-			children = (
-				592342A216E556C3008E4AEE /* classcart-logo.png */,
-				592342A316E556C3008E4AEE /* Default-568h@2x.png */,
-				592342A416E556C3008E4AEE /* Default.png */,
-				592342A516E556C3008E4AEE /* Default@2x.png */,
-				592342A616E556C3008E4AEE /* login-logo.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		592342BF16E557EA008E4AEE /* Classes */ = {
@@ -433,6 +411,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7CAF48D516E55E88004931D5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7CAF48D616E55E88004931D5 /* Adamas-Regular.otf */,
+				7CAF48D716E55E88004931D5 /* Quicksand_Book.otf */,
+				7CAF48D816E55E88004931D5 /* Quicksand_Light.otf */,
+			);
+			path = fonts;
+			sourceTree = SOURCE_ROOT;
+		};
+		7CAF48D916E55E88004931D5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7CAF48DA16E55E88004931D5 /* classcart-logo.png */,
+				7CAF48DB16E55E88004931D5 /* Default-568h@2x.png */,
+				7CAF48DC16E55E88004931D5 /* Default.png */,
+				7CAF48DD16E55E88004931D5 /* Default@2x.png */,
+				7CAF48DE16E55E88004931D5 /* login-logo.png */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -503,25 +503,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5923429516E5545C008E4AEE /* ClassCartographyTests-Info.plist in Resources */,
-				5923429716E5545C008E4AEE /* InfoPlist.strings in Resources */,
-				7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */,
-				7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */,
-				7CAA13F316E55357004D8490 /* Icon.png in Resources */,
-				7CAA13F416E55357004D8490 /* Icon@2x.png in Resources */,
-				592342A716E556C3008E4AEE /* Adamas-Regular.otf in Resources */,
-				592342A816E556C3008E4AEE /* Quicksand_Book.otf in Resources */,
-				592342A916E556C3008E4AEE /* Quicksand_Light.otf in Resources */,
-				592342AA16E556C3008E4AEE /* classcart-logo.png in Resources */,
-				592342AB16E556C3008E4AEE /* Default-568h@2x.png in Resources */,
-				592342AC16E556C3008E4AEE /* Default.png in Resources */,
-				592342AD16E556C3008E4AEE /* Default@2x.png in Resources */,
-				592342AE16E556C3008E4AEE /* login-logo.png in Resources */,
 				592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */,
 				592342C916E558C1008E4AEE /* InfoPlist.strings in Resources */,
 				5923436816E559B1008E4AEE /* LoginView.xib in Resources */,
 				5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */,
 				5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */,
+				7CAF48DF16E55E88004931D5 /* Adamas-Regular.otf in Resources */,
+				7CAF48E016E55E88004931D5 /* Quicksand_Book.otf in Resources */,
+				7CAF48E116E55E88004931D5 /* Quicksand_Light.otf in Resources */,
+				7CAF48E216E55E88004931D5 /* classcart-logo.png in Resources */,
+				7CAF48E316E55E88004931D5 /* Default-568h@2x.png in Resources */,
+				7CAF48E416E55E88004931D5 /* Default.png in Resources */,
+				7CAF48E516E55E88004931D5 /* Default@2x.png in Resources */,
+				7CAF48E616E55E88004931D5 /* login-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
