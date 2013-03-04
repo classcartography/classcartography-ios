@@ -46,11 +46,9 @@
 		5923436216E559B1008E4AEE /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435516E559B1008E4AEE /* DashboardViewController.m */; };
 		5923436316E559B1008E4AEE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435716E559B1008E4AEE /* LoginViewController.m */; };
 		5923436416E559B1008E4AEE /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435916E559B1008E4AEE /* StudentViewController.m */; };
-		5923436516E559B1008E4AEE /* StudentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435A16E559B1008E4AEE /* StudentViewController.xib */; };
 		5923436616E559B1008E4AEE /* TeacherDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */; };
-		5923436716E559B1008E4AEE /* TeacherDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435D16E559B1008E4AEE /* TeacherDashboardViewController.xib */; };
 		5923436816E559B1008E4AEE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435F16E559B1008E4AEE /* LoginView.xib */; };
-		5923436916E559B1008E4AEE /* StudentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentView.xib */; };
+		5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentDashboardView.xib */; };
 		5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436116E559B1008E4AEE /* TeacherDashboardView.xib */; };
 		5923436E16E55B55008E4AEE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5923436D16E55B55008E4AEE /* SenTestingKit.framework */; };
 		7C113EA116E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
@@ -144,12 +142,10 @@
 		5923435716E559B1008E4AEE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5923435816E559B1008E4AEE /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
 		5923435916E559B1008E4AEE /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
-		5923435A16E559B1008E4AEE /* StudentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentViewController.xib; sourceTree = "<group>"; };
 		5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDashboardViewController.h; sourceTree = "<group>"; };
 		5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDashboardViewController.m; sourceTree = "<group>"; };
-		5923435D16E559B1008E4AEE /* TeacherDashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardViewController.xib; sourceTree = "<group>"; };
 		5923435F16E559B1008E4AEE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		5923436016E559B1008E4AEE /* StudentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentView.xib; sourceTree = "<group>"; };
+		5923436016E559B1008E4AEE /* StudentDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentDashboardView.xib; sourceTree = "<group>"; };
 		5923436116E559B1008E4AEE /* TeacherDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardView.xib; sourceTree = "<group>"; };
 		5923436D16E55B55008E4AEE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7C113E9D16E535FA005C0B65 /* ClassCartography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCartography.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,10 +341,8 @@
 				5923435716E559B1008E4AEE /* LoginViewController.m */,
 				5923435816E559B1008E4AEE /* StudentViewController.h */,
 				5923435916E559B1008E4AEE /* StudentViewController.m */,
-				5923435A16E559B1008E4AEE /* StudentViewController.xib */,
 				5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */,
 				5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */,
-				5923435D16E559B1008E4AEE /* TeacherDashboardViewController.xib */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -358,7 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				5923435F16E559B1008E4AEE /* LoginView.xib */,
-				5923436016E559B1008E4AEE /* StudentView.xib */,
+				5923436016E559B1008E4AEE /* StudentDashboardView.xib */,
 				5923436116E559B1008E4AEE /* TeacherDashboardView.xib */,
 			);
 			name = Views;
@@ -504,10 +498,8 @@
 				592342AE16E556C3008E4AEE /* login-logo.png in Resources */,
 				592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */,
 				592342C916E558C1008E4AEE /* InfoPlist.strings in Resources */,
-				5923436516E559B1008E4AEE /* StudentViewController.xib in Resources */,
-				5923436716E559B1008E4AEE /* TeacherDashboardViewController.xib in Resources */,
 				5923436816E559B1008E4AEE /* LoginView.xib in Resources */,
-				5923436916E559B1008E4AEE /* StudentView.xib in Resources */,
+				5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */,
 				5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
