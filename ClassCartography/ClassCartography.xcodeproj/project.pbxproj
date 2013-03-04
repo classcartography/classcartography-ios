@@ -16,6 +16,7 @@
 		5923426316E54AF2008E4AEE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923425816E54AF2008E4AEE /* AFURLConnectionOperation.m */; };
 		5923426416E54AF2008E4AEE /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923425A16E54AF2008E4AEE /* AFXMLRequestOperation.m */; };
 		5923426516E54AF2008E4AEE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923425C16E54AF2008E4AEE /* UIImageView+AFNetworking.m */; };
+		5923426916E54C3A008E4AEE /* InBloomAPIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923426816E54C3A008E4AEE /* InBloomAPIHandler.m */; };
 		7C113EA116E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EA316E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA416E535FA005C0B65 /* CoreGraphics.framework */; };
@@ -65,6 +66,8 @@
 		5923425A16E54AF2008E4AEE /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		5923425B16E54AF2008E4AEE /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		5923425C16E54AF2008E4AEE /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		5923426716E54C3A008E4AEE /* InBloomAPIHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InBloomAPIHandler.h; sourceTree = "<group>"; };
+		5923426816E54C3A008E4AEE /* InBloomAPIHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InBloomAPIHandler.m; sourceTree = "<group>"; };
 		7C113E9D16E535FA005C0B65 /* ClassCartography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCartography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C113EA016E535FA005C0B65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C113EA216E535FA005C0B65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,15 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		5923426616E54BD7008E4AEE /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				5923426716E54C3A008E4AEE /* InBloomAPIHandler.h */,
+				5923426816E54C3A008E4AEE /* InBloomAPIHandler.m */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
 		7C113E9416E535FA005C0B65 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +194,7 @@
 		7C113EA816E535FA005C0B65 /* ClassCartography */ = {
 			isa = PBXGroup;
 			children = (
+				5923426616E54BD7008E4AEE /* Handlers */,
 				5923424816E54ADB008E4AEE /* External */,
 				7C113EB116E535FA005C0B65 /* AppDelegate.h */,
 				7C113EB216E535FA005C0B65 /* AppDelegate.m */,
@@ -344,6 +357,7 @@
 				5923426316E54AF2008E4AEE /* AFURLConnectionOperation.m in Sources */,
 				5923426416E54AF2008E4AEE /* AFXMLRequestOperation.m in Sources */,
 				5923426516E54AF2008E4AEE /* UIImageView+AFNetworking.m in Sources */,
+				5923426916E54C3A008E4AEE /* InBloomAPIHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
