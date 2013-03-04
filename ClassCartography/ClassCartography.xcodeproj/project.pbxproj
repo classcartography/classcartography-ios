@@ -28,6 +28,10 @@
 		5923428C16E551EB008E4AEE /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923428016E551EB008E4AEE /* SBJsonStreamWriterAccumulator.m */; };
 		5923428D16E551EB008E4AEE /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923428216E551EB008E4AEE /* SBJsonStreamWriterState.m */; };
 		5923428E16E551EB008E4AEE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923428416E551EB008E4AEE /* SBJsonWriter.m */; };
+		5923429516E5545C008E4AEE /* ClassCartographyTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */; };
+		5923429616E5545C008E4AEE /* ClassCartographyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923429216E5545C008E4AEE /* ClassCartographyTests.m */; };
+		5923429716E5545C008E4AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5923429316E5545C008E4AEE /* InfoPlist.strings */; };
+		5923429B16E554E1008E4AEE /* ClassCartography-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5923429916E554E1008E4AEE /* ClassCartography-Info.plist */; };
 		7C113EA116E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EA316E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA416E535FA005C0B65 /* CoreGraphics.framework */; };
@@ -35,23 +39,13 @@
 		7C113EAD16E535FA005C0B65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EAB16E535FA005C0B65 /* InfoPlist.strings */; };
 		7C113EAF16E535FA005C0B65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C113EAE16E535FA005C0B65 /* main.m */; };
 		7C113EB316E535FA005C0B65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C113EB216E535FA005C0B65 /* AppDelegate.m */; };
-		7C113EB516E535FA005C0B65 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EB416E535FA005C0B65 /* Default.png */; };
-		7C113EB716E535FA005C0B65 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EB616E535FA005C0B65 /* Default@2x.png */; };
-		7C113EB916E535FA005C0B65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EB816E535FA005C0B65 /* Default-568h@2x.png */; };
 		7C113EBC16E535FA005C0B65 /* ClassCartography.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C113EBA16E535FA005C0B65 /* ClassCartography.xcdatamodeld */; };
 		7C113EC416E535FA005C0B65 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EC316E535FA005C0B65 /* SenTestingKit.framework */; };
 		7C113EC516E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EC616E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EC716E535FA005C0B65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA616E535FA005C0B65 /* CoreData.framework */; };
-		7C113ECF16E535FA005C0B65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C113ECD16E535FA005C0B65 /* InfoPlist.strings */; };
-		7C113ED216E535FA005C0B65 /* ClassCartographyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C113ED116E535FA005C0B65 /* ClassCartographyTests.m */; };
 		7C113EF016E53BC9005C0B65 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C113EEE16E53BC9005C0B65 /* LoginViewController.m */; };
-		7C113EF816E540A4005C0B65 /* Adamas-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EF416E540A4005C0B65 /* Adamas-Regular.otf */; };
-		7C113EF916E540A4005C0B65 /* Quicksand_Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EF516E540A4005C0B65 /* Quicksand_Book.otf */; };
-		7C113EFA16E540A4005C0B65 /* Quicksand_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EF616E540A4005C0B65 /* Quicksand_Light.otf */; };
 		7C113EFC16E540C6005C0B65 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFB16E540C6005C0B65 /* LoginView.xib */; };
-		7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFD16E54A31005C0B65 /* login-logo.png */; };
-		7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFF16E54AFA005C0B65 /* classcart-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,35 +103,27 @@
 		5923428216E551EB008E4AEE /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
 		5923428316E551EB008E4AEE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		5923428416E551EB008E4AEE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClassCartographyTests-Info.plist"; sourceTree = "<group>"; };
+		5923429116E5545C008E4AEE /* ClassCartographyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCartographyTests.h; sourceTree = "<group>"; };
+		5923429216E5545C008E4AEE /* ClassCartographyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassCartographyTests.m; sourceTree = "<group>"; };
+		5923429416E5545C008E4AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5923429916E554E1008E4AEE /* ClassCartography-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClassCartography-Info.plist"; sourceTree = "<group>"; };
+		5923429A16E554E1008E4AEE /* ClassCartography-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClassCartography-Prefix.pch"; sourceTree = "<group>"; };
 		7C113E9D16E535FA005C0B65 /* ClassCartography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCartography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C113EA016E535FA005C0B65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C113EA216E535FA005C0B65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C113EA416E535FA005C0B65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7C113EA616E535FA005C0B65 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		7C113EAA16E535FA005C0B65 /* ClassCartography-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassCartography-Info.plist"; sourceTree = "<group>"; };
 		7C113EAC16E535FA005C0B65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C113EAE16E535FA005C0B65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7C113EB016E535FA005C0B65 /* ClassCartography-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassCartography-Prefix.pch"; sourceTree = "<group>"; };
 		7C113EB116E535FA005C0B65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C113EB216E535FA005C0B65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7C113EB416E535FA005C0B65 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7C113EB616E535FA005C0B65 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		7C113EB816E535FA005C0B65 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7C113EBB16E535FA005C0B65 /* ClassCartography.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassCartography.xcdatamodel; sourceTree = "<group>"; };
 		7C113EC216E535FA005C0B65 /* ClassCartographyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassCartographyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C113EC316E535FA005C0B65 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7C113ECC16E535FA005C0B65 /* ClassCartographyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassCartographyTests-Info.plist"; sourceTree = "<group>"; };
-		7C113ECE16E535FA005C0B65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7C113ED016E535FA005C0B65 /* ClassCartographyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassCartographyTests.h; sourceTree = "<group>"; };
-		7C113ED116E535FA005C0B65 /* ClassCartographyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassCartographyTests.m; sourceTree = "<group>"; };
 		7C113EED16E53BC9005C0B65 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7C113EEE16E53BC9005C0B65 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		7C113EF416E540A4005C0B65 /* Adamas-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adamas-Regular.otf"; sourceTree = "<group>"; };
-		7C113EF516E540A4005C0B65 /* Quicksand_Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Book.otf; sourceTree = "<group>"; };
-		7C113EF616E540A4005C0B65 /* Quicksand_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light.otf; sourceTree = "<group>"; };
 		7C113EFB16E540C6005C0B65 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		7C113EFD16E54A31005C0B65 /* login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo.png"; sourceTree = "<group>"; };
-		7C113EFF16E54AFA005C0B65 /* classcart-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classcart-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,11 +233,30 @@
 			path = SBJson;
 			sourceTree = "<group>";
 		};
+		5923428F16E5545C008E4AEE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5923429116E5545C008E4AEE /* ClassCartographyTests.h */,
+				5923429216E5545C008E4AEE /* ClassCartographyTests.m */,
+				5923429816E55484008E4AEE /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5923429816E55484008E4AEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */,
+				5923429316E5545C008E4AEE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7C113E9416E535FA005C0B65 = {
 			isa = PBXGroup;
 			children = (
 				7C113EA816E535FA005C0B65 /* ClassCartography */,
-				7C113ECA16E535FA005C0B65 /* ClassCartographyTests */,
+				5923428F16E5545C008E4AEE /* Tests */,
 				7C113E9F16E535FA005C0B65 /* Frameworks */,
 				7C113E9E16E535FA005C0B65 /* Products */,
 			);
@@ -281,12 +286,12 @@
 		7C113EA816E535FA005C0B65 /* ClassCartography */ = {
 			isa = PBXGroup;
 			children = (
-				5923424816E54ADB008E4AEE /* External */,
-				5923426A16E54CDE008E4AEE /* Objects */,
-				5923426616E54BD7008E4AEE /* Handlers */,
 				7C113EB116E535FA005C0B65 /* AppDelegate.h */,
 				7C113EB216E535FA005C0B65 /* AppDelegate.m */,
 				7C113EBA16E535FA005C0B65 /* ClassCartography.xcdatamodeld */,
+				5923424816E54ADB008E4AEE /* External */,
+				5923426616E54BD7008E4AEE /* Handlers */,
+				5923426A16E54CDE008E4AEE /* Objects */,
 				7C113EE116E53A4E005C0B65 /* ViewControllers */,
 				7C113EEA16E53AB3005C0B65 /* Views */,
 				7C113EF216E540A4005C0B65 /* Resources */,
@@ -298,32 +303,10 @@
 		7C113EA916E535FA005C0B65 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C113EAA16E535FA005C0B65 /* ClassCartography-Info.plist */,
 				7C113EAB16E535FA005C0B65 /* InfoPlist.strings */,
 				7C113EAE16E535FA005C0B65 /* main.m */,
-				7C113EB016E535FA005C0B65 /* ClassCartography-Prefix.pch */,
-				7C113EB416E535FA005C0B65 /* Default.png */,
-				7C113EB616E535FA005C0B65 /* Default@2x.png */,
-				7C113EB816E535FA005C0B65 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7C113ECA16E535FA005C0B65 /* ClassCartographyTests */ = {
-			isa = PBXGroup;
-			children = (
-				7C113ED016E535FA005C0B65 /* ClassCartographyTests.h */,
-				7C113ED116E535FA005C0B65 /* ClassCartographyTests.m */,
-				7C113ECB16E535FA005C0B65 /* Supporting Files */,
-			);
-			path = ClassCartographyTests;
-			sourceTree = "<group>";
-		};
-		7C113ECB16E535FA005C0B65 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7C113ECC16E535FA005C0B65 /* ClassCartographyTests-Info.plist */,
-				7C113ECD16E535FA005C0B65 /* InfoPlist.strings */,
+				5923429916E554E1008E4AEE /* ClassCartography-Info.plist */,
+				5923429A16E554E1008E4AEE /* ClassCartography-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -349,29 +332,8 @@
 		7C113EF216E540A4005C0B65 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7C113EF316E540A4005C0B65 /* fonts */,
-				7C113EF716E540A4005C0B65 /* images */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7C113EF316E540A4005C0B65 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				7C113EF416E540A4005C0B65 /* Adamas-Regular.otf */,
-				7C113EF516E540A4005C0B65 /* Quicksand_Book.otf */,
-				7C113EF616E540A4005C0B65 /* Quicksand_Light.otf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
-		7C113EF716E540A4005C0B65 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				7C113EFF16E54AFA005C0B65 /* classcart-logo.png */,
-				7C113EFD16E54A31005C0B65 /* login-logo.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,15 +407,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C113EAD16E535FA005C0B65 /* InfoPlist.strings in Resources */,
-				7C113EB516E535FA005C0B65 /* Default.png in Resources */,
-				7C113EB716E535FA005C0B65 /* Default@2x.png in Resources */,
-				7C113EB916E535FA005C0B65 /* Default-568h@2x.png in Resources */,
-				7C113EF816E540A4005C0B65 /* Adamas-Regular.otf in Resources */,
-				7C113EF916E540A4005C0B65 /* Quicksand_Book.otf in Resources */,
-				7C113EFA16E540A4005C0B65 /* Quicksand_Light.otf in Resources */,
 				7C113EFC16E540C6005C0B65 /* LoginView.xib in Resources */,
-				7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */,
-				7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */,
+				5923429516E5545C008E4AEE /* ClassCartographyTests-Info.plist in Resources */,
+				5923429716E5545C008E4AEE /* InfoPlist.strings in Resources */,
+				5923429B16E554E1008E4AEE /* ClassCartography-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +418,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C113ECF16E535FA005C0B65 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +469,7 @@
 				5923428C16E551EB008E4AEE /* SBJsonStreamWriterAccumulator.m in Sources */,
 				5923428D16E551EB008E4AEE /* SBJsonStreamWriterState.m in Sources */,
 				5923428E16E551EB008E4AEE /* SBJsonWriter.m in Sources */,
+				5923429616E5545C008E4AEE /* ClassCartographyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +477,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C113ED216E535FA005C0B65 /* ClassCartographyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,18 +491,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C113EAB16E535FA005C0B65 /* InfoPlist.strings */ = {
+		5923429316E5545C008E4AEE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C113EAC16E535FA005C0B65 /* en */,
+				5923429416E5545C008E4AEE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7C113ECD16E535FA005C0B65 /* InfoPlist.strings */ = {
+		7C113EAB16E535FA005C0B65 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C113ECE16E535FA005C0B65 /* en */,
+				7C113EAC16E535FA005C0B65 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
