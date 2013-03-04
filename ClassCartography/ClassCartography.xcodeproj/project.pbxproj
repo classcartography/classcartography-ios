@@ -24,6 +24,13 @@
 		7C113EC716E535FA005C0B65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA616E535FA005C0B65 /* CoreData.framework */; };
 		7C113ECF16E535FA005C0B65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C113ECD16E535FA005C0B65 /* InfoPlist.strings */; };
 		7C113ED216E535FA005C0B65 /* ClassCartographyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C113ED116E535FA005C0B65 /* ClassCartographyTests.m */; };
+		7C113EF016E53BC9005C0B65 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C113EEE16E53BC9005C0B65 /* LoginViewController.m */; };
+		7C113EF816E540A4005C0B65 /* Adamas-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EF416E540A4005C0B65 /* Adamas-Regular.otf */; };
+		7C113EF916E540A4005C0B65 /* Quicksand_Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EF516E540A4005C0B65 /* Quicksand_Book.otf */; };
+		7C113EFA16E540A4005C0B65 /* Quicksand_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EF616E540A4005C0B65 /* Quicksand_Light.otf */; };
+		7C113EFC16E540C6005C0B65 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFB16E540C6005C0B65 /* LoginView.xib */; };
+		7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFD16E54A31005C0B65 /* login-logo.png */; };
+		7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFF16E54AFA005C0B65 /* classcart-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,14 @@
 		7C113ECE16E535FA005C0B65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C113ED016E535FA005C0B65 /* ClassCartographyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassCartographyTests.h; sourceTree = "<group>"; };
 		7C113ED116E535FA005C0B65 /* ClassCartographyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassCartographyTests.m; sourceTree = "<group>"; };
+		7C113EED16E53BC9005C0B65 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7C113EEE16E53BC9005C0B65 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7C113EF416E540A4005C0B65 /* Adamas-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adamas-Regular.otf"; sourceTree = "<group>"; };
+		7C113EF516E540A4005C0B65 /* Quicksand_Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Book.otf; sourceTree = "<group>"; };
+		7C113EF616E540A4005C0B65 /* Quicksand_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light.otf; sourceTree = "<group>"; };
+		7C113EFB16E540C6005C0B65 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		7C113EFD16E54A31005C0B65 /* login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo.png"; sourceTree = "<group>"; };
+		7C113EFF16E54AFA005C0B65 /* classcart-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classcart-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,9 @@
 				7C113EB116E535FA005C0B65 /* AppDelegate.h */,
 				7C113EB216E535FA005C0B65 /* AppDelegate.m */,
 				7C113EBA16E535FA005C0B65 /* ClassCartography.xcdatamodeld */,
+				7C113EE116E53A4E005C0B65 /* ViewControllers */,
+				7C113EEA16E53AB3005C0B65 /* Views */,
+				7C113EF216E540A4005C0B65 /* Resources */,
 				7C113EA916E535FA005C0B65 /* Supporting Files */,
 			);
 			path = ClassCartography;
@@ -159,6 +177,52 @@
 				7C113ECD16E535FA005C0B65 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C113EE116E53A4E005C0B65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C113EED16E53BC9005C0B65 /* LoginViewController.h */,
+				7C113EEE16E53BC9005C0B65 /* LoginViewController.m */,
+			);
+			name = ViewControllers;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C113EEA16E53AB3005C0B65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C113EFB16E540C6005C0B65 /* LoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C113EF216E540A4005C0B65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C113EF316E540A4005C0B65 /* fonts */,
+				7C113EF716E540A4005C0B65 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C113EF316E540A4005C0B65 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7C113EF416E540A4005C0B65 /* Adamas-Regular.otf */,
+				7C113EF516E540A4005C0B65 /* Quicksand_Book.otf */,
+				7C113EF616E540A4005C0B65 /* Quicksand_Light.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		7C113EF716E540A4005C0B65 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7C113EFF16E54AFA005C0B65 /* classcart-logo.png */,
+				7C113EFD16E54A31005C0B65 /* login-logo.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +299,12 @@
 				7C113EB516E535FA005C0B65 /* Default.png in Resources */,
 				7C113EB716E535FA005C0B65 /* Default@2x.png in Resources */,
 				7C113EB916E535FA005C0B65 /* Default-568h@2x.png in Resources */,
+				7C113EF816E540A4005C0B65 /* Adamas-Regular.otf in Resources */,
+				7C113EF916E540A4005C0B65 /* Quicksand_Book.otf in Resources */,
+				7C113EFA16E540A4005C0B65 /* Quicksand_Light.otf in Resources */,
+				7C113EFC16E540C6005C0B65 /* LoginView.xib in Resources */,
+				7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */,
+				7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +342,7 @@
 				7C113EAF16E535FA005C0B65 /* main.m in Sources */,
 				7C113EB316E535FA005C0B65 /* AppDelegate.m in Sources */,
 				7C113EBC16E535FA005C0B65 /* ClassCartography.xcdatamodeld in Sources */,
+				7C113EF016E53BC9005C0B65 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
