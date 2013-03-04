@@ -42,6 +42,13 @@
 		7C113EFC16E540C6005C0B65 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFB16E540C6005C0B65 /* LoginView.xib */; };
 		7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFD16E54A31005C0B65 /* login-logo.png */; };
 		7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C113EFF16E54AFA005C0B65 /* classcart-logo.png */; };
+		7CAA13E216E55173004D8490 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA13E116E55173004D8490 /* DashboardViewController.m */; };
+		7CAA13E616E55193004D8490 /* TeacherDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA13E416E55193004D8490 /* TeacherDashboardViewController.m */; };
+		7CAA13E916E551B7004D8490 /* TeacherDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA13E816E551B7004D8490 /* TeacherDashboardView.xib */; };
+		7CAA13ED16E55272004D8490 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA13EB16E55272004D8490 /* StudentViewController.m */; };
+		7CAA13F016E55298004D8490 /* StudentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA13EF16E55298004D8490 /* StudentView.xib */; };
+		7CAA13F316E55357004D8490 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA13F116E55357004D8490 /* Icon.png */; };
+		7CAA13F416E55357004D8490 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA13F216E55357004D8490 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +114,16 @@
 		7C113EFB16E540C6005C0B65 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		7C113EFD16E54A31005C0B65 /* login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo.png"; sourceTree = "<group>"; };
 		7C113EFF16E54AFA005C0B65 /* classcart-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classcart-logo.png"; sourceTree = "<group>"; };
+		7CAA13E016E55173004D8490 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		7CAA13E116E55173004D8490 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		7CAA13E316E55193004D8490 /* TeacherDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDashboardViewController.h; sourceTree = "<group>"; };
+		7CAA13E416E55193004D8490 /* TeacherDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDashboardViewController.m; sourceTree = "<group>"; };
+		7CAA13E816E551B7004D8490 /* TeacherDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardView.xib; sourceTree = "<group>"; };
+		7CAA13EA16E55272004D8490 /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
+		7CAA13EB16E55272004D8490 /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
+		7CAA13EF16E55298004D8490 /* StudentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentView.xib; sourceTree = "<group>"; };
+		7CAA13F116E55357004D8490 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7CAA13F216E55357004D8490 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +290,12 @@
 			children = (
 				7C113EED16E53BC9005C0B65 /* LoginViewController.h */,
 				7C113EEE16E53BC9005C0B65 /* LoginViewController.m */,
+				7CAA13E016E55173004D8490 /* DashboardViewController.h */,
+				7CAA13E116E55173004D8490 /* DashboardViewController.m */,
+				7CAA13E316E55193004D8490 /* TeacherDashboardViewController.h */,
+				7CAA13E416E55193004D8490 /* TeacherDashboardViewController.m */,
+				7CAA13EA16E55272004D8490 /* StudentViewController.h */,
+				7CAA13EB16E55272004D8490 /* StudentViewController.m */,
 			);
 			name = ViewControllers;
 			path = Controllers;
@@ -281,6 +304,8 @@
 		7C113EEA16E53AB3005C0B65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7CAA13EF16E55298004D8490 /* StudentView.xib */,
+				7CAA13E816E551B7004D8490 /* TeacherDashboardView.xib */,
 				7C113EFB16E540C6005C0B65 /* LoginView.xib */,
 			);
 			path = Views;
@@ -308,6 +333,8 @@
 		7C113EF716E540A4005C0B65 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7CAA13F116E55357004D8490 /* Icon.png */,
+				7CAA13F216E55357004D8490 /* Icon@2x.png */,
 				7C113EFF16E54AFA005C0B65 /* classcart-logo.png */,
 				7C113EFD16E54A31005C0B65 /* login-logo.png */,
 			);
@@ -394,6 +421,10 @@
 				7C113EFC16E540C6005C0B65 /* LoginView.xib in Resources */,
 				7C113EFE16E54A31005C0B65 /* login-logo.png in Resources */,
 				7C113F0016E54AFA005C0B65 /* classcart-logo.png in Resources */,
+				7CAA13E916E551B7004D8490 /* TeacherDashboardView.xib in Resources */,
+				7CAA13F016E55298004D8490 /* StudentView.xib in Resources */,
+				7CAA13F316E55357004D8490 /* Icon.png in Resources */,
+				7CAA13F416E55357004D8490 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +474,9 @@
 				5923426516E54AF2008E4AEE /* UIImageView+AFNetworking.m in Sources */,
 				5923426916E54C3A008E4AEE /* InBloomAPIHandler.m in Sources */,
 				5923426D16E54CF7008E4AEE /* User.m in Sources */,
+				7CAA13E216E55173004D8490 /* DashboardViewController.m in Sources */,
+				7CAA13E616E55193004D8490 /* TeacherDashboardViewController.m in Sources */,
+				7CAA13ED16E55272004D8490 /* StudentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
