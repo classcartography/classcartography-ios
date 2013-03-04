@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		592342BD16E557C0008E4AEE /* ClassCartography.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 592342B916E557C0008E4AEE /* ClassCartography.xcdatamodeld */; };
-		592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 592342C016E5586C008E4AEE /* ClassCartography-Info.plist */; };
 		592342C416E5586C008E4AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342C216E5586C008E4AEE /* main.m */; };
-		592342C916E558C1008E4AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 592342C716E558C1008E4AEE /* InfoPlist.strings */; };
 		592342CC16E558FD008E4AEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342CB16E558FD008E4AEE /* AppDelegate.m */; };
 		5923433816E55970008E4AEE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923431016E55970008E4AEE /* AFHTTPClient.m */; };
 		5923433916E55970008E4AEE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923431216E55970008E4AEE /* AFHTTPRequestOperation.m */; };
@@ -255,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				5923430E16E55970008E4AEE /* AFNetworking */,
-				5923436F16E5610D008E4AEE /* Reachability */,
 				5923432216E55970008E4AEE /* SBJson */,
 			);
 			name = External;
@@ -371,15 +367,6 @@
 			);
 			name = Views;
 			path = Classes/Views;
-			sourceTree = "<group>";
-		};
-		5923436F16E5610D008E4AEE /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				5923437016E5610E008E4AEE /* Reachability.h */,
-				5923437116E5610E008E4AEE /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		7C113E9416E535FA005C0B65 = {
@@ -535,8 +522,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */,
-				592342C916E558C1008E4AEE /* InfoPlist.strings in Resources */,
 				5923436816E559B1008E4AEE /* LoginView.xib in Resources */,
 				5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */,
 				5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */,
@@ -584,7 +569,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592342BD16E557C0008E4AEE /* ClassCartography.xcdatamodeld in Sources */,
 				592342C416E5586C008E4AEE /* main.m in Sources */,
 				592342CC16E558FD008E4AEE /* AppDelegate.m in Sources */,
 				5923433816E55970008E4AEE /* AFHTTPClient.m in Sources */,
@@ -617,7 +601,6 @@
 				7CAF48CE16E55D89004931D5 /* FeedbackView.m in Sources */,
 				7CAF48D116E55D9A004931D5 /* CommentView.m in Sources */,
 				7CAF48D416E55DA6004931D5 /* NotificationView.m in Sources */,
-				5923437216E5610E008E4AEE /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
