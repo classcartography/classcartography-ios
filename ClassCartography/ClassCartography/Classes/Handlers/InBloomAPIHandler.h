@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFHTTPClient.h"
 
-@interface InBloomAPIHandler : NSObject
+
+@interface InBloomAPIHandler : NSObject {
+    
+@private
+    AFHTTPClient *_httpClient;
+}
+
++ (InBloomAPIHandler *)sharedInBloomAPIHandler;
 
 @end
+

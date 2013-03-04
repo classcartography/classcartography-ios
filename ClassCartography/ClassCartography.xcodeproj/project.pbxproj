@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		592342BD16E557C0008E4AEE /* ClassCartography.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 592342B916E557C0008E4AEE /* ClassCartography.xcdatamodeld */; };
-		592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 592342C016E5586C008E4AEE /* ClassCartography-Info.plist */; };
 		592342C416E5586C008E4AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342C216E5586C008E4AEE /* main.m */; };
-		592342C916E558C1008E4AEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 592342C716E558C1008E4AEE /* InfoPlist.strings */; };
 		592342CC16E558FD008E4AEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342CB16E558FD008E4AEE /* AppDelegate.m */; };
 		5923433816E55970008E4AEE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923431016E55970008E4AEE /* AFHTTPClient.m */; };
 		5923433916E55970008E4AEE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923431216E55970008E4AEE /* AFHTTPRequestOperation.m */; };
@@ -40,7 +37,6 @@
 		5923436816E559B1008E4AEE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435F16E559B1008E4AEE /* LoginView.xib */; };
 		5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentDashboardView.xib */; };
 		5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436116E559B1008E4AEE /* TeacherDashboardView.xib */; };
-		5923437216E5610E008E4AEE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923437116E5610E008E4AEE /* Reachability.m */; };
 		7C113EA116E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EA316E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA416E535FA005C0B65 /* CoreGraphics.framework */; };
@@ -138,8 +134,6 @@
 		5923435F16E559B1008E4AEE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		5923436016E559B1008E4AEE /* StudentDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentDashboardView.xib; sourceTree = "<group>"; };
 		5923436116E559B1008E4AEE /* TeacherDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardView.xib; sourceTree = "<group>"; };
-		5923437016E5610E008E4AEE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		5923437116E5610E008E4AEE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7C113E9D16E535FA005C0B65 /* ClassCartography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCartography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C113EA016E535FA005C0B65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C113EA216E535FA005C0B65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -235,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				5923430E16E55970008E4AEE /* AFNetworking */,
-				5923436F16E5610D008E4AEE /* Reachability */,
 				5923432216E55970008E4AEE /* SBJson */,
 			);
 			name = External;
@@ -351,15 +344,6 @@
 			);
 			name = Views;
 			path = Classes/Views;
-			sourceTree = "<group>";
-		};
-		5923436F16E5610D008E4AEE /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				5923437016E5610E008E4AEE /* Reachability.h */,
-				5923437116E5610E008E4AEE /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		7C113E9416E535FA005C0B65 = {
@@ -506,8 +490,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592342C316E5586C008E4AEE /* ClassCartography-Info.plist in Resources */,
-				592342C916E558C1008E4AEE /* InfoPlist.strings in Resources */,
 				5923436816E559B1008E4AEE /* LoginView.xib in Resources */,
 				5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */,
 				5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */,
@@ -552,7 +534,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592342BD16E557C0008E4AEE /* ClassCartography.xcdatamodeld in Sources */,
 				592342C416E5586C008E4AEE /* main.m in Sources */,
 				592342CC16E558FD008E4AEE /* AppDelegate.m in Sources */,
 				5923433816E55970008E4AEE /* AFHTTPClient.m in Sources */,
@@ -585,7 +566,6 @@
 				7CAF48CE16E55D89004931D5 /* FeedbackView.m in Sources */,
 				7CAF48D116E55D9A004931D5 /* CommentView.m in Sources */,
 				7CAF48D416E55DA6004931D5 /* NotificationView.m in Sources */,
-				5923437216E5610E008E4AEE /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
