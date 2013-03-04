@@ -21,6 +21,8 @@
     IBOutlet FeedbackView *feedbackView;
     IBOutlet CommentView *commentView;
     IBOutlet NotificationView *notificationView;
+    
+
 }
 
 
