@@ -49,7 +49,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Default.png</string>
+							<string key="NSResourceName">Default-Landscape~ipad.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="564435935">
@@ -58,6 +58,7 @@
 						<string key="NSFrame">{{362, 429}, {300, 61}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -318,7 +319,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="Default.png">{1024, 768}</string>
+			<string key="Default-Landscape~ipad.png">{1024, 768}</string>
 			<string key="login-logo.png">{300, 61}</string>
 		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
