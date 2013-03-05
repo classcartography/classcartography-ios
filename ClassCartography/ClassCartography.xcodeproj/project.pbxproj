@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59015ADB16E6A88000FDA4E0 /* popover-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 59015AD916E6A88000FDA4E0 /* popover-arrow.png */; };
+		59015ADC16E6A88000FDA4E0 /* popover-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 59015ADA16E6A88000FDA4E0 /* popover-bg.png */; };
 		592342C416E5586C008E4AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342C216E5586C008E4AEE /* main.m */; };
 		592342CC16E558FD008E4AEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342CB16E558FD008E4AEE /* AppDelegate.m */; };
 		5923433816E55970008E4AEE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923431016E55970008E4AEE /* AFHTTPClient.m */; };
@@ -100,6 +102,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59015AD916E6A88000FDA4E0 /* popover-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow.png"; sourceTree = "<group>"; };
+		59015ADA16E6A88000FDA4E0 /* popover-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-bg.png"; sourceTree = "<group>"; };
 		5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClassCartographyTests-Info.plist"; sourceTree = "<group>"; };
 		5923429416E5545C008E4AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		592342BA16E557C0008E4AEE /* ClassCartography.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassCartography.xcdatamodel; sourceTree = "<group>"; };
@@ -532,6 +536,8 @@
 				5923590D16E5BB04008CD31F /* nav-bg@2x.png */,
 				5923591016E5E0D2008CD31F /* photo-bg.png */,
 				5923591116E5E0D2008CD31F /* photo-bg@2x.png */,
+				59015AD916E6A88000FDA4E0 /* popover-arrow.png */,
+				59015ADA16E6A88000FDA4E0 /* popover-bg.png */,
 			);
 			path = images;
 			sourceTree = SOURCE_ROOT;
@@ -634,6 +640,8 @@
 				7CAF841516E6A8D300C0212D /* haku@2x.png in Resources */,
 				7CAF841816E6A9DA00C0212D /* temp2@2x.png in Resources */,
 				7CAF841916E6A9DA00C0212D /* temp3@2x.png in Resources */,
+				59015ADB16E6A88000FDA4E0 /* popover-arrow.png in Resources */,
+				59015ADC16E6A88000FDA4E0 /* popover-bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +817,7 @@
 		7C113ED616E535FA005C0B65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chamara Paul (45WXQRENUV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -819,6 +828,7 @@
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
 				INFOPLIST_FILE = "ClassCartography/ClassCartography-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -826,6 +836,7 @@
 		7C113ED716E535FA005C0B65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chamara Paul (45WXQRENUV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -836,6 +847,7 @@
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
 				INFOPLIST_FILE = "ClassCartography/ClassCartography-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

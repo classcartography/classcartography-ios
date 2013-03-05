@@ -26,7 +26,7 @@
     
     photoView.delegate = self;
     
-    _howLabel = [[UILabel alloc] initWithFrame:CGRectMake(350, 10, 700, 60)];
+    _howLabel = [[UILabel alloc] initWithFrame:CGRectMake(350, 10, 520, 60)];
     _howLabel.backgroundColor = [UIColor clearColor];
     _howLabel.textColor = [UIColor blackColor];
     _howLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
@@ -43,13 +43,13 @@
 #pragma mark private methods
 
 - (void)showPopover {
-    NSLog(@"Yessssssss!");
-    
     UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+    tableViewController.tableView.dataSource = self;
+    tableViewController.contentSizeForViewInPopover = CGSizeMake(320, 210);
     
     _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
     
-    //_classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
+    _classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
     [_classesPopoverController presentPopoverFromRect:_howLabel.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
@@ -73,6 +73,28 @@
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
 }
+
+
+
+#pragma mark -
+#pragma mark UITableViewDataSource methods
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    cell.textLabel.text = [[[UserHandler sharedUserHandler].classes objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:18];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].classes count]; }
 
 
 #pragma mark
