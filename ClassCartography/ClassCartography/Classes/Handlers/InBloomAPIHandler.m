@@ -37,6 +37,41 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 
 
 #pragma mark -
+#pragma mark private methods
+
+- (void)getClasses:(NSString *)classesUrl {
+    [_httpClient getPath:classesUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSArray *classesResponse = [json objectWithString:operation.responseString];
+        for(NSDictionary *d in classesResponse) {
+            [[UserHandler sharedUserHandler].classes addObject:d];
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+- (void)getClassesInfo {
+    [_httpClient getPath:@"/api/rest/v1.1/home" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        
+        NSDictionary *home = [json objectWithString:operation.responseString];
+        NSString *classesUrl;
+        NSArray *arr = [NSArray arrayWithArray:[home objectForKey:@"links"]];
+        for (NSDictionary *d in arr) {
+            if ([((NSString *)[d objectForKey:@"rel"]) isEqualToString:@"getSections"]) {
+                classesUrl = [d objectForKey:@"href"];
+            }
+        }
+        
+        [self getClasses:classesUrl];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+
+#pragma mark -
 #pragma mark public methods
 
 - (void)authenticate:(UIViewController *)viewController {
@@ -70,6 +105,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         if ([d valueForKey:@"authenticated"] == [NSNumber numberWithBool:YES]) {
             [UserHandler sharedUserHandler].isLoggedIn = YES;
             [UserHandler sharedUserHandler].name = [d objectForKey:@"full_name"];
+            [self getClassesInfo];
             if (delegate)
                 [delegate loginComplete];
         } else {

@@ -13,6 +13,7 @@
 @interface TeacherDashboardViewController : DashboardViewController {
     
 @private
+    UILabel *_howLabel;
     FeedbackView *_feedbackView;
 }
 

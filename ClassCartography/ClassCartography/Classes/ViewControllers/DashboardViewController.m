@@ -23,7 +23,7 @@
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, 700, 60)];
+    _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, 320, 60)];
     _helloLabel.backgroundColor = [UIColor clearColor];
     _helloLabel.textColor = [UIColor blackColor];
     _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];

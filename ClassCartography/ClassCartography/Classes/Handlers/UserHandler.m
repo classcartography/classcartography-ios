@@ -15,6 +15,7 @@ static UserHandler *sharedUserHandler;
 
 @synthesize isLoggedIn;
 @synthesize name;
+@synthesize classes;
 
 
 #pragma mark -
@@ -23,6 +24,7 @@ static UserHandler *sharedUserHandler;
 - (id)init {
     if (self = [super init]) {
         isLoggedIn = NO;
+        classes = [[NSMutableArray alloc] initWithCapacity:0];  
     }
     
     return self;

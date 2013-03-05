@@ -13,10 +13,12 @@
     
     BOOL isLoggedIn;
     NSString *name;
+    NSMutableArray *classes;
 }
 
 @property (nonatomic, assign) BOOL isLoggedIn;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSMutableArray *classes;
 
 + (UserHandler *)sharedUserHandler;
 
