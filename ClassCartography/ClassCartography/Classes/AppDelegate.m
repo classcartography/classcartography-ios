@@ -17,26 +17,26 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize navController = _navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     TeacherDashboardViewController *teacherDashboardViewController = [[TeacherDashboardViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:teacherDashboardViewController];
+    _navController = [[UINavigationController alloc] initWithRootViewController:teacherDashboardViewController];
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:(215.0/255.0) green:(70.0/255.0) blue:(20.0/255.0) alpha:1.0]];
     UIImage *bg = [[UIImage imageNamed:@"nav-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
-    [navigationController.navigationBar.topItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
-    
+    [_navController.navigationBar.topItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];    
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = _navController;
     [self.window makeKeyAndVisible];
     
     [InBloomAPIHandler sharedInBloomAPIHandler].token = [[NSUserDefaults standardUserDefaults] objectForKey:INBLOOM_TOKEN];
     if (![[InBloomAPIHandler sharedInBloomAPIHandler] isSessionValid]) {
         [InBloomAPIHandler sharedInBloomAPIHandler].delegate = teacherDashboardViewController;
         LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginView" bundle:nil];
-        [navigationController presentViewController:loginViewController animated:NO completion:nil];
+        [_navController presentViewController:loginViewController animated:NO completion:nil];
     }
     
     return YES;

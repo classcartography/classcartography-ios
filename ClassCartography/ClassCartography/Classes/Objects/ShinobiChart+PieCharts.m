@@ -20,7 +20,7 @@
     chart.autoresizingMask = ~UIViewAutoresizingNone;
         
     SChartLightTheme *theme = [SChartLightTheme new];
-    theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
+    theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandLight-Regular" size:12];
     theme.chartTitleStyle.position = SChartTitlePositionBottomOrLeft;
     theme.chartStyle.backgroundColor = [UIColor whiteColor];
     theme.chartStyle.backgroundColorGradient = [UIColor whiteColor];

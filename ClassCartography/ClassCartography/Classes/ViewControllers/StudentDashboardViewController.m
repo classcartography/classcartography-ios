@@ -1,19 +1,18 @@
 //
-//  StudentViewController.m
+//  StudentDashboardViewController.m
 //  ClassCartography
 //
-//  Created by Paul Lee on 3/4/13.
+//  Created by Paul Lee on 3/5/13.
 //
 //
 
-#import "StudentViewController.h"
+#import "StudentDashboardViewController.h"
 
-
-@interface StudentViewController ()
+@interface StudentDashboardViewController ()
 
 @end
 
-@implementation StudentViewController
+@implementation StudentDashboardViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
