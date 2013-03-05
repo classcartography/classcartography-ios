@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ShinobiCharts/ShinobiChart.h>
 
-@interface GraphView : UIView
+
+@interface GraphView : UIView <SChartDelegate, SChartDatasource> {
+
+ ShinobiChart *_chart;
+}
 
 @end
