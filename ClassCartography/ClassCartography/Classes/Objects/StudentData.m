@@ -33,9 +33,6 @@
                    @"Jun 11",
                    @"May 11",
                    @"Apr 11",
-                   @"Mar 11",
-                   @"Feb 11",
-                   @"Jan 11",
                    nil];
         
         NSDictionary *mar12Data = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
@@ -111,23 +108,6 @@
                                                                        nil] forKeys:_dataKeys];
         [_data setObject:apr11Data forKey:[_months objectAtIndex:11]];
         
-        NSDictionary *mar11Data = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
-                                                                       [NSNumber numberWithFloat:21.03],
-                                                                       [NSNumber numberWithFloat:15.27],
-                                                                       nil] forKeys:_dataKeys];
-        [_data setObject:mar11Data forKey:[_months objectAtIndex:12]];
-        
-        NSDictionary *feb11Data = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
-                                                                       [NSNumber numberWithFloat:21.15],
-                                                                       [NSNumber numberWithFloat:14.70],
-                                                                       nil] forKeys:_dataKeys];
-        [_data setObject:feb11Data forKey:[_months objectAtIndex:13]];
-        
-        NSDictionary *jan11Data = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
-                                                                       [NSNumber numberWithFloat:21.04],
-                                                                       [NSNumber numberWithFloat:14.19],
-                                                                       nil] forKeys:_dataKeys];
-        [_data setObject:jan11Data forKey:[_months objectAtIndex:14]];
         
     }
     

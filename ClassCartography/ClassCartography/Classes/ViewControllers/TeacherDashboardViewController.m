@@ -29,19 +29,19 @@
     _photoView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_photoView];
     
-    _graphView = [[GraphView alloc] initWithFrame:CGRectMake(319, 66, 676, 285)];
-    _graphView.backgroundColor = [UIColor whiteColor];
+    _graphView = [[GraphView alloc] initWithFrame:CGRectMake(319, 66, 676, 340)];
+    _graphView.backgroundColor = [UIColor colorWithRed:251.0/255.0 green:251.0/255.0 blue:251.0/255.0 alpha:1.0];
     [self.view addSubview:_graphView];
     
-    _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(32, 391, 300, 350)];
+    _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(32, 440, 300, 300)];
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
 
-    _commentView = [[CommentView alloc] initWithFrame:CGRectMake(363, 391, 300, 350)];
+    _commentView = [[CommentView alloc] initWithFrame:CGRectMake(363, 440, 300, 300)];
     _commentView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_commentView];
 
-    _notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(695, 391, 300, 350)];
+    _notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(695, 440, 300, 300)];
     _notificationView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_notificationView];
 

@@ -12,10 +12,10 @@
     BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
     
     if (iPad) {
-        frame.origin.x += 10;
-        frame.origin.y += 50;
-        frame.size.width -= 50;
-        frame.size.height -= 100;
+//        frame.origin.x += 10;
+//        frame.origin.y += 50;
+        frame.size.width -= 10;
+//        frame.size.height += 100;
     } else {
         frame.size.width -= 10;
     }
@@ -24,10 +24,20 @@
     chart.autoresizingMask = ~UIViewAutoresizingNone;
     chart.clipsToBounds = NO;
     
-    //Choose the light theme for this chart
     SChartLightTheme *theme = [SChartLightTheme new];
-    //perform any theme stylign here before applying to the chart
+    theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
+    theme.chartTitleStyle.position = SChartTitlePositionCenter;
+//    theme.chartStyle.backgroundColor = [UIColor whiteColor];
+    theme.yAxisStyle.titleStyle.position = SChartTitlePositionCenter;
+    theme.yAxisStyle.titleStyle.font = [UIFont systemFontOfSize:12];
+    theme.xAxisStyle.titleStyle.font = [UIFont systemFontOfSize:12];
+    theme.xAxisStyle.titleStyle.position = SChartTitlePositionCenter;
+    theme.yAxisStyle.majorTickStyle.labelFont = [UIFont systemFontOfSize:10];
+    theme.yAxisStyle.minorTickStyle.labelFont = [UIFont systemFontOfSize:10];
+    theme.xAxisStyle.majorTickStyle.labelFont = [UIFont systemFontOfSize:10];
+    theme.xAxisStyle.minorTickStyle.labelFont = [UIFont systemFontOfSize:10];
     chart.theme = theme;
+    //chart.theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
     
     //Double tap can either reset zoom or zoom in
     chart.gestureDoubleTapResetsZoom = YES;
@@ -47,20 +57,23 @@
     chart.xAxis = xAxis;
     
     //Use a custom range to best display our data
-    SChartNumberRange *r = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:5] andMaximum:[NSNumber numberWithInt:28]];
+    SChartNumberRange *r = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:0] andMaximum:[NSNumber numberWithInt:100]];
     SChartNumberAxis *yAxis = [[SChartNumberAxis alloc] initWithRange:r];
-    yAxis.enableGesturePanning = YES;
-    yAxis.enableGestureZooming = YES;
-    yAxis.enableMomentumPanning = YES;
-    yAxis.enableMomentumZooming = YES;
-    yAxis.title = @"Share (%)";
-    yAxis.style.titleStyle.position = SChartTitlePositionBottomOrLeft;
+    yAxis.enableGesturePanning = NO;
+    yAxis.enableGestureZooming = NO;
+    yAxis.enableMomentumPanning = NO;
+    yAxis.enableMomentumZooming = NO;
+    yAxis.title = @"(%)";
+
     chart.yAxis = yAxis;
     
     //Only show the legend on the iPad
     chart.legend.hidden = !iPad;
     chart.legend.position = SChartLegendPositionBottomMiddle;
-    chart.legend.maxSeriesPerLine = 6;
+    chart.legend.maxSeriesPerLine = 2;
+    chart.legend.style.font = [UIFont systemFontOfSize:10];
+    chart.legend.style.marginWidth = [NSNumber numberWithFloat:0.25f];
+    chart.legend.style.borderColor = [UIColor redColor];
     
     return chart;
 }

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <ShinobiCharts/ShinobiChart.h>
+#import "ShinobiChart+LineChart.h"
 #import "StudentData.h"
 #import "Datasource.h"
 
