@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewController : UIViewController
+
+@interface WebViewController : UIViewController <UIWebViewDelegate> {
+    
+@private
+    UIWebView *_webview;
+}
+
+- (void)loadRequest:(NSString *)url;
 
 @end

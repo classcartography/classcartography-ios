@@ -39,7 +39,7 @@
 }
 
 - (IBAction)inBloomLogin:(id)sender {
-    [[InBloomAPIHandler sharedInBloomAPIHandler] authenticate];
+    [[InBloomAPIHandler sharedInBloomAPIHandler] authenticate:self];
 }
 
 @end
