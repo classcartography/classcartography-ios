@@ -31,7 +31,6 @@
 		5923435116E5598B008E4AEE /* InBloomAPIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923434D16E5598B008E4AEE /* InBloomAPIHandler.m */; };
 		5923436216E559B1008E4AEE /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435516E559B1008E4AEE /* DashboardViewController.m */; };
 		5923436316E559B1008E4AEE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435716E559B1008E4AEE /* LoginViewController.m */; };
-		5923436416E559B1008E4AEE /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435916E559B1008E4AEE /* StudentViewController.m */; };
 		5923436616E559B1008E4AEE /* TeacherDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */; };
 		5923436816E559B1008E4AEE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435F16E559B1008E4AEE /* LoginView.xib */; };
 		5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentDashboardView.xib */; };
@@ -83,6 +82,8 @@
 		7CBAB11616E67DFC0047A2E3 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */; };
 		7CBAB11916E683860047A2E3 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11716E683860047A2E3 /* star@2x.png */; };
 		7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11816E683860047A2E3 /* warning@2x.png */; };
+		7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11F16E697F20047A2E3 /* GradeView.m */; };
+		7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,8 +152,6 @@
 		5923435516E559B1008E4AEE /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		5923435616E559B1008E4AEE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5923435716E559B1008E4AEE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		5923435816E559B1008E4AEE /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
-		5923435916E559B1008E4AEE /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
 		5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDashboardViewController.h; sourceTree = "<group>"; };
 		5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDashboardViewController.m; sourceTree = "<group>"; };
 		5923435F16E559B1008E4AEE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -219,6 +218,10 @@
 		7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
 		7CBAB11716E683860047A2E3 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		7CBAB11816E683860047A2E3 /* warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning@2x.png"; sourceTree = "<group>"; };
+		7CBAB11E16E697F10047A2E3 /* GradeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradeView.h; sourceTree = "<group>"; };
+		7CBAB11F16E697F20047A2E3 /* GradeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradeView.m; sourceTree = "<group>"; };
+		7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDashboardViewController.h; sourceTree = "<group>"; };
+		7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDashboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,12 +394,12 @@
 				5923435516E559B1008E4AEE /* DashboardViewController.m */,
 				5923435616E559B1008E4AEE /* LoginViewController.h */,
 				5923435716E559B1008E4AEE /* LoginViewController.m */,
-				5923435816E559B1008E4AEE /* StudentViewController.h */,
-				5923435916E559B1008E4AEE /* StudentViewController.m */,
 				5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */,
 				5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */,
 				59D722BD16E57A5F002D6B0A /* WebViewController.h */,
 				59D722BE16E57A5F002D6B0A /* WebViewController.m */,
+				7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */,
+				7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -412,6 +415,8 @@
 				7CAF48C716E55D5B004931D5 /* PhotoView.m */,
 				7CAF48C916E55D72004931D5 /* GraphView.h */,
 				7CAF48CA16E55D72004931D5 /* GraphView.m */,
+				7CBAB11E16E697F10047A2E3 /* GradeView.h */,
+				7CBAB11F16E697F20047A2E3 /* GradeView.m */,
 				7CAF48CC16E55D89004931D5 /* FeedbackView.h */,
 				7CAF48CD16E55D89004931D5 /* FeedbackView.m */,
 				7CAF48CF16E55D99004931D5 /* CommentView.h */,
@@ -673,7 +678,6 @@
 				5923435116E5598B008E4AEE /* InBloomAPIHandler.m in Sources */,
 				5923436216E559B1008E4AEE /* DashboardViewController.m in Sources */,
 				5923436316E559B1008E4AEE /* LoginViewController.m in Sources */,
-				5923436416E559B1008E4AEE /* StudentViewController.m in Sources */,
 				5923436616E559B1008E4AEE /* TeacherDashboardViewController.m in Sources */,
 				7CAF48C816E55D5B004931D5 /* PhotoView.m in Sources */,
 				7CAF48CB16E55D72004931D5 /* GraphView.m in Sources */,
@@ -688,6 +692,8 @@
 				7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */,
 				7CBAB10916E5FEF80047A2E3 /* CommentTableViewCell.m in Sources */,
 				7CBAB11616E67DFC0047A2E3 /* NotificationTableViewCell.m in Sources */,
+				7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */,
+				7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

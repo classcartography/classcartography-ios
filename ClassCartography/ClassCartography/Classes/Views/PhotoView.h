@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "StudentDashboardViewController.h"
 
-
-@interface PhotoView : UIView
+@interface PhotoView : UIView {
+    UIButton *button;
+}
 
 @end
