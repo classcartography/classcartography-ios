@@ -73,7 +73,7 @@
     chart.legend.maxSeriesPerLine = 2;
     chart.legend.style.font = [UIFont systemFontOfSize:10];
     chart.legend.style.marginWidth = [NSNumber numberWithFloat:0.55f];
-    chart.legend.backgroundColor = [UIColor whiteColor];
+    chart.legend.style.areaColor = [UIColor clearColor];
     chart.legend.cornerRadius = [NSNumber numberWithInt:10];
     
     return chart;

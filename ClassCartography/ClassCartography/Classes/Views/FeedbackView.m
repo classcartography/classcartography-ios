@@ -26,7 +26,9 @@
         pieChart.licenseKey = licenseKey;
         pieChart.datasource = self;
         pieChart.delegate = self;
-        pieChart.backgroundColor = [UIColor whiteColor];
+        pieChart.backgroundColor = [UIColor clearColor];
+        pieChart.plotAreaBackgroundColor = [UIColor clearColor];
+        pieChart.plotAreaBorderColor = [UIColor clearColor];
         [self addSubview:pieChart];
         
         graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];

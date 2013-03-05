@@ -22,6 +22,9 @@
         self.graphData = studentData;
         _chart.datasource = self;
         _chart.delegate = self;
+        _chart.backgroundColor = [UIColor clearColor];
+        _chart.plotAreaBackgroundColor = [UIColor clearColor];
+        _chart.plotAreaBorderColor = [UIColor clearColor];
         [self addSubview:_chart];
         
         graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(54, -20, 400, 20)];
