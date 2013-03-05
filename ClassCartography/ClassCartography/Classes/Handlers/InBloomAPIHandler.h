@@ -10,13 +10,21 @@
 #import "AFHTTPClient.h"
 
 
+@protocol InBloomAPIHandlerDelegate
+- (void)loginComplete;
+@end
+
 @interface InBloomAPIHandler : NSObject {
+    
+    __unsafe_unretained id <InBloomAPIHandlerDelegate> delegate;
     
 @private
     AFHTTPClient *_httpClient;
 }
 
 + (InBloomAPIHandler *)sharedInBloomAPIHandler;
+
+@property (nonatomic, assign) id <InBloomAPIHandlerDelegate> delegate;
 
 - (void)authenticate:(UIViewController *)viewController;
 - (void)saveSession:(NSString *)authorizationCode;

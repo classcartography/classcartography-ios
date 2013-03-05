@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 
 
-@interface UserHandler : NSObject
+@interface UserHandler : NSObject {
+    
+    BOOL isLoggedIn;
+    NSString *token;
+}
+
+@property (nonatomic, assign) BOOL isLoggedIn;
+@property (nonatomic, copy) NSString *token;
+
++ (UserHandler *)sharedUserHandler;
 
 @end

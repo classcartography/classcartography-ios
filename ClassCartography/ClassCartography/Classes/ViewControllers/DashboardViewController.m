@@ -39,4 +39,12 @@
     [self.view addSubview:notificationView];
 }
 
+
+#pragma mark
+#pragma mark InBloomAPIHandlerDelegate methods
+
+- (void)loginComplete {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "InBloomAPIHandler.h"
+#import "LoginViewController.h"
+#import "TeacherDashboardViewController.h"
+#import "UserHandler.h"
+
 
 @implementation AppDelegate
 
@@ -14,17 +19,20 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-@synthesize lvc = _lvc;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    _lvc = [[LoginViewController alloc] initWithNibName:@"LoginView" bundle:nil];
+    TeacherDashboardViewController *teacherDashboardViewController = [[TeacherDashboardViewController alloc] init];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = _lvc;
+    self.window.rootViewController = teacherDashboardViewController;
     [self.window makeKeyAndVisible];
+    
+    if ([UserHandler sharedUserHandler].isLoggedIn == NO) {
+        [InBloomAPIHandler sharedInBloomAPIHandler].delegate = teacherDashboardViewController;
+        LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginView" bundle:nil];
+        [teacherDashboardViewController presentViewController:loginViewController animated:NO completion:nil];
+    }
+    
     return YES;
     
 }
