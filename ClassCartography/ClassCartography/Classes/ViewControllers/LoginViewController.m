@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "InBloomAPIHandler.h"
 
 @interface LoginViewController ()
 
@@ -38,8 +39,7 @@
 }
 
 - (IBAction)inBloomLogin:(id)sender {
-    
-    // Log in to inBloom
+    [[InBloomAPIHandler sharedInBloomAPIHandler] authenticate];
 }
 
 @end
