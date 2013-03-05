@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "InBloomAPIHandler.h"
 
 @interface LoginViewController ()
 
@@ -37,12 +38,15 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"class://test_page/one?token=12345&domain=foo.com"]];
 }
 
-- (IBAction)inBloomLogin:(id)sender {
-
+- (IBAction)goToDashboard:(id)sender {
     TeacherDashboardViewController *tdvc = [[TeacherDashboardViewController alloc] init];
     APP_DELEGATE.window.rootViewController = tdvc;
+}
+
+- (IBAction)inBloomLogin:(id)sender {
+
     // Log in to inBloom
-    
+    [[InBloomAPIHandler sharedInBloomAPIHandler] authenticate];
 }
 
 @end

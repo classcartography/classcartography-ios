@@ -13,3 +13,7 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
 #endif
+
+#define INBLOOM_API_ROOT @"https://api.sandbox.inbloom.org"
+#define INBLOOM_CLIENT_ID @"LD6rZ2263p"
+#define INBLOOM_SHARED_SECRET @"lGYKd65KRFUmyunmo3hU48RZBWP0R4GoEVwtU3dSKVvMegWR"
