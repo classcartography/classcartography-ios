@@ -52,13 +52,13 @@
     NSDate *endDate = [formatter dateFromString:@"2012-01-01"];
     SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
     SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
-    xAxis.title = @"Date";
+    xAxis.title = @" ";
     xAxis.tickLabelClippingModeHigh = SChartTickLabelClippingModeTicksAndLabelsPersist; //keep tick marks at the right end
     xAxis.majorTickFrequency = [SChartDateFrequency dateFrequencyWithMonth:1];
     xAxis.minorTickFrequency = [SChartDateFrequency dateFrequencyWithDay:1];
     //Make some space at the axis limits to prevent clipping of the datapoints
-    xAxis.rangePaddingHigh = [NSNumber numberWithFloat:0.25f];
-    xAxis.rangePaddingLow = [NSNumber numberWithFloat:0.25f];
+    xAxis.rangePaddingHigh = [SChartDateFrequency dateFrequencyWithMonth:1]; //[NSNumber numberWithFloat:0.25f];
+    xAxis.rangePaddingLow =  [SChartDateFrequency dateFrequencyWithDay:1]; //[NSNumber numberWithFloat:0.25f];
     //allow zooming and panning
     xAxis.enableGesturePanning = YES;
     xAxis.enableGestureZooming = YES;
@@ -73,7 +73,7 @@
     yAxis.enableGestureZooming = NO;
     yAxis.enableMomentumPanning = NO;
     yAxis.enableMomentumZooming = NO;
-    yAxis.title = @"(%)";
+    yAxis.title = @"Percentage (%)";
 
     chart.yAxis = yAxis;
     

@@ -33,7 +33,7 @@
     photoView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:photoView];
     
-    graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 66, 676, 285)];
+    graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 90, 676, 285)];
     graphView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:graphView];
     
