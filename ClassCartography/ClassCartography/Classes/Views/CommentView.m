@@ -53,12 +53,21 @@
     
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
     [dict3 setObject:@"temp" forKey:@"imageName"];
-    [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
+    [dict3 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict3 setObject:@"Billy Joe" forKey:@"name"];
     [dict3 setObject:@"Homework #1" forKey:@"assignment"];
     [dict3 setObject:@"I didn't understand question 4." forKey:@"comment"];
     [dict3 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
     [comments addObject:dict3];
+    
+    NSMutableDictionary *dict4 = [NSMutableDictionary dictionary];
+    [dict4 setObject:@"temp" forKey:@"imageName"];
+    [dict4 setObject:@"itemstars-5" forKey:@"starsName"];
+    [dict4 setObject:@"Billy Joe" forKey:@"name"];
+    [dict4 setObject:@"Homework #1" forKey:@"assignment"];
+    [dict4 setObject:@"Difficulty: 8 out of 10" forKey:@"comment"];
+    [dict4 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
+    [comments addObject:dict4];
     
 }
 

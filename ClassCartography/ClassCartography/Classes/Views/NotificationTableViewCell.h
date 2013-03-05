@@ -13,6 +13,7 @@
 @private
     UILabel *message;
     UILabel *description;
+    UILabel *dateTime;
     UIImageView *icon;
     NSMutableDictionary *dict;
 

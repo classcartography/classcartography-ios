@@ -81,6 +81,8 @@
 		7CBAB11116E66FCA0047A2E3 /* itemstars-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB10F16E66FCA0047A2E3 /* itemstars-5.png */; };
 		7CBAB11316E6729A0047A2E3 /* itemstars-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11216E6729A0047A2E3 /* itemstars-5@2x.png */; };
 		7CBAB11616E67DFC0047A2E3 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */; };
+		7CBAB11916E683860047A2E3 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11716E683860047A2E3 /* star@2x.png */; };
+		7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11816E683860047A2E3 /* warning@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +217,8 @@
 		7CBAB11216E6729A0047A2E3 /* itemstars-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemstars-5@2x.png"; sourceTree = "<group>"; };
 		7CBAB11416E67DFB0047A2E3 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
 		7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
+		7CBAB11716E683860047A2E3 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		7CBAB11816E683860047A2E3 /* warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,6 +496,8 @@
 		7CAF48D916E55E88004931D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7CBAB11716E683860047A2E3 /* star@2x.png */,
+				7CBAB11816E683860047A2E3 /* warning@2x.png */,
 				7CBAB11216E6729A0047A2E3 /* itemstars-5@2x.png */,
 				7CBAB10E16E66FCA0047A2E3 /* itemstars-3.png */,
 				7CBAB10F16E66FCA0047A2E3 /* itemstars-5.png */,
@@ -608,6 +614,8 @@
 				7CBAB11016E66FCA0047A2E3 /* itemstars-3.png in Resources */,
 				7CBAB11116E66FCA0047A2E3 /* itemstars-5.png in Resources */,
 				7CBAB11316E6729A0047A2E3 /* itemstars-5@2x.png in Resources */,
+				7CBAB11916E683860047A2E3 /* star@2x.png in Resources */,
+				7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

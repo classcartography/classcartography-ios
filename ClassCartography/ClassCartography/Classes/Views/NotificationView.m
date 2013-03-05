@@ -36,28 +36,38 @@
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
     [dict1 setObject:@"warning" forKey:@"imageName"];
     [dict1 setObject:@"Johnny had trouble with the last assignment." forKey:@"message"];
-    [dict1 setObject:@"This " forKey:@"description"];
+    [dict1 setObject:@"Johnny had trouble with the last assignment. His last comment was \"I didn't understand the last 3 questions\"" forKey:@"description"];
     [dict1 setObject:@"This was really difficult." forKey:@"comment"];
-    [dict1 setObject:@"March 4, 2013 4:34pm" forKey:@"dateTime"];
+    [dict1 setObject:@"March 3, 2013 4:10pm" forKey:@"dateTime"];
     [notifications addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"warning" forKey:@"imageName"];
-    [dict2 setObject:@"itemstars-3" forKey:@"starsName"];
-    [dict2 setObject:@"Jane Goodman" forKey:@"name"];
-    [dict2 setObject:@"Quiz #1" forKey:@"assignment"];
-    [dict2 setObject:@"This was too easy." forKey:@"comment"];
-    [dict2 setObject:@"March 4, 2013 2:20pm" forKey:@"dateTime"];
+    [dict2 setObject:@"star" forKey:@"imageName"];
+    [dict2 setObject:@"Susie may need more challenging work." forKey:@"message"];
+    [dict2 setObject:@"Susie may need more challenging work. Her last comment was \"This quiz was really easy.\"" forKey:@"description"];
+    [dict2 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict2];
     
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
-    [dict3 setObject:@"star" forKey:@"imageName"];
-    [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
-    [dict3 setObject:@"Billy Joe" forKey:@"name"];
-    [dict3 setObject:@"Homework #1" forKey:@"assignment"];
-    [dict3 setObject:@"I didn't understand question 4." forKey:@"comment"];
-    [dict3 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
+    [dict3 setObject:@"warning" forKey:@"imageName"];
+    [dict3 setObject:@"Susie may need more challenging work." forKey:@"message"];
+    [dict3 setObject:@"Billy had trouble with the last quiz. His last comment was \"I didn't have enough time to finish.\"" forKey:@"description"];
+    [dict3 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict3];
+
+    NSMutableDictionary *dict4 = [NSMutableDictionary dictionary];
+    [dict4 setObject:@"warning" forKey:@"imageName"];
+    [dict4 setObject:@"Susie may need more challenging work." forKey:@"message"];
+    [dict4 setObject:@"Sally had trouble with the last quiz. Her last comment was \"Too many questions!\"" forKey:@"description"];
+    [dict4 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
+    [notifications addObject:dict4];
+    
+    NSMutableDictionary *dict5 = [NSMutableDictionary dictionary];
+    [dict5 setObject:@"star" forKey:@"imageName"];
+    [dict5 setObject:@"Danny may need more challenging work." forKey:@"message"];
+    [dict5 setObject:@"Danny may not be challenged enough. His last comment was \"This quiz was really easy.\"" forKey:@"description"];
+    [dict5 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
+    [notifications addObject:dict5];
     
 }
 
@@ -66,7 +76,7 @@
 #pragma mark Table Delegate Methods
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return 60;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
