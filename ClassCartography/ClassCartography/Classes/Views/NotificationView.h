@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NotificationTableViewCell.h"
 
-@interface NotificationView : UIView {    
-    UILabel *graphTitle;
+@interface NotificationView : UIView <UITableViewDataSource, UITableViewDelegate> {
+    UILabel *title;
+    
+    UITableView *notificationTable;
+    NSMutableArray *notifications;
+
 }
 
 

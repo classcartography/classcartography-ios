@@ -35,26 +35,29 @@
     [comments removeAllObjects];
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
     [dict1 setObject:@"temp" forKey:@"imageName"];
+    [dict1 setObject:@"itemstars-4" forKey:@"starsName"];
     [dict1 setObject:@"John Smith" forKey:@"name"];
     [dict1 setObject:@"Homework #1" forKey:@"assignment"];
     [dict1 setObject:@"This was really difficult." forKey:@"comment"];
-    [dict1 setObject:@"Mar 7, 2013 4:34pm" forKey:@"dateTime"];
+    [dict1 setObject:@"March 4, 2013 4:34pm" forKey:@"dateTime"];
     [comments addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
     [dict2 setObject:@"temp" forKey:@"imageName"];
+    [dict2 setObject:@"itemstars-3" forKey:@"starsName"];
     [dict2 setObject:@"Jane Goodman" forKey:@"name"];
     [dict2 setObject:@"Quiz #1" forKey:@"assignment"];
     [dict2 setObject:@"This was too easy." forKey:@"comment"];
-    [dict2 setObject:@"Mar 7, 2013 2:20pm" forKey:@"dateTime"];
+    [dict2 setObject:@"March 4, 2013 2:20pm" forKey:@"dateTime"];
     [comments addObject:dict2];
     
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
     [dict3 setObject:@"temp" forKey:@"imageName"];
+    [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict3 setObject:@"Billy Joe" forKey:@"name"];
     [dict3 setObject:@"Homework #1" forKey:@"assignment"];
     [dict3 setObject:@"I didn't understand question 4." forKey:@"comment"];
-    [dict3 setObject:@"Mar 7, 2013 1:12pm" forKey:@"dateTime"];
+    [dict3 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
     [comments addObject:dict3];
     
 }
@@ -86,6 +89,10 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     [dict addEntriesFromDictionary:[comments objectAtIndex:[indexPath row]]];
     [cell configureCell:dict forIndexPath:indexPath];
+    if ([indexPath row] == 1) {
+        cell.stars.hidden = NO;
+        cell.comment.hidden = YES;
+    }
     return cell;
 }
 
