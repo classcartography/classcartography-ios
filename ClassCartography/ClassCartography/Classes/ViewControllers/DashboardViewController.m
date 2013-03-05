@@ -23,14 +23,26 @@
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, 700, 60)];
+    _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, 700, 60)];
     _helloLabel.backgroundColor = [UIColor clearColor];
     _helloLabel.textColor = [UIColor blackColor];
-    _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:24];
+    _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
     [self.view addSubview:_helloLabel];
     
-    photoView = [[PhotoView alloc] initWithFrame:CGRectMake(30, 66, 251, 292)];
-    photoView.backgroundColor = [UIColor blackColor];
+    NSString *formatString = [NSDateFormatter dateFormatFromTemplate:@"EEEEdMMMMYYYY" options:0
+                                                              locale:[NSLocale currentLocale]];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:formatString];
+    
+    UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(32, 34, 400, 60)];
+    dateLabel.backgroundColor = [UIColor clearColor];
+    dateLabel.textColor = [UIColor blackColor];
+    dateLabel.font = [UIFont fontWithName:@"QuicksandLight-Regular" size:14];
+    dateLabel.text = [dateFormatter stringFromDate:[NSDate date]];
+    [self.view addSubview:dateLabel];
+    
+    photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 88, 275, 275)];
+    photoView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:photoView];
     
     graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
