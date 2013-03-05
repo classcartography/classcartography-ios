@@ -20,19 +20,21 @@
                 
         _dataKeys = [NSArray arrayWithObjects:@"Attendance", @"Grade", nil];
         
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd"];
         _months = [NSArray arrayWithObjects:
-                   @"Mar 12",
-                   @"Feb 12",
-                   @"Jan 12",
-                   @"Dec 11",
-                   @"Nov 11",
-                   @"Oct 11",
-                   @"Sep 11",
-                   @"Aug 11",
-                   @"Jul 11",
-                   @"Jun 11",
-                   @"May 11",
-                   @"Apr 11",
+                   [formatter dateFromString:@"2012-03-01"],
+                   [formatter dateFromString:@"2012-02-11"],
+                   [formatter dateFromString:@"2012-01-01"],
+                   [formatter dateFromString:@"2011-12-01"],
+                   [formatter dateFromString:@"2011-11-01"],
+                   [formatter dateFromString:@"2011-10-01"],
+                   [formatter dateFromString:@"2011-09-01"],
+                   [formatter dateFromString:@"2011-08-01"],
+                   [formatter dateFromString:@"2011-07-01"],
+                   [formatter dateFromString:@"2011-06-01"],
+                   [formatter dateFromString:@"2011-05-01"],
+                   [formatter dateFromString:@"2011-04-01"],
                    nil];
         
         NSDictionary *mar12Data = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:

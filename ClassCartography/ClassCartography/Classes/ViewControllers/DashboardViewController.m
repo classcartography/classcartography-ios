@@ -20,7 +20,7 @@
     [super loadView];
     
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 66, 251, 292)];
     photoView.backgroundColor = [UIColor whiteColor];
