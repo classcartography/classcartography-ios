@@ -19,7 +19,6 @@
         
         [self addSubview:_borderImageView];
         [self addSubview:_arrowView];
-        
     }
     
     return self;
@@ -58,9 +57,7 @@
 }
 
 -  (void)layoutSubviews {
-    if (self.arrowDirection == UIPopoverArrowDirectionUp)
-    {
-        NSLog(@"hey");
+    if (self.arrowDirection == UIPopoverArrowDirectionUp) {
         CGFloat height = [[self class] arrowHeight];
         CGFloat base = [[self class] arrowBase];
         

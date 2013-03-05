@@ -44,6 +44,8 @@
 
 - (void)showPopover {
     UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+    tableViewController.tableView.dataSource = self;
+    tableViewController.contentSizeForViewInPopover = CGSizeMake(320, 210);
     
     _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
     
@@ -71,6 +73,28 @@
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
 }
+
+
+
+#pragma mark -
+#pragma mark UITableViewDataSource methods
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    cell.textLabel.text = [[[UserHandler sharedUserHandler].classes objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:18];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].classes count]; }
 
 
 #pragma mark

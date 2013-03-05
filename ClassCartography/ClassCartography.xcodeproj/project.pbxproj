@@ -809,6 +809,7 @@
 		7C113ED616E535FA005C0B65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chamara Paul (45WXQRENUV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -819,6 +820,7 @@
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
 				INFOPLIST_FILE = "ClassCartography/ClassCartography-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -826,6 +828,7 @@
 		7C113ED716E535FA005C0B65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chamara Paul (45WXQRENUV)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -836,6 +839,7 @@
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
 				INFOPLIST_FILE = "ClassCartography/ClassCartography-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
