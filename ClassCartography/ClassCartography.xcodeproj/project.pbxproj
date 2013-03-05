@@ -556,7 +556,6 @@
 				5923590B16E5B8F1008CD31F /* classcart-logo@2x.png in Resources */,
 				5923590E16E5BB04008CD31F /* nav-bg.png in Resources */,
 				5923590F16E5BB04008CD31F /* nav-bg@2x.png in Resources */,
->>>>>>> 27407c2bafe799482aef0b28c43d210b7105fba3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
