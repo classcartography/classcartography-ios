@@ -9,12 +9,16 @@
 #import "InBloomAPIHandler.h"
 #import "AFJSONRequestOperation.h"
 #import "AFHTTPRequestOperation.h"
+#import "SBJson.h"
 #import "WebViewController.h"
+#import "UserHandler.h"
 
 
 static InBloomAPIHandler *sharedInBloomAPIHandler;
 
 @implementation InBloomAPIHandler
+
+@synthesize delegate;
 
 
 #pragma mark -
@@ -43,8 +47,13 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 - (void)saveSession:(NSString *)authorizationCode {
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:INBLOOM_CLIENT_ID, @"client_id", INBLOOM_SHARED_SECRET, @"client_secret", authorizationCode, @"code", @"", @"redirect_uri", nil];
     [_httpClient getPath:@"/api/oauth/token" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@", operation.responseString);
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSDictionary *d = [json objectWithString:operation.responseString];
         
+        [UserHandler sharedUserHandler].isLoggedIn = YES;
+        [UserHandler sharedUserHandler].token = [d objectForKey:@"access_token"];
+        
+        [delegate loginComplete];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];

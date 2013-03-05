@@ -29,7 +29,6 @@
 		5923434916E55970008E4AEE /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923433516E55970008E4AEE /* SBJsonStreamWriterState.m */; };
 		5923434A16E55970008E4AEE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923433716E55970008E4AEE /* SBJsonWriter.m */; };
 		5923435116E5598B008E4AEE /* InBloomAPIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923434D16E5598B008E4AEE /* InBloomAPIHandler.m */; };
-		5923435216E5598B008E4AEE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435016E5598B008E4AEE /* User.m */; };
 		5923436216E559B1008E4AEE /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435516E559B1008E4AEE /* DashboardViewController.m */; };
 		5923436316E559B1008E4AEE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435716E559B1008E4AEE /* LoginViewController.m */; };
 		5923436416E559B1008E4AEE /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435916E559B1008E4AEE /* StudentViewController.m */; };
@@ -37,6 +36,7 @@
 		5923436816E559B1008E4AEE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435F16E559B1008E4AEE /* LoginView.xib */; };
 		5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentDashboardView.xib */; };
 		5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436116E559B1008E4AEE /* TeacherDashboardView.xib */; };
+		5923590916E59B07008CD31F /* UserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923590816E59B06008CD31F /* UserHandler.m */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
@@ -131,8 +131,6 @@
 		5923433716E55970008E4AEE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		5923434C16E5598B008E4AEE /* InBloomAPIHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InBloomAPIHandler.h; sourceTree = "<group>"; };
 		5923434D16E5598B008E4AEE /* InBloomAPIHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InBloomAPIHandler.m; sourceTree = "<group>"; };
-		5923434F16E5598B008E4AEE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		5923435016E5598B008E4AEE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5923435416E559B1008E4AEE /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		5923435516E559B1008E4AEE /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		5923435616E559B1008E4AEE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -144,6 +142,8 @@
 		5923435F16E559B1008E4AEE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		5923436016E559B1008E4AEE /* StudentDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentDashboardView.xib; sourceTree = "<group>"; };
 		5923436116E559B1008E4AEE /* TeacherDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardView.xib; sourceTree = "<group>"; };
+		5923590716E59B06008CD31F /* UserHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHandler.h; sourceTree = "<group>"; };
+		5923590816E59B06008CD31F /* UserHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHandler.m; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -323,6 +323,8 @@
 			children = (
 				5923434C16E5598B008E4AEE /* InBloomAPIHandler.h */,
 				5923434D16E5598B008E4AEE /* InBloomAPIHandler.m */,
+				5923590716E59B06008CD31F /* UserHandler.h */,
+				5923590816E59B06008CD31F /* UserHandler.m */,
 			);
 			name = Handlers;
 			path = Classes/Handlers;
@@ -338,8 +340,6 @@
 				7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */,
 				7C36689116E58F230085FDBB /* StudentData.h */,
 				7C36689216E58F230085FDBB /* StudentData.m */,
-				5923434F16E5598B008E4AEE /* User.h */,
-				5923435016E5598B008E4AEE /* User.m */,
 			);
 			name = Objects;
 			path = Classes/Objects;
@@ -602,7 +602,6 @@
 				5923434916E55970008E4AEE /* SBJsonStreamWriterState.m in Sources */,
 				5923434A16E55970008E4AEE /* SBJsonWriter.m in Sources */,
 				5923435116E5598B008E4AEE /* InBloomAPIHandler.m in Sources */,
-				5923435216E5598B008E4AEE /* User.m in Sources */,
 				5923436216E559B1008E4AEE /* DashboardViewController.m in Sources */,
 				5923436316E559B1008E4AEE /* LoginViewController.m in Sources */,
 				5923436416E559B1008E4AEE /* StudentViewController.m in Sources */,
@@ -616,6 +615,7 @@
 				7C36689316E58F230085FDBB /* Datasource.m in Sources */,
 				7C36689416E58F230085FDBB /* ShinobiChart+LineChart.m in Sources */,
 				7C36689516E58F230085FDBB /* StudentData.m in Sources */,
+				5923590916E59B07008CD31F /* UserHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

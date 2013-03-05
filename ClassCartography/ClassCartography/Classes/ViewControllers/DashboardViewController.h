@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InBloomAPIHandler.h"
+#import "PhotoView.h"
+#import "GraphView.h"
+#import "CommentView.h"
+#import "NotificationView.h"
 
-@interface DashboardViewController : UIViewController
+
+@interface DashboardViewController : UIViewController <InBloomAPIHandlerDelegate> {
+    PhotoView *photoView;
+    GraphView *graphView;
+    CommentView *commentView;
+    NotificationView *notificationView;
+}
 
 @end

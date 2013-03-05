@@ -8,31 +8,43 @@
 
 #import "DashboardViewController.h"
 
-@interface DashboardViewController ()
-
-@end
 
 @implementation DashboardViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+- (id)init {
+    if (self = [super init]) { }
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)loadView {
+    [super loadView];
+    
+    self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 66, 251, 292)];
+    photoView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:photoView];
+    
+    graphView = [[GraphView alloc] initWithFrame:CGRectMake(319, 66, 676, 285)];
+    graphView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:graphView];
+    
+    commentView = [[CommentView alloc] initWithFrame:CGRectMake(363, 391, 300, 350)];
+    commentView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:commentView];
+    
+    notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(695, 391, 300, 350)];
+    notificationView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:notificationView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark
+#pragma mark InBloomAPIHandlerDelegate methods
+
+- (void)loginComplete {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
