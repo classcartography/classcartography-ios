@@ -38,11 +38,6 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"class://test_page/one?token=12345&domain=foo.com"]];
 }
 
-- (IBAction)goToDashboard:(id)sender {
-    TeacherDashboardViewController *tdvc = [[TeacherDashboardViewController alloc] init];
-    APP_DELEGATE.window.rootViewController = tdvc;
-}
-
 - (IBAction)inBloomLogin:(id)sender {
     [[InBloomAPIHandler sharedInBloomAPIHandler] authenticate:self];
 }

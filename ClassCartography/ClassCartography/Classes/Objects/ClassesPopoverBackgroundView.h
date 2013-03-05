@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ClassesPopoverBackgroundView : UIPopoverBackgroundView
+
++(UIEdgeInsets)contentViewInsets;
++(CGFloat)arrowHeight;
++(CGFloat)arrowBase;
+
+@property(nonatomic,readwrite) CGFloat arrowOffset;
+@property(nonatomic,readwrite) UIPopoverArrowDirection arrowDirection;
 
 @end

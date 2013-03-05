@@ -7,6 +7,7 @@
 //
 
 #import "TeacherDashboardViewController.h"
+#import "ClassesPopoverBackgroundView.h"
 #import "UserHandler.h"
 
 
@@ -44,7 +45,8 @@
     UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
     
     _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
-    _classesPopoverController.
+    
+    _classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
     [_classesPopoverController presentPopoverFromRect:_howLabel.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 

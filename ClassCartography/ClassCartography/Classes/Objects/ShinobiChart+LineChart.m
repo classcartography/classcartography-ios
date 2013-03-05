@@ -9,7 +9,6 @@
 
 + (ShinobiChart*)lineChartForBrowserUsageWithFrame:(CGRect)frame {
     
-    BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
     ShinobiChart *chart = [[ShinobiChart alloc] initWithFrame:frame];
     chart.autoresizingMask = ~UIViewAutoresizingNone;
     chart.clipsToBounds = NO;
