@@ -22,15 +22,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     TeacherDashboardViewController *teacherDashboardViewController = [[TeacherDashboardViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:teacherDashboardViewController];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:(215.0/255.0) green:(70.0/255.0) blue:(20.0/255.0) alpha:1.0]];
+    [navigationController.navigationBar.topItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = teacherDashboardViewController;
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
     if ([UserHandler sharedUserHandler].isLoggedIn == NO) {
         [InBloomAPIHandler sharedInBloomAPIHandler].delegate = teacherDashboardViewController;
         LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginView" bundle:nil];
-        [teacherDashboardViewController presentViewController:loginViewController animated:NO completion:nil];
+        [navigationController presentViewController:loginViewController animated:NO completion:nil];
     }
     
     return YES;

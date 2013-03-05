@@ -29,8 +29,6 @@
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    CGRect frame = self.view.frame;
-    frame.size.height = self.view.frame.size.height-64;
     _webview = [[UIWebView alloc] init];
     _webview.frame = self.view.frame;
     _webview.backgroundColor = [UIColor clearColor];
