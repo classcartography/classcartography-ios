@@ -19,7 +19,7 @@
 - (void)loadView {
     [super loadView];
     
-    _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(32, 391, 300, 350)];
+    _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(30, 391, 300, 350)];
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
 }

@@ -24,7 +24,7 @@
         _chart.delegate = self;
         [self addSubview:_chart];
         
-        graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(54, -24, 400, 16)];
+        graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(54, -20, 400, 20)];
         graphTitle.text = @"Overall Class Performance";
         graphTitle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
         [self addSubview:graphTitle];

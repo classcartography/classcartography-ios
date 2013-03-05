@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotificationView : UIView
+@interface NotificationView : UIView {    
+    UILabel *graphTitle;
+}
+
 
 @end
