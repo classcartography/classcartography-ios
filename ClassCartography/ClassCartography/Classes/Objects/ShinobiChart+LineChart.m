@@ -52,7 +52,7 @@
     NSDate *endDate = [formatter dateFromString:@"2012-01-01"];
     SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
     SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
-    xAxis.title = @"Month";
+    xAxis.title = @"Date";
     xAxis.tickLabelClippingModeHigh = SChartTickLabelClippingModeTicksAndLabelsPersist; //keep tick marks at the right end
     xAxis.majorTickFrequency = [SChartDateFrequency dateFrequencyWithMonth:1];
     xAxis.minorTickFrequency = [SChartDateFrequency dateFrequencyWithDay:1];

@@ -10,14 +10,15 @@
 #import <ShinobiCharts/ShinobiChart.h>
 #import "ShinobiChart+LineChart.h"
 #import "StudentData.h"
-#import "Datasource.h"
+#import "GraphData.h"
+
 
 @interface GraphView : UIView <SChartDelegate, SChartDatasource> {
 
     ShinobiChart *_chart;
-    Datasource *datasource;
     StudentData *studentData;
 
 }
+@property (nonatomic) id<GraphData> graphData;
 
 @end
