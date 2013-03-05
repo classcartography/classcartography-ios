@@ -44,7 +44,7 @@
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
     [dict2 setObject:@"temp" forKey:@"imageName"];
-    [dict2 setObject:@"itemstars-3" forKey:@"starsName"];
+    [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Jane Goodman" forKey:@"name"];
     [dict2 setObject:@"Quiz #1" forKey:@"assignment"];
     [dict2 setObject:@"This was too easy." forKey:@"comment"];
