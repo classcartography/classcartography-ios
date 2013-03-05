@@ -8,6 +8,11 @@
 
 #import "ShinobiChart+PieCharts.h"
 
+#define POSITIVE [UIColor colorWithRed:20.0/255.0 green:215.0/255.0 blue:168.0/255.0 alpha:1.0]
+#define NEGATIVE [UIColor colorWithRed:215.0/255.0 green:20.0/255.0 blue:68.0/255.0 alpha:1.0]
+#define NEUTRAL [UIColor colorWithRed:20.0/255.0 green:68.0/255.0 blue:215.0/255.0 alpha:1.0]
+
+
 @implementation ShinobiChart (PieCharts)
 
 + (ShinobiChart*)pieChartForOSDataWithFrame:(CGRect)frame {
@@ -38,13 +43,12 @@
     p.selectedStyle.chartEffect = SChartRadialChartEffectFlat;
     p.selectedStyle.showCrust = NO;
     p.labelFormatString = @"%.0f%%";
+    p.style.labelFont = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
     p.selectedPosition = [NSNumber numberWithFloat:-M_PI/2.f];    
-    p.style.crustColors = [NSMutableArray arrayWithObjects:[UIColor colorWithRed:0 green:170.0/255.0 blue:0 alpha:1.0],
-                          [UIColor colorWithRed:170.0/255.0 green:0 blue:0 alpha:1.0],
-                          [UIColor colorWithRed:0 green:0 blue:170.0/255.0 alpha:1.0], nil];
-    p.style.flavourColors = [NSMutableArray arrayWithObjects:[UIColor colorWithRed:0 green:170.0/255.0 blue:0 alpha:1.0],
-                           [UIColor colorWithRed:170.0/255.0 green:0 blue:0 alpha:1.0],
-                           [UIColor colorWithRed:0 green:0 blue:170.0/255.0 alpha:1.0], nil];
+    p.style.crustColors = [NSMutableArray arrayWithObjects:POSITIVE, NEGATIVE, NEUTRAL, nil];
+    p.style.flavourColors = [NSMutableArray arrayWithObjects:POSITIVE, NEGATIVE, NEUTRAL, nil];
+    p.selectedStyle.crustColors = [NSMutableArray arrayWithObjects:POSITIVE, NEGATIVE, NEUTRAL, nil];
+    p.selectedStyle.flavourColors = [NSMutableArray arrayWithObjects:POSITIVE, NEGATIVE, NEUTRAL, nil];
     return p;
 }
 

@@ -17,9 +17,13 @@
     UILabel *comment;
 //    UILabel *weekAvailability;
     UIImageView *photo;
+    UIImageView *stars;
     NSMutableDictionary *dict;
     
 }
+
+@property (nonatomic) UIImageView *stars;
+@property (nonatomic) UILabel *comment;
 
 - (void)configureCell:(NSDictionary *)details forIndexPath:(NSIndexPath *)indexPath;
 
