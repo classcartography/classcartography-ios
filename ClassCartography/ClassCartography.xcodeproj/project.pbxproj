@@ -49,6 +49,9 @@
 		7C113EC616E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EC716E535FA005C0B65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA616E535FA005C0B65 /* CoreData.framework */; };
 		7C36688816E566BA0085FDBB /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36688616E566A70085FDBB /* ShinobiCharts.framework */; };
+		7C36689316E58F230085FDBB /* Datasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36688D16E58F230085FDBB /* Datasource.m */; };
+		7C36689416E58F230085FDBB /* ShinobiChart+LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */; };
+		7C36689516E58F230085FDBB /* StudentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36689216E58F230085FDBB /* StudentData.m */; };
 		7C68CAF916E5623000CD4AAC /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CAF616E5623000CD4AAC /* Icon-144.png */; };
 		7C68CAFA16E5623000CD4AAC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CAF716E5623000CD4AAC /* Icon.png */; };
 		7C68CAFB16E5623000CD4AAC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CAF816E5623000CD4AAC /* Icon@2x.png */; };
@@ -153,6 +156,13 @@
 		7C113EA616E535FA005C0B65 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7C113EC216E535FA005C0B65 /* ClassCartographyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassCartographyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C36688616E566A70085FDBB /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ClassCartography/Classes/Frameworks/ShinobiCharts.framework; sourceTree = "<group>"; };
+		7C36688C16E58F230085FDBB /* Datasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource.h; sourceTree = "<group>"; };
+		7C36688D16E58F230085FDBB /* Datasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource.m; sourceTree = "<group>"; };
+		7C36688E16E58F230085FDBB /* GraphData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphData.h; sourceTree = "<group>"; };
+		7C36688F16E58F230085FDBB /* ShinobiChart+LineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+LineChart.h"; sourceTree = "<group>"; };
+		7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+LineChart.m"; sourceTree = "<group>"; };
+		7C36689116E58F230085FDBB /* StudentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentData.h; sourceTree = "<group>"; };
+		7C36689216E58F230085FDBB /* StudentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentData.m; sourceTree = "<group>"; };
 		7C68CAF616E5623000CD4AAC /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
 		7C68CAF716E5623000CD4AAC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7C68CAF816E5623000CD4AAC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -321,6 +331,13 @@
 		5923434E16E5598B008E4AEE /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				7C36688C16E58F230085FDBB /* Datasource.h */,
+				7C36688D16E58F230085FDBB /* Datasource.m */,
+				7C36688E16E58F230085FDBB /* GraphData.h */,
+				7C36688F16E58F230085FDBB /* ShinobiChart+LineChart.h */,
+				7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */,
+				7C36689116E58F230085FDBB /* StudentData.h */,
+				7C36689216E58F230085FDBB /* StudentData.m */,
 				5923434F16E5598B008E4AEE /* User.h */,
 				5923435016E5598B008E4AEE /* User.m */,
 			);
@@ -596,6 +613,9 @@
 				7CAF48D116E55D9A004931D5 /* CommentView.m in Sources */,
 				7CAF48D416E55DA6004931D5 /* NotificationView.m in Sources */,
 				59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */,
+				7C36689316E58F230085FDBB /* Datasource.m in Sources */,
+				7C36689416E58F230085FDBB /* ShinobiChart+LineChart.m in Sources */,
+				7C36689516E58F230085FDBB /* StudentData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <ShinobiCharts/ShinobiChart.h>
-
+#import "StudentData.h"
+#import "Datasource.h"
 
 @interface GraphView : UIView <SChartDelegate, SChartDatasource> {
 
- ShinobiChart *_chart;
+    ShinobiChart *_chart;
+    Datasource *datasource;
+    StudentData *studentData;
+
 }
 
 @end

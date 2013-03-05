@@ -11,11 +11,10 @@
 @implementation GraphView
 
 - (id)initWithFrame:(CGRect)frame {
-    NSLog(@"does xib call this?");
-    
+
     if (self = [super initWithFrame:frame]) {
         _chart = [[ShinobiChart alloc] initWithFrame:self.bounds];
-        _chart.title = @"My First Chart";
+        _chart.title = @"Overall Class Performance";
         _chart.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin |
         UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin |
         UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin |
@@ -28,16 +27,21 @@
         // Use a number axis for the y axis.
         SChartNumberAxis *yAxis = [[SChartNumberAxis alloc] init];
         _chart.yAxis = yAxis;
-        _chart.datasource = self;
         _chart.licenseKey = @"SaT4LeSLC2D5uL9MjAxMzA0MDNpbmZvQHNoaW5vYmljb250cm9scy5jb20=3lo58geh0gQoogPZ8PIH+Oqks9gBfDeXIeNwe3jFuNeXC4JMzuKGVs+oMGqQTg4DrY/+LYTAxnm4mdjgkh6WUyrePEWgVNXcL10hKIN/i/q3X2kiuapu7QDG1KXwgxPik7ZiVRZubSub3X47pomXyj5Qr7O0=BQxSUisl3BaWf/7myRmmlIjRnMU2cA7q+/03ZX9wdj30RzapYANf51ee3Pi8m2rVW6aD7t6Hi4Qy5vv9xpaQYXF5T7XzsafhzS3hbBokp36BoJZg8IrceBj742nQajYyV7trx5GIw9jy/V6r0bvctKYwTim7Kzq+YPWGMtqtQoU=PFJTQUtleVZhbHVlPjxNb2R1bHVzPnh6YlRrc2dYWWJvQUh5VGR6dkNzQXUrUVAxQnM5b2VrZUxxZVdacnRFbUx3OHZlWStBK3pteXg4NGpJbFkzT2hGdlNYbHZDSjlKVGZQTTF4S2ZweWZBVXBGeXgxRnVBMThOcDNETUxXR1JJbTJ6WXA3a1YyMEdYZGU3RnJyTHZjdGhIbW1BZ21PTTdwMFBsNWlSKzNVMDg5M1N4b2hCZlJ5RHdEeE9vdDNlMD08L01vZHVsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+";
-        
-        NSLog(@"view did load");
+
+        //Initialise our data and assign it to the data source - then assign the datasource to our chart
+        studentData = [StudentData new];
+        datasource = [Datasource new];
+        datasource.graphData = studentData;
+        _chart.datasource = datasource;
+        _chart.delegate = self;
         [self addSubview:_chart];
     }
     
     return self;
 }
 
+/*
 #pragma mark
 #pragma Shinobi
 
@@ -71,7 +75,7 @@
     return datapoint;
 }
 
-
+*/
 
 #pragma mark - ShinobiChart Delegate
 - (void)sChart:(ShinobiChart *)chart alterTickMark:(SChartTickMark *)tickMark beforeAddingToAxis:(SChartAxis *)axis {

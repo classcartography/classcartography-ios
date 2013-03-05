@@ -36,6 +36,15 @@
     _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(32, 391, 300, 350)];
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
+
+    _commentView = [[CommentView alloc] initWithFrame:CGRectMake(363, 391, 300, 350)];
+    _commentView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_commentView];
+
+    _notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(695, 391, 300, 350)];
+    _notificationView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_notificationView];
+
 }
 
 @end
