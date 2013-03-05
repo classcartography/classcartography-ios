@@ -11,6 +11,8 @@
 
 @implementation PhotoView
 
+@synthesize delegate;
+
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo-bg"]];
@@ -23,7 +25,7 @@
         
         button = [UIButton buttonWithType:UIButtonTypeContactAdd];
         button.titleLabel.text = @"Switch";
-        [button addTarget:self action:@selector(studentView) forControlEvents:UIControlEventAllEvents];
+        [button addTarget:self action:@selector(studentView) forControlEvents:UIControlEventTouchUpInside];
         button.center = CGPointMake(20, 20);
         [self addSubview:button];
     }
@@ -31,9 +33,8 @@
     return self;
 }
 
-- (void) studentView {
-    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
-    [APP_DELEGATE.navController pushViewController:svc animated:YES];
+- (void)studentView {
+    [delegate showStudentView];
 }
 
 @end

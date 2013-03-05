@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
-#import "StudentDashboardViewController.h"
+
+@protocol PhotoViewDelegate
+- (void)showStudentView;
+@end
+
 
 @interface PhotoView : UIView {
+    
+    __unsafe_unretained id <PhotoViewDelegate> delegate;
     UIButton *button;
 }
+
+@property (nonatomic, assign) id <PhotoViewDelegate> delegate;
 
 @end

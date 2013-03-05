@@ -10,7 +10,7 @@
 #import "FeedbackView.h"
 
 
-@interface TeacherDashboardViewController : DashboardViewController {
+@interface TeacherDashboardViewController : DashboardViewController <PhotoViewDelegate> {
     
 @private
     UITapGestureRecognizer *_tap;

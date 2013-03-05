@@ -8,6 +8,7 @@
 
 #import "TeacherDashboardViewController.h"
 #import "ClassesPopoverBackgroundView.h"
+#import "StudentDashboardViewController.h"
 #import "UserHandler.h"
 
 
@@ -22,6 +23,8 @@
 
 - (void)loadView {
     [super loadView];
+    
+    photoView.delegate = self;
     
     _howLabel = [[UILabel alloc] initWithFrame:CGRectMake(350, 10, 700, 60)];
     _howLabel.backgroundColor = [UIColor clearColor];
@@ -46,7 +49,7 @@
     
     _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
     
-    _classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
+    //_classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
     [_classesPopoverController presentPopoverFromRect:_howLabel.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
@@ -69,6 +72,16 @@
                                                              attributes:nil];
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
+}
+
+
+#pragma mark
+#pragma mark PhotoViewDelegate methods
+
+- (void)showStudentView {
+    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
+    
+    [self.navigationController pushViewController:svc animated:YES];
 }
 
 @end
