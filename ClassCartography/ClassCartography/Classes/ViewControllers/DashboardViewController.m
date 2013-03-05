@@ -30,7 +30,7 @@
     [self.view addSubview:_helloLabel];
     
     photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 66, 251, 292)];
-    photoView.backgroundColor = [UIColor whiteColor];
+    photoView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:photoView];
     
     graphView = [[GraphView alloc] initWithFrame:CGRectMake(319, 66, 676, 285)];

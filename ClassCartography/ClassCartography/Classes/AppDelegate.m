@@ -10,7 +10,6 @@
 #import "InBloomAPIHandler.h"
 #import "LoginViewController.h"
 #import "TeacherDashboardViewController.h"
-#import "UserHandler.h"
 
 
 @implementation AppDelegate
@@ -33,7 +32,8 @@
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
-    if ([UserHandler sharedUserHandler].isLoggedIn == NO) {
+    [InBloomAPIHandler sharedInBloomAPIHandler].token = [[NSUserDefaults standardUserDefaults] objectForKey:INBLOOM_TOKEN];
+    if (![[InBloomAPIHandler sharedInBloomAPIHandler] isSessionValid]) {
         [InBloomAPIHandler sharedInBloomAPIHandler].delegate = teacherDashboardViewController;
         LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginView" bundle:nil];
         [navigationController presentViewController:loginViewController animated:NO completion:nil];

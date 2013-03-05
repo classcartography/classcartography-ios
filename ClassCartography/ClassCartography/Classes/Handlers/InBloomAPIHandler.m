@@ -19,6 +19,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 @implementation InBloomAPIHandler
 
 @synthesize delegate;
+@synthesize token;
 
 
 #pragma mark -
@@ -33,19 +34,6 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 }
 
 - (id)copyWithZone:(NSZone *)zone { return self; }
-
-- (void)completeLogin {
-    [_httpClient getPath:@"/api/rest/system/session/check" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        SBJsonParser *json = [[SBJsonParser alloc] init];
-        NSDictionary *d = [json objectWithString:operation.responseString];
-        
-        [UserHandler sharedUserHandler].isLoggedIn = YES;
-        [UserHandler sharedUserHandler].name = [d objectForKey:@"full_name"];
-        [delegate loginComplete];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }];
-}
 
 
 #pragma mark -
@@ -62,13 +50,36 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
     [_httpClient getPath:@"/api/oauth/token" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         SBJsonParser *json = [[SBJsonParser alloc] init];
         NSDictionary *d = [json objectWithString:operation.responseString];
+        token = [NSString stringWithFormat:@"Bearer %@", [d objectForKey:@"access_token"]];
         
-        [_httpClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Bearer %@", [d objectForKey:@"access_token"]]];
+        [[NSUserDefaults standardUserDefaults] setObject:token forKey:INBLOOM_TOKEN];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         
-        [self completeLogin];
+        [self isSessionValid];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];
+}
+
+- (BOOL)isSessionValid {
+    [_httpClient setDefaultHeader:@"Authorization" value:token];
+    [_httpClient getPath:@"/api/rest/system/session/check" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSDictionary *d = [json objectWithString:operation.responseString];
+        
+        if ([d valueForKey:@"authenticated"] == [NSNumber numberWithBool:YES]) {
+            [UserHandler sharedUserHandler].isLoggedIn = YES;
+            [UserHandler sharedUserHandler].name = [d objectForKey:@"full_name"];
+            if (delegate)
+                [delegate loginComplete];
+        } else {
+            [UserHandler sharedUserHandler].isLoggedIn = NO;
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+    
+    return [UserHandler sharedUserHandler].isLoggedIn;
 }
 
 
