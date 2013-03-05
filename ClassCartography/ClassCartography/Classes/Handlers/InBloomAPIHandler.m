@@ -74,6 +74,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
                 [delegate loginComplete];
         } else {
             [UserHandler sharedUserHandler].isLoggedIn = NO;
+            [_httpClient clearAuthorizationHeader];
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);

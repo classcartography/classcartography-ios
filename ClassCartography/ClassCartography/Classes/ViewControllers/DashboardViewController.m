@@ -26,10 +26,22 @@
     _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(32, 0, 700, 60)];
     _helloLabel.backgroundColor = [UIColor clearColor];
     _helloLabel.textColor = [UIColor blackColor];
-    _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:24];
+    _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
     [self.view addSubview:_helloLabel];
     
-    photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 66, 251, 292)];
+    NSString *formatString = [NSDateFormatter dateFormatFromTemplate:@"EEEEdMMMMYYYY" options:0
+                                                              locale:[NSLocale currentLocale]];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:formatString];
+    
+    UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(32, 24, 400, 60)];
+    dateLabel.backgroundColor = [UIColor clearColor];
+    dateLabel.textColor = [UIColor blackColor];
+    dateLabel.font = [UIFont fontWithName:@"QuicksandLight-Regular" size:14];
+    dateLabel.text = [dateFormatter stringFromDate:[NSDate date]];
+    [self.view addSubview:dateLabel];
+    
+    photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 86, 250, 250)];
     photoView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:photoView];
     
