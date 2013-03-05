@@ -12,8 +12,10 @@
 @protocol GraphData <NSObject>
 
 @required
-- (NSMutableDictionary*)data;
-- (NSArray*)months;
-- (NSArray*)dataKeys;
+
+- (NSMutableDictionary*) attendanceData;
+- (NSMutableDictionary*) gradeData;
+- (NSArray*) attendanceDays;
+- (NSArray*) gradeDays;
 
 @end

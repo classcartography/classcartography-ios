@@ -8,8 +8,9 @@
 //A class that contain broser usage stats - in particular these are mobile browser stats 
 @interface StudentData : NSObject <GraphData>
 
-@property (nonatomic) NSMutableDictionary *data;
-@property (nonatomic) NSArray *months;
-@property (nonatomic) NSArray *dataKeys;
+@property (nonatomic) NSMutableDictionary *attendanceData;
+@property (nonatomic) NSMutableDictionary *gradeData;
+@property (nonatomic) NSArray *attendanceDays;
+@property (nonatomic) NSArray *gradeDays;
 
 @end

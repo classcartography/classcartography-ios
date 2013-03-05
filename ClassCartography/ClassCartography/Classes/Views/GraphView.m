@@ -35,27 +35,68 @@
 
 #pragma mark - ShinobiChart Datasource
 
+
 - (int)numberOfSeriesInSChart:(ShinobiChart *)chart {
-    return [_graphData dataKeys].count;
+    return 2;
 }
 
 - (SChartSeries*)sChart:(ShinobiChart *)chart seriesAtIndex:(int)index {
-    return [chart lineSeriesForKey:[[_graphData dataKeys] objectAtIndex:index]];
+    if (index == 0) {
+        return [chart lineSeriesForKey:@"Attendance"];
+    } else {
+        return [chart lineSeriesForKey:@"Grade"];
+    }
 }
 
 - (int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
-    return [_graphData months].count;
+    if (seriesIndex == 0) {
+        NSLog(@"attendance count: %d", [[[_graphData attendanceData] allKeys] count]);
+        return [[[_graphData attendanceData] allKeys] count];
+    } else {
+        NSLog(@"grade count: %d", [[[_graphData gradeData] allKeys] count]);
+        return [[[_graphData gradeData] allKeys] count];
+    }
 }
 
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(int)dataIndex forSeriesAtIndex:(int)seriesIndex {
     SChartDataPoint *dp = [SChartDataPoint new];
-    
-    //Map our data values from the data to our chart
-    dp.xValue =  [[_graphData months] objectAtIndex:[_graphData months].count - dataIndex - 1];
-    dp.yValue = [[[_graphData data] objectForKey:dp.xValue] objectForKey:[[_graphData dataKeys] objectAtIndex:seriesIndex]];
+
+    if (seriesIndex == 0) {
+        NSLog(@"Data index: %d", dataIndex);
+        dp.xValue = [[_graphData attendanceDays] objectAtIndex:dataIndex];
+        NSLog(@"dx value: %@", dp.xValue);
+        dp.yValue = [[_graphData attendanceData] objectForKey:dp.xValue];
+        NSLog(@"dy value: %@", dp.yValue);
+    } else {
+        NSLog(@"Data index: %d", dataIndex);
+        dp.xValue = [[_graphData gradeDays] objectAtIndex:dataIndex];
+        dp.yValue = [[_graphData gradeData] objectForKey:dp.xValue];
+    }
     
     return dp;
 }
+//
+//- (int)numberOfSeriesInSChart:(ShinobiChart *)chart {
+//    return [_graphData dataKeys].count;
+//}
+//
+//- (SChartSeries*)sChart:(ShinobiChart *)chart seriesAtIndex:(int)index {
+//    return [chart lineSeriesForKey:[[_graphData dataKeys] objectAtIndex:index]];
+//}
+//
+//- (int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
+//    return [_graphData months].count;
+//}
+//
+//- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(int)dataIndex forSeriesAtIndex:(int)seriesIndex {
+//    SChartDataPoint *dp = [SChartDataPoint new];
+//    
+//    //Map our data values from the data to our chart
+//    dp.xValue =  [[_graphData months] objectAtIndex:[_graphData months].count - dataIndex - 1];
+//    dp.yValue = [[[_graphData data] objectForKey:dp.xValue] objectForKey:[[_graphData dataKeys] objectAtIndex:seriesIndex]];
+//    
+//    return dp;
+//}
 
 #pragma mark - ShinobiChart Delegate
 - (void)sChart:(ShinobiChart *)chart alterTickMark:(SChartTickMark *)tickMark beforeAddingToAxis:(SChartAxis *)axis {

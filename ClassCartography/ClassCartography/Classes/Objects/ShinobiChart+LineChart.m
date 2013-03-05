@@ -10,16 +10,6 @@
 + (ShinobiChart*)lineChartForBrowserUsageWithFrame:(CGRect)frame {
     
     BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
-    
-    if (iPad) {
-//        frame.origin.x += 10;
-//        frame.origin.y += 50;
-        frame.size.width -= 10;
-//        frame.size.height += 100;
-    } else {
-        frame.size.width -= 10;
-    }
-    
     ShinobiChart *chart = [[ShinobiChart alloc] initWithFrame:frame];
     chart.autoresizingMask = ~UIViewAutoresizingNone;
     chart.clipsToBounds = NO;
@@ -78,34 +68,22 @@
     chart.yAxis = yAxis;
     
     //Only show the legend on the iPad
-    chart.legend.hidden = !iPad;
+    chart.legend.hidden = NO;
     chart.legend.position = SChartLegendPositionBottomMiddle;
     chart.legend.maxSeriesPerLine = 2;
     chart.legend.style.font = [UIFont systemFontOfSize:10];
-    chart.legend.style.marginWidth = [NSNumber numberWithFloat:0.05f];
+    chart.legend.style.marginWidth = [NSNumber numberWithFloat:0.55f];
     chart.legend.backgroundColor = [UIColor whiteColor];
     chart.legend.cornerRadius = [NSNumber numberWithInt:10];
     
     return chart;
 }
 
-- (NSString*)seriesTitleForKey:(NSString*)key {
-    NSString *title = nil;
-    
-    if ([key isEqualToString:attendance]) {
-        title = @"Attendance";
-    } else if ([key isEqualToString:grade]) {
-        title = @"Grade";
-    }
-    
-    return title;
-}
-
 - (SChartSeries*)lineSeriesForKey:(NSString*)key {
     
     SChartLineSeries *l = [SChartLineSeries new];
     l.style.pointStyle.showPoints = NO;
-    l.title = [self seriesTitleForKey:key];
+    l.title = key;
     return l;
 
 }
