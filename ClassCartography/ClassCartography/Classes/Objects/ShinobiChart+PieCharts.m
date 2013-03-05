@@ -31,43 +31,20 @@
 }
 
 - (SChartPieSeries*)pieSeriesForOS {
-    BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
     SChartPieSeries *p = [SChartPieSeries new];
-    p.selectedStyle.protrusion = iPad ? 40.f : 10.f;
-    p.style.showCrust = NO;
+    p.selectedStyle.protrusion = 30.f;
+    p.style.showCrust = YES;
     p.selectedStyle.showCrust = NO;
     p.labelFormatString = @"%.0f%%";
-    p.selectedPosition = [NSNumber numberWithFloat:-M_PI/2.f];
+    p.selectedPosition = [NSNumber numberWithFloat:-M_PI/2.f];    
+    p.style.crustColors = [NSMutableArray arrayWithObjects:[UIColor colorWithRed:0 green:170.0/255.0 blue:0 alpha:1.0],
+                          [UIColor colorWithRed:170.0/255.0 green:0 blue:0 alpha:1.0],
+                          [UIColor colorWithRed:0 green:0 blue:170.0/255.0 alpha:1.0], nil];
+    p.style.flavourColors = [NSMutableArray arrayWithObjects:[UIColor colorWithRed:0 green:170.0/255.0 blue:0 alpha:1.0],
+                           [UIColor colorWithRed:170.0/255.0 green:0 blue:0 alpha:1.0],
+                           [UIColor colorWithRed:0 green:0 blue:170.0/255.0 alpha:1.0], nil];
     return p;
 }
-
-//+ (ShinobiChart*)donutChartForOSVersionDataWithFrame:(CGRect)frame {
-//    
-//    ShinobiChart *chart = [[ShinobiChart alloc] initWithFrame:frame];
-//    chart.autoresizingMask = ~UIViewAutoresizingNone;
-//    
-//    chart.theme = [SChartLightTheme new];
-//    chart.legend.hidden = YES;
-//    chart.legend.position = SChartLegendPositionBottomMiddle;
-//    chart.legend.maxSeriesPerLine = 2;
-//    
-//    return chart;
-//}
-//
-//
-//- (SChartDonutSeries*)donutSeriesForOSVerison {
-//    SChartDonutSeries *d = [SChartDonutSeries new];
-//    d.style.showCrust = NO;
-//    d.selectedStyle.showCrust = NO;
-//    d.labelFormatString = @"%.0f%%";
-//    d.style.labelFont = [UIFont fontWithName:self.theme.lightFontName size:12.f];
-//    d.outerRadius = 105.f;
-//    d.innerRadius = 35.f;
-//    d.selectedStyle.protrusion = 0.f;
-//    return d;
-//}
-
-
 
 
 @end

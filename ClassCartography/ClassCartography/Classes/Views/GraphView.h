@@ -18,6 +18,7 @@
     ShinobiChart *_chart;
     StudentData *studentData;
 
+    UILabel *graphTitle;
 }
 @property (nonatomic) id<GraphData> graphData;
 

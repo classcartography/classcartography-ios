@@ -11,15 +11,14 @@
 #import "ShinobiChart+PieCharts.h"
 #import "PieData.h"
 #import "FeedbackData.h"
-#import "LineView.h"
 
 @interface FeedbackView : UIView <SChartDatasource, SChartDelegate> {
 
     ShinobiChart *pieChart;
     FeedbackData *feedbackData;
     UILabel *selectedOSLabel;
-    LineView *lineView;
     BOOL first;
+    UILabel *graphTitle;
 
 }
 
