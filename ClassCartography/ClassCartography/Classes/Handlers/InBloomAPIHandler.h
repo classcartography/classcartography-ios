@@ -14,6 +14,7 @@
 
 @protocol InBloomAPIHandlerDelegate
 - (void)loginComplete;
+- (void)getClassesComplete;
 @end
 
 @interface InBloomAPIHandler : NSObject {

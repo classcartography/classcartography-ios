@@ -46,6 +46,8 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         for(NSDictionary *d in classesResponse) {
             [[UserHandler sharedUserHandler].classes addObject:d];
         }
+        
+        [delegate getClassesComplete];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];
@@ -106,6 +108,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
             [UserHandler sharedUserHandler].isLoggedIn = YES;
             [UserHandler sharedUserHandler].name = [d objectForKey:@"full_name"];
             [self getClassesInfo];
+            
             if (delegate)
                 [delegate loginComplete];
         } else {

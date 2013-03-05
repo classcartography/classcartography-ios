@@ -13,7 +13,9 @@
 @interface TeacherDashboardViewController : DashboardViewController {
     
 @private
+    UITapGestureRecognizer *_tap;
     UILabel *_howLabel;
+    UIPopoverController *_classesPopoverController;
     FeedbackView *_feedbackView;
 }
 

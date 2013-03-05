@@ -26,11 +26,6 @@
         _chart.plotAreaBackgroundColor = [UIColor clearColor];
         _chart.plotAreaBorderColor = [UIColor clearColor];
         [self addSubview:_chart];
-        
-        graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(54, -20, 400, 20)];
-        graphTitle.text = @"Overall Class Performance";
-        graphTitle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
-        [self addSubview:graphTitle];
     }
     
     return self;
