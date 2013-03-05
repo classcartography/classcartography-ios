@@ -38,8 +38,11 @@
 }
 
 - (IBAction)inBloomLogin:(id)sender {
-    
+
+    TeacherDashboardViewController *tdvc = [[TeacherDashboardViewController alloc] init];
+    APP_DELEGATE.window.rootViewController = tdvc;
     // Log in to inBloom
+    
 }
 
 @end

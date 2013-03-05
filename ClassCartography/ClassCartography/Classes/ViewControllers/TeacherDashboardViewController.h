@@ -12,19 +12,15 @@
 #import "FeedbackView.h"
 #import "CommentView.h"
 #import "NotificationView.h"
-#import <ShinobiCharts/ShinobiChart.h>
 
 @interface TeacherDashboardViewController : DashboardViewController {
     
 @private
-    IBOutlet PhotoView *photoView;
-    IBOutlet GraphView *graphView;
-    IBOutlet FeedbackView *feedbackView;
-    IBOutlet CommentView *commentView;
-    IBOutlet NotificationView *notificationView;
-    
-
+    PhotoView *_photoView;
+    GraphView *_graphView;
+    FeedbackView *_feedbackView;
+    CommentView *_commentView;
+    NotificationView *_notificationView;
 }
-
 
 @end

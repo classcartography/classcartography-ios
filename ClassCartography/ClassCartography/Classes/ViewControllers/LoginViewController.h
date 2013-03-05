@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TeacherDashboardViewController.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController : UIViewController
 

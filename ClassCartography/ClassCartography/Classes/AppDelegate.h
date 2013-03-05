@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LoginViewController.h"
 
+#define APP_DELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
 @class LoginViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
