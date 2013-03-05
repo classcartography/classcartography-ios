@@ -13,15 +13,18 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-//        title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];
-//        title.text = @"Overall Grade";
-//        title.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
-//        [self addSubview:title];
-//        
-//        grade = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 300, 300)];
-//        grade.text = @"92";
-//        grade.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:46];
-//        [self addSubview:grade];
+        title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];
+        title.text = @"Overall Grade";
+        title.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
+        [self addSubview:title];
+        
+        theGrade = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 300, 270)];
+        theGrade.text = @"92";
+        theGrade.textAlignment = NSTextAlignmentCenter;
+        theGrade.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:130];
+        [self addSubview:theGrade];
+        
+        
     }
     return self;
 }

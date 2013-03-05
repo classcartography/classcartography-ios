@@ -16,4 +16,6 @@
     NSMutableArray *comments;
 }
 
+- (void) createStudentDummyData;
+
 @end

@@ -33,7 +33,6 @@
 		5923436316E559B1008E4AEE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435716E559B1008E4AEE /* LoginViewController.m */; };
 		5923436616E559B1008E4AEE /* TeacherDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */; };
 		5923436816E559B1008E4AEE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435F16E559B1008E4AEE /* LoginView.xib */; };
-		5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentDashboardView.xib */; };
 		5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436116E559B1008E4AEE /* TeacherDashboardView.xib */; };
 		5923590916E59B07008CD31F /* UserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923590816E59B06008CD31F /* UserHandler.m */; };
 		5923590B16E5B8F1008CD31F /* classcart-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5923590A16E5B8F1008CD31F /* classcart-logo@2x.png */; };
@@ -69,6 +68,9 @@
 		7CAF48E116E55E88004931D5 /* Quicksand_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48D816E55E88004931D5 /* Quicksand_Light.otf */; };
 		7CAF48E216E55E88004931D5 /* classcart-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DA16E55E88004931D5 /* classcart-logo.png */; };
 		7CAF48E616E55E88004931D5 /* login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF48DE16E55E88004931D5 /* login-logo.png */; };
+		7CAF841516E6A8D300C0212D /* haku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF841416E6A8D300C0212D /* haku@2x.png */; };
+		7CAF841816E6A9DA00C0212D /* temp2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF841616E6A9DA00C0212D /* temp2@2x.png */; };
+		7CAF841916E6A9DA00C0212D /* temp3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAF841716E6A9DA00C0212D /* temp3@2x.png */; };
 		7CBAB0FA16E5C25E0047A2E3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F716E5C25E0047A2E3 /* Icon.png */; };
 		7CBAB0FB16E5C25E0047A2E3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F816E5C25E0047A2E3 /* Icon@2x.png */; };
 		7CBAB0FC16E5C25E0047A2E3 /* login-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F916E5C25E0047A2E3 /* login-logo@2x.png */; };
@@ -156,7 +158,6 @@
 		5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDashboardViewController.h; sourceTree = "<group>"; };
 		5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDashboardViewController.m; sourceTree = "<group>"; };
 		5923435F16E559B1008E4AEE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		5923436016E559B1008E4AEE /* StudentDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentDashboardView.xib; sourceTree = "<group>"; };
 		5923436116E559B1008E4AEE /* TeacherDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardView.xib; sourceTree = "<group>"; };
 		5923590716E59B06008CD31F /* UserHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHandler.h; sourceTree = "<group>"; };
 		5923590816E59B06008CD31F /* UserHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHandler.m; sourceTree = "<group>"; };
@@ -202,6 +203,9 @@
 		7CAF48D816E55E88004931D5 /* Quicksand_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light.otf; sourceTree = "<group>"; };
 		7CAF48DA16E55E88004931D5 /* classcart-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classcart-logo.png"; sourceTree = "<group>"; };
 		7CAF48DE16E55E88004931D5 /* login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo.png"; sourceTree = "<group>"; };
+		7CAF841416E6A8D300C0212D /* haku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "haku@2x.png"; sourceTree = "<group>"; };
+		7CAF841616E6A9DA00C0212D /* temp2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp2@2x.png"; sourceTree = "<group>"; };
+		7CAF841716E6A9DA00C0212D /* temp3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp3@2x.png"; sourceTree = "<group>"; };
 		7CBAB0F716E5C25E0047A2E3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7CBAB0F816E5C25E0047A2E3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		7CBAB0F916E5C25E0047A2E3 /* login-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-logo@2x.png"; sourceTree = "<group>"; };
@@ -414,7 +418,6 @@
 			isa = PBXGroup;
 			children = (
 				5923435F16E559B1008E4AEE /* LoginView.xib */,
-				5923436016E559B1008E4AEE /* StudentDashboardView.xib */,
 				5923436116E559B1008E4AEE /* TeacherDashboardView.xib */,
 				7CAF48C616E55D5B004931D5 /* PhotoView.h */,
 				7CAF48C716E55D5B004931D5 /* PhotoView.m */,
@@ -506,6 +509,9 @@
 		7CAF48D916E55E88004931D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7CAF841616E6A9DA00C0212D /* temp2@2x.png */,
+				7CAF841716E6A9DA00C0212D /* temp3@2x.png */,
+				7CAF841416E6A8D300C0212D /* haku@2x.png */,
 				7CBAB11716E683860047A2E3 /* star@2x.png */,
 				7CBAB11816E683860047A2E3 /* warning@2x.png */,
 				7CBAB11216E6729A0047A2E3 /* itemstars-5@2x.png */,
@@ -601,7 +607,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5923436816E559B1008E4AEE /* LoginView.xib in Resources */,
-				5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */,
 				5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */,
 				7CAF48DF16E55E88004931D5 /* Adamas-Regular.otf in Resources */,
 				7CAF48E016E55E88004931D5 /* Quicksand_Book.otf in Resources */,
@@ -626,6 +631,9 @@
 				7CBAB11316E6729A0047A2E3 /* itemstars-5@2x.png in Resources */,
 				7CBAB11916E683860047A2E3 /* star@2x.png in Resources */,
 				7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */,
+				7CAF841516E6A8D300C0212D /* haku@2x.png in Resources */,
+				7CAF841816E6A9DA00C0212D /* temp2@2x.png in Resources */,
+				7CAF841916E6A9DA00C0212D /* temp3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

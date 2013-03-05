@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface GradeView : UIView {
-//    UILabel *grade;
-//    UILabel *title;
+    UILabel *theGrade;
+    UILabel *title;
 }
 
 

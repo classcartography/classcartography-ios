@@ -37,8 +37,8 @@
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSDate *startDate = [formatter dateFromString:@"2011-06-01"];
-    NSDate *endDate = [formatter dateFromString:@"2012-01-01"];
+    NSDate *startDate = [formatter dateFromString:@"2012-02-01"];
+    NSDate *endDate = [formatter dateFromString:@"2012-09-01"];
     SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
     SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
     xAxis.title = @" ";

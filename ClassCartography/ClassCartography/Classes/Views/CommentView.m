@@ -43,7 +43,7 @@
     [comments addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"temp" forKey:@"imageName"];
+    [dict2 setObject:@"temp2" forKey:@"imageName"];
     [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Jane Goodman" forKey:@"name"];
     [dict2 setObject:@"Quiz #1" forKey:@"assignment"];
@@ -52,7 +52,7 @@
     [comments addObject:dict2];
     
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
-    [dict3 setObject:@"temp" forKey:@"imageName"];
+    [dict3 setObject:@"temp3" forKey:@"imageName"];
     [dict3 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict3 setObject:@"Billy Joe" forKey:@"name"];
     [dict3 setObject:@"Homework #1" forKey:@"assignment"];
@@ -68,6 +68,29 @@
     [dict4 setObject:@"Difficulty: 8 out of 10" forKey:@"comment"];
     [dict4 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
     [comments addObject:dict4];
+    
+}
+
+- (void) createStudentDummyData {
+    
+    [comments removeAllObjects];
+    NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
+    [dict1 setObject:@"temp" forKey:@"imageName"];
+    [dict1 setObject:@"itemstars-4" forKey:@"starsName"];
+    [dict1 setObject:@"John Smith" forKey:@"name"];
+    [dict1 setObject:@"Homework #1" forKey:@"assignment"];
+    [dict1 setObject:@"This was really difficult." forKey:@"comment"];
+    [dict1 setObject:@"March 4, 2013 4:34pm" forKey:@"dateTime"];
+    [comments addObject:dict1];
+    
+    NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
+    [dict2 setObject:@"temp" forKey:@"imageName"];
+    [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
+    [dict2 setObject:@"Billy Joe" forKey:@"name"];
+    [dict2 setObject:@"Homework #1" forKey:@"assignment"];
+    [dict2 setObject:@"Difficulty: 8 out of 10" forKey:@"comment"];
+    [dict2 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
+    [comments addObject:dict2];
     
 }
 
