@@ -26,7 +26,7 @@
     
     photoView.delegate = self;
     
-    _howLabel = [[UILabel alloc] initWithFrame:CGRectMake(350, 10, 700, 60)];
+    _howLabel = [[UILabel alloc] initWithFrame:CGRectMake(350, 10, 520, 60)];
     _howLabel.backgroundColor = [UIColor clearColor];
     _howLabel.textColor = [UIColor blackColor];
     _howLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
@@ -43,13 +43,11 @@
 #pragma mark private methods
 
 - (void)showPopover {
-    NSLog(@"Yessssssss!");
-    
     UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
     
     _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
     
-    //_classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
+    _classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
     [_classesPopoverController presentPopoverFromRect:_howLabel.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
