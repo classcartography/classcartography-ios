@@ -15,13 +15,11 @@
 
 
 @interface DashboardViewController : UIViewController <InBloomAPIHandlerDelegate> {
+    UILabel *helloLabel;
     PhotoView *photoView;
     GraphView *graphView;
     CommentView *commentView;
     NotificationView *notificationView;
-    
-@private
-    UILabel *_helloLabel;
 }
 
 @end

@@ -7,12 +7,15 @@
 //
 
 #import "TeacherDashboardViewController.h"
+#import "UserHandler.h"
 
 
 @implementation TeacherDashboardViewController
 
 - (id)init {
-    if (self = [super init]) { }
+    if (self = [super init]) {
+        _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPopover)];
+    }
     return self;
 }
 
@@ -23,12 +26,47 @@
     _howLabel.backgroundColor = [UIColor clearColor];
     _howLabel.textColor = [UIColor blackColor];
     _howLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
-    _howLabel.text = @"How is your 7th Grade English Class doing?";
+    _howLabel.userInteractionEnabled = YES;
+    [_howLabel addGestureRecognizer:_tap];
     [self.view addSubview:_howLabel];
     
     _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(30, 391, 300, 350)];
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
+}
+
+#pragma mark
+#pragma mark private methods
+
+- (void)showPopover {
+    NSLog(@"Yessssssss!");
+    
+    UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
+    _classesPopoverController.
+    [_classesPopoverController presentPopoverFromRect:_howLabel.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+
+#pragma mark
+#pragma mark InBloomAPIHandlerDelegate methods
+
+- (void)loginComplete {
+    helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].name];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)getClassesComplete {
+    NSString *className = [[[UserHandler sharedUserHandler].classes objectAtIndex:0] objectForKey:@"uniqueSectionCode"];
+    int l = [className length];
+    NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @1};
+    const NSRange range = NSMakeRange(12,l);
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"How is your %@ class doing?", className]
+                                                             attributes:nil];
+    [attributedText setAttributes:underlineAttribute range:range];
+    _howLabel.attributedText = attributedText;
 }
 
 @end

@@ -23,11 +23,11 @@
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, 320, 60)];
-    _helloLabel.backgroundColor = [UIColor clearColor];
-    _helloLabel.textColor = [UIColor blackColor];
-    _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
-    [self.view addSubview:_helloLabel];
+    helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, 320, 60)];
+    helloLabel.backgroundColor = [UIColor clearColor];
+    helloLabel.textColor = [UIColor blackColor];
+    helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:20];
+    [self.view addSubview:helloLabel];
     
     NSString *formatString = [NSDateFormatter dateFormatFromTemplate:@"EEEEdMMMMYYYY" options:0
                                                               locale:[NSLocale currentLocale]];
@@ -61,11 +61,10 @@
 
 #pragma mark
 #pragma mark InBloomAPIHandlerDelegate methods
+// Implement these methods in the subclass of DashboardViewController
 
-- (void)loginComplete {
-    _helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].name];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+- (void)loginComplete { }
+
+- (void)getClassesComplete { }
 
 @end
