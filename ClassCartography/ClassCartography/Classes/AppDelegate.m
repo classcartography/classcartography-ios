@@ -24,7 +24,10 @@
     TeacherDashboardViewController *teacherDashboardViewController = [[TeacherDashboardViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:teacherDashboardViewController];
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:(215.0/255.0) green:(70.0/255.0) blue:(20.0/255.0) alpha:1.0]];
+    UIImage *bg = [[UIImage imageNamed:@"nav-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
     [navigationController.navigationBar.topItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
+    
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = navigationController;
