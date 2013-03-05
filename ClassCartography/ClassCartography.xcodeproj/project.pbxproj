@@ -37,6 +37,7 @@
 		5923436816E559B1008E4AEE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923435F16E559B1008E4AEE /* LoginView.xib */; };
 		5923436916E559B1008E4AEE /* StudentDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436016E559B1008E4AEE /* StudentDashboardView.xib */; };
 		5923436A16E559B1008E4AEE /* TeacherDashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5923436116E559B1008E4AEE /* TeacherDashboardView.xib */; };
+		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
 		7C09404616E5658700055283 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404316E5657500055283 /* Security.framework */; };
@@ -140,6 +141,8 @@
 		5923435F16E559B1008E4AEE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		5923436016E559B1008E4AEE /* StudentDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentDashboardView.xib; sourceTree = "<group>"; };
 		5923436116E559B1008E4AEE /* TeacherDashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherDashboardView.xib; sourceTree = "<group>"; };
+		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7C09404116E5656F00055283 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7C09404316E5657500055283 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -336,6 +339,8 @@
 				5923435916E559B1008E4AEE /* StudentViewController.m */,
 				5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */,
 				5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */,
+				59D722BD16E57A5F002D6B0A /* WebViewController.h */,
+				59D722BE16E57A5F002D6B0A /* WebViewController.m */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -590,6 +595,7 @@
 				7CAF48CE16E55D89004931D5 /* FeedbackView.m in Sources */,
 				7CAF48D116E55D9A004931D5 /* CommentView.m in Sources */,
 				7CAF48D416E55DA6004931D5 /* NotificationView.m in Sources */,
+				59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
