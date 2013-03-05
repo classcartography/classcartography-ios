@@ -12,11 +12,11 @@
 @interface UserHandler : NSObject {
     
     BOOL isLoggedIn;
-    NSString *token;
+    NSString *name;
 }
 
 @property (nonatomic, assign) BOOL isLoggedIn;
-@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *name;
 
 + (UserHandler *)sharedUserHandler;
 

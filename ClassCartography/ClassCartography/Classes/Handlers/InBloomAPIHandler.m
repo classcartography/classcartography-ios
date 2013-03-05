@@ -34,6 +34,19 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 
 - (id)copyWithZone:(NSZone *)zone { return self; }
 
+- (void)completeLogin {
+    [_httpClient getPath:@"/api/rest/system/session/check" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSDictionary *d = [json objectWithString:operation.responseString];
+        
+        [UserHandler sharedUserHandler].isLoggedIn = YES;
+        [UserHandler sharedUserHandler].name = [d objectForKey:@"full_name"];
+        [delegate loginComplete];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
 
 #pragma mark -
 #pragma mark public methods
@@ -50,10 +63,9 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         SBJsonParser *json = [[SBJsonParser alloc] init];
         NSDictionary *d = [json objectWithString:operation.responseString];
         
-        [UserHandler sharedUserHandler].isLoggedIn = YES;
-        [UserHandler sharedUserHandler].token = [d objectForKey:@"access_token"];
+        [_httpClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Bearer %@", [d objectForKey:@"access_token"]]];
         
-        [delegate loginComplete];
+        [self completeLogin];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];

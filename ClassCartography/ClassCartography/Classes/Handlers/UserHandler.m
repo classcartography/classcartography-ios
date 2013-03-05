@@ -14,7 +14,7 @@ static UserHandler *sharedUserHandler;
 @implementation UserHandler
 
 @synthesize isLoggedIn;
-@synthesize token;
+@synthesize name;
 
 
 #pragma mark -

@@ -19,6 +19,9 @@
     GraphView *graphView;
     CommentView *commentView;
     NotificationView *notificationView;
+    
+@private
+    UILabel *_helloLabel;
 }
 
 @end

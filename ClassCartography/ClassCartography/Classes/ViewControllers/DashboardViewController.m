@@ -7,6 +7,7 @@
 //
 
 #import "DashboardViewController.h"
+#import "UserHandler.h"
 
 
 @implementation DashboardViewController
@@ -21,6 +22,12 @@
     
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    _helloLabel = [[UILabel alloc] initWithFrame:CGRectMake(32, 0, 700, 60)];
+    _helloLabel.backgroundColor = [UIColor clearColor];
+    _helloLabel.textColor = [UIColor blackColor];
+    _helloLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:24];
+    [self.view addSubview:_helloLabel];
     
     photoView = [[PhotoView alloc] initWithFrame:CGRectMake(32, 66, 251, 292)];
     photoView.backgroundColor = [UIColor whiteColor];
@@ -44,6 +51,8 @@
 #pragma mark InBloomAPIHandlerDelegate methods
 
 - (void)loginComplete {
+    _helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].name];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
