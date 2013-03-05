@@ -74,6 +74,8 @@
 		7CBAB0FC16E5C25E0047A2E3 /* login-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F916E5C25E0047A2E3 /* login-logo@2x.png */; };
 		7CBAB0FF16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */; };
 		7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */; };
+		7CBAB10916E5FEF80047A2E3 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */; };
+		7CBAB10B16E604FC0047A2E3 /* temp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB10A16E604FC0047A2E3 /* temp@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +201,9 @@
 		7CBAB10016E5C4A60047A2E3 /* PieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieData.h; sourceTree = "<group>"; };
 		7CBAB10416E5C5CC0047A2E3 /* FeedbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackData.h; sourceTree = "<group>"; };
 		7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackData.m; sourceTree = "<group>"; };
+		7CBAB10716E5FEF70047A2E3 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		7CBAB10A16E604FC0047A2E3 /* temp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +403,8 @@
 				7CAF48D016E55D9A004931D5 /* CommentView.m */,
 				7CAF48D216E55DA6004931D5 /* NotificationView.h */,
 				7CAF48D316E55DA6004931D5 /* NotificationView.m */,
+				7CBAB10716E5FEF70047A2E3 /* CommentTableViewCell.h */,
+				7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -472,6 +479,7 @@
 		7CAF48D916E55E88004931D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7CBAB10A16E604FC0047A2E3 /* temp@2x.png */,
 				5923591416E5E846008CD31F /* stock-img.jpg */,
 				7CAF48DA16E55E88004931D5 /* classcart-logo.png */,
 				5923590A16E5B8F1008CD31F /* classcart-logo@2x.png */,
@@ -578,6 +586,7 @@
 				5923591216E5E0D2008CD31F /* photo-bg.png in Resources */,
 				5923591316E5E0D2008CD31F /* photo-bg@2x.png in Resources */,
 				5923591516E5E846008CD31F /* stock-img.jpg in Resources */,
+				7CBAB10B16E604FC0047A2E3 /* temp@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +657,7 @@
 				5923590916E59B07008CD31F /* UserHandler.m in Sources */,
 				7CBAB0FF16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m in Sources */,
 				7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */,
+				7CBAB10916E5FEF80047A2E3 /* CommentTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

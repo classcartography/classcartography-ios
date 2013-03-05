@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];
-        graphTitle.text = @"Overall Student Feedback";
+        graphTitle.text = @"Notifications";
         graphTitle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
         [self addSubview:graphTitle];
     }

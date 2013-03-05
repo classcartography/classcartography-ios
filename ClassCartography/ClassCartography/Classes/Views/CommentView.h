@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommentTableViewCell.h"
 
-@interface CommentView : UIView {
+@interface CommentView : UIView <UITableViewDataSource, UITableViewDelegate> {
     
     UILabel *graphTitle;
+    UITableView *commentTable;
+    NSMutableArray *comments;
 }
 
 @end
