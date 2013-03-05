@@ -15,12 +15,12 @@
     chart.autoresizingMask = ~UIViewAutoresizingNone;
         
     SChartLightTheme *theme = [SChartLightTheme new];
-    
     theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
     theme.chartTitleStyle.position = SChartTitlePositionBottomOrLeft;
     theme.chartStyle.backgroundColor = [UIColor whiteColor];
     theme.chartStyle.backgroundColorGradient = [UIColor whiteColor];
     theme.legendStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
+    theme.pieCrustThickness = 0;
     chart.theme = theme;
     
     chart.legend.hidden = YES;
@@ -33,7 +33,9 @@
 - (SChartPieSeries*)pieSeriesForOS {
     SChartPieSeries *p = [SChartPieSeries new];
     p.selectedStyle.protrusion = 30.f;
-    p.style.showCrust = YES;
+    p.style.showCrust = NO;
+    p.style.chartEffect = SChartRadialChartEffectFlat;
+    p.selectedStyle.chartEffect = SChartRadialChartEffectFlat;
     p.selectedStyle.showCrust = NO;
     p.labelFormatString = @"%.0f%%";
     p.selectedPosition = [NSNumber numberWithFloat:-M_PI/2.f];    
