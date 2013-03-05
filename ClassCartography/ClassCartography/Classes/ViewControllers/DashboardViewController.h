@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhotoView.h"
+#import "GraphView.h"
+#import "CommentView.h"
+#import "NotificationView.h"
 
-@interface DashboardViewController : UIViewController
+
+@interface DashboardViewController : UIViewController {
+    PhotoView *photoView;
+    GraphView *graphView;
+    CommentView *commentView;
+    NotificationView *notificationView;
+}
 
 @end

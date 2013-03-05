@@ -1,13 +1,14 @@
 //
-//  User.m
+//  UserHandler.m
 //  ClassCartography
 //
 //  Created by Chamara Paul on 3/4/13.
 //
 //
 
-#import "User.h"
+#import "UserHandler.h"
 
-@implementation User
+
+@implementation UserHandler
 
 @end

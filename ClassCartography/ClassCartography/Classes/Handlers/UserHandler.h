@@ -1,5 +1,5 @@
 //
-//  User.h
+//  UserHandler.h
 //  ClassCartography
 //
 //  Created by Chamara Paul on 3/4/13.
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
+
+@interface UserHandler : NSObject
 
 @end
