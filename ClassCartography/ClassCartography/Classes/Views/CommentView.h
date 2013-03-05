@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CommentView : UIView
+@interface CommentView : UIView {
+    
+    UILabel *graphTitle;
+}
 
 @end

@@ -70,7 +70,6 @@
 		7CBAB0FB16E5C25E0047A2E3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F816E5C25E0047A2E3 /* Icon@2x.png */; };
 		7CBAB0FC16E5C25E0047A2E3 /* login-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F916E5C25E0047A2E3 /* login-logo@2x.png */; };
 		7CBAB0FF16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */; };
-		7CBAB10316E5C4D00047A2E3 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB10216E5C4D00047A2E3 /* LineView.m */; };
 		7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */; };
 /* End PBXBuildFile section */
 
@@ -192,8 +191,6 @@
 		7CBAB0FD16E5C48A0047A2E3 /* ShinobiChart+PieCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+PieCharts.h"; sourceTree = "<group>"; };
 		7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+PieCharts.m"; sourceTree = "<group>"; };
 		7CBAB10016E5C4A60047A2E3 /* PieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieData.h; sourceTree = "<group>"; };
-		7CBAB10116E5C4D00047A2E3 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
-		7CBAB10216E5C4D00047A2E3 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
 		7CBAB10416E5C5CC0047A2E3 /* FeedbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackData.h; sourceTree = "<group>"; };
 		7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,8 +343,6 @@
 		5923434E16E5598B008E4AEE /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				7CBAB10116E5C4D00047A2E3 /* LineView.h */,
-				7CBAB10216E5C4D00047A2E3 /* LineView.m */,
 				7CBAB10016E5C4A60047A2E3 /* PieData.h */,
 				7CBAB10416E5C5CC0047A2E3 /* FeedbackData.h */,
 				7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */,
@@ -640,7 +635,6 @@
 				7C36689516E58F230085FDBB /* StudentData.m in Sources */,
 				5923590916E59B07008CD31F /* UserHandler.m in Sources */,
 				7CBAB0FF16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m in Sources */,
-				7CBAB10316E5C4D00047A2E3 /* LineView.m in Sources */,
 				7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
