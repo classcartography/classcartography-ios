@@ -16,7 +16,8 @@
         UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo-bg"]];
         [self addSubview:bgView];
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 255, 255)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(11, 11, 254, 254)];
+        imageView.image = [UIImage imageNamed:@"stock-img.jpg"];
         imageView.backgroundColor = [UIColor blackColor];
         [self addSubview:imageView];
     }
