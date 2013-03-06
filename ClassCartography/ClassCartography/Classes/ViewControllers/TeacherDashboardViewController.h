@@ -9,6 +9,7 @@
 #import "DashboardViewController.h"
 #import "FeedbackView.h"
 #import "GraphView.h"
+#import "Slider.h"
 
 @interface TeacherDashboardViewController : DashboardViewController <UITableViewDataSource, PhotoViewDelegate> {
     
@@ -18,6 +19,10 @@
     UIPopoverController *_sectionsPopoverController;
     FeedbackView *_feedbackView;
     GraphView *graphView;
+    UIButton *_studentsButton;
+    Slider *_studentsButtonSlider;
+    BOOL _studentsTableViewIsVisible;
+    Slider *_studentsTableViewSlider;
 }
 
 @end

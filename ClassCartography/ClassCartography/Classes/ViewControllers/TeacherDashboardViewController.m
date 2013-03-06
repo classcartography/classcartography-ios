@@ -20,6 +20,7 @@
         [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
         
         _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPopover)];
+        _studentsTableViewIsVisible = NO;
     }
     return self;
 }
@@ -44,18 +45,25 @@
     graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
     graphView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:graphView];
-
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(920, 20, 104, 36);
-    [button setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];
-    [button setTitle:@"<< Students" forState:UIControlStateNormal];
-    [button setTitle:@">> Students" forState:UIControlStateSelected];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
-    [button setTitleEdgeInsets:UIEdgeInsetsMake(4, 0, 0, 0)];
-    [button addTarget:self action:@selector(showStudents) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    _studentsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _studentsButton.frame = CGRectMake(920, 20, 104, 36);
+    [_studentsButton setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];
+    [_studentsButton setTitle:@"<< Students" forState:UIControlStateNormal];
+    [_studentsButton setTitle:@">> Students" forState:UIControlStateSelected];
+    [_studentsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    _studentsButton.titleLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
+    [_studentsButton setTitleEdgeInsets:UIEdgeInsetsMake(4, 0, 0, 0)];
+    [_studentsButton addTarget:self action:@selector(toggleStudentsTableView) forControlEvents:UIControlEventTouchUpInside];
+    _studentsButtonSlider = [[Slider alloc] initWithButton:_studentsButton];
+    [_studentsButtonSlider slideButtonToVisible:NO withAnimation:NO];
+    [self.view addSubview:_studentsButton];
+    
+    UITableView *studentsTableView = [[UITableView alloc] initWithFrame:CGRectMake(724, 0, 300, 724)];
+    studentsTableView.backgroundColor = [UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0];
+    _studentsTableViewSlider = [[Slider alloc] initWithView:studentsTableView];
+	[_studentsTableViewSlider slideViewToVisible:NO withAnimation:NO];
+    [self.view addSubview:studentsTableView];
 }
 
 #pragma mark
@@ -75,8 +83,18 @@
     [_sectionsPopoverController presentPopoverFromRect:frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
-- (void)showStudents {
-    
+- (void)toggleStudentsTableView {
+    if (_studentsTableViewIsVisible == NO) {
+        [_studentsButtonSlider slideButtonToVisible:YES withAnimation:YES];
+        [_studentsTableViewSlider slideViewToVisible:YES withAnimation:YES];
+        _studentsTableViewIsVisible = YES;
+        _studentsButton.selected = YES;
+    } else {
+        [_studentsButtonSlider slideButtonToVisible:NO withAnimation:YES];
+        [_studentsTableViewSlider slideViewToVisible:NO withAnimation:YES];
+        _studentsTableViewIsVisible = NO;
+        _studentsButton.selected = NO;
+    }
 }
 
 
