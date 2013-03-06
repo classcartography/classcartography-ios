@@ -128,8 +128,8 @@
     [[InBloomAPIHandler sharedInBloomAPIHandler] getStudentsInfoForSection:sectionId];
 }
 
-- (void)getStudentsComplete {
-    
+- (void)getStudentsComplete:(NSMutableArray *)arr {
+    [((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students setArray:arr];
 }
 
 
