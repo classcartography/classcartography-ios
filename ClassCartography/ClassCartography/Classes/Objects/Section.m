@@ -16,7 +16,9 @@
 @synthesize students;
 
 - (id)init {
-    if (self = [super init]) { }
+    if (self = [super init]) {
+        students = [[NSMutableArray alloc] init];
+    }
     
     return self;
 }
@@ -42,11 +44,12 @@
     return section;
 }
 
+
 #pragma mark -
 #pragma mark public methods
 
 - (void)buildFromDictionary:(NSDictionary *)d {
-    sectionId = [[d objectForKey:@"id"] intValue];
+    sectionId = [[d objectForKey:@"id"] copy];
     name = [[d objectForKey:@"uniqueSectionCode"] copy];
 }
         

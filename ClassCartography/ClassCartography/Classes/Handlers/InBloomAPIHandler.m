@@ -11,6 +11,7 @@
 #import "AFHTTPRequestOperation.h"
 #import "SBJson.h"
 #import "Section.h"
+#import "Student.h"
 #import "WebViewController.h"
 #import "UserHandler.h"
 
@@ -40,20 +41,6 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 #pragma mark -
 #pragma mark private methods
 
-- (void)getSections:(NSString *)sectionsUrl {
-    [_httpClient getPath:sectionsUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        SBJsonParser *json = [[SBJsonParser alloc] init];
-        NSArray *sectionsResponse = [json objectWithString:operation.responseString];
-        for(NSDictionary *d in sectionsResponse) {
-            [Section generate:d];
-            [[UserHandler sharedUserHandler].user.sections addObject:[Section generate:d]];
-        }
-        [delegate getSectionsComplete];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }];
-}
-
 - (void)getSectionsInfo {
     [_httpClient getPath:@"/api/rest/v1.1/home" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         SBJsonParser *json = [[SBJsonParser alloc] init];
@@ -68,6 +55,34 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         }
         
         [self getSections:sectionsUrl];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+- (void)getSections:(NSString *)sectionsUrl {
+    [_httpClient getPath:sectionsUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSArray *sectionsResponse = [json objectWithString:operation.responseString];
+        for(NSDictionary *d in sectionsResponse) {
+            [Section generate:d];
+            [[UserHandler sharedUserHandler].user.sections addObject:[Section generate:d]];
+        }
+        [delegate getSectionsComplete];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+- (void)getStudents:(NSString *)studentsUrl {
+    [_httpClient getPath:studentsUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSArray *studentsResponse = [json objectWithString:operation.responseString];
+        NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:0];
+        for(NSDictionary *d in studentsResponse) {
+            [arr addObject:[Student generate:d]];
+        }
+        [delegate getStudentsComplete:arr];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];
@@ -121,6 +136,25 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
     }];
     
     return [UserHandler sharedUserHandler].isLoggedIn;
+}
+
+- (void)getStudentsInfoForSection:(NSString *)sectionId {
+    [_httpClient getPath:[NSString stringWithFormat:@"/api/rest/v1.1/sections/%@", sectionId] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        
+        NSDictionary *section = [json objectWithString:operation.responseString];
+        NSString *studentsUrl;
+        NSArray *arr = [NSArray arrayWithArray:[section objectForKey:@"links"]];
+        for (NSDictionary *d in arr) {
+            if ([((NSString *)[d objectForKey:@"rel"]) isEqualToString:@"getStudents"]) {
+                studentsUrl = [d objectForKey:@"href"];
+            }
+        }
+        
+        [self getStudents:studentsUrl];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
 }
 
 

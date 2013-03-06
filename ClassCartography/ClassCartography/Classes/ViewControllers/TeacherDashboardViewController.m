@@ -114,7 +114,8 @@
 }
 
 - (void)getSectionsComplete {
-    NSString *sectionName = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:0]).name;
+    NSString *sectionId = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).sectionId;
+    NSString *sectionName = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).name;
     int l = [sectionName length];
     NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @1};
     const NSRange range = NSMakeRange(12,l);
@@ -122,6 +123,9 @@
                                                              attributes:nil];
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
+    
+    //now get students for that class
+    [[InBloomAPIHandler sharedInBloomAPIHandler] getStudentsInfoForSection:sectionId];
 }
 
 - (void)getStudentsComplete {

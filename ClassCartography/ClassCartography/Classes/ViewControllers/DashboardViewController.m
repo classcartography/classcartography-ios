@@ -63,7 +63,7 @@
 
 - (void)getSectionsComplete { }
 
-- (void)getStudentsComplete { }
+- (void)getStudentsComplete:(NSMutableArray *)arr { }
 
 #pragma mark
 #pragma mark NotificationViewDelegate methods

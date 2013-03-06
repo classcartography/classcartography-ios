@@ -11,14 +11,14 @@
 
 @interface Section : NSObject <NSCopying> {
     
-    int sectionId;
+    NSString *sectionId;
     NSString *name;
-    NSArray *students;
+    NSMutableArray *students;
 }
 
-@property (nonatomic, assign) int sectionId;
+@property (nonatomic, copy) NSString *sectionId;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, retain) NSArray *students;
+@property (nonatomic, retain) NSMutableArray *students;
 
 + (id)generate:(NSDictionary *)d;
 - (void)buildFromDictionary:(NSDictionary *)d;
