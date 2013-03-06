@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Student : NSObject
+@interface Student : NSObject {
+    
+    NSString *name;
+}
+
+@property (nonatomic, copy) NSString *name;
 
 @end

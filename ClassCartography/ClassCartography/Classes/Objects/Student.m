@@ -11,4 +11,12 @@
 
 @implementation Student
 
+@synthesize name;
+
+- (id)init {
+    if (self = [super init]) { }
+    
+    return self;
+}
+
 @end

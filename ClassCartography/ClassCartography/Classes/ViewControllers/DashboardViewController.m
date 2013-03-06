@@ -65,6 +65,6 @@
 
 - (void)loginComplete { }
 
-- (void)getClassesComplete { }
+- (void)getSectionsComplete { }
 
 @end

@@ -102,10 +102,6 @@
     return 80;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
     return [comments count];
 }
@@ -125,23 +121,9 @@
         cell.stars.hidden = NO;
         cell.comment.hidden = YES;
     }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
-}
-
-- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
-    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
--(BOOL)tableView:(UITableView*)tv canEditRowAtIndexPath:(NSIndexPath*)indexPath {
-	return NO;
-}
-
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return UITableViewCellEditingStyleNone;
-}
-
-- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
-    return NO;
 }
 
 

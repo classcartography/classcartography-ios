@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
+
+@interface User : NSObject {
+    
+    NSString *name;
+    NSMutableArray *sections;
+}
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSMutableArray *sections;
 
 @end

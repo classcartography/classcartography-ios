@@ -7,18 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 
 @interface UserHandler : NSObject {
     
     BOOL isLoggedIn;
-    NSString *name;
-    NSMutableArray *classes;
+    User *user;
 }
 
 @property (nonatomic, assign) BOOL isLoggedIn;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, retain) NSMutableArray *classes;
+@property (nonatomic, retain) User *user;
 
 + (UserHandler *)sharedUserHandler;
 

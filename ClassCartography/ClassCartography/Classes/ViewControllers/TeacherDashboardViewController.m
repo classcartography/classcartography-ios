@@ -61,17 +61,17 @@
 #pragma mark InBloomAPIHandlerDelegate methods
 
 - (void)loginComplete {
-    helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].name];
+    helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].user.name];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)getClassesComplete {
-    NSString *className = [[[UserHandler sharedUserHandler].classes objectAtIndex:0] objectForKey:@"uniqueSectionCode"];
-    int l = [className length];
+- (void)getSectionsComplete {
+    NSString *sectionName = [[[UserHandler sharedUserHandler].user.sections objectAtIndex:0] objectForKey:@"uniqueSectionCode"];
+    int l = [sectionName length];
     NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @1};
     const NSRange range = NSMakeRange(12,l);
-    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"How is your %@ class doing?", className]
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"How is your %@ class doing?", sectionName]
                                                              attributes:nil];
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
@@ -89,7 +89,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [[[UserHandler sharedUserHandler].classes objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
+    cell.textLabel.text = [[[UserHandler sharedUserHandler].user.sections objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
@@ -97,7 +97,7 @@
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].classes count]; }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].user.sections count]; }
 
 
 #pragma mark
