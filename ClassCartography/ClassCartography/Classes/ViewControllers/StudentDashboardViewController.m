@@ -10,10 +10,11 @@
 
 
 @implementation StudentDashboardViewController
-@synthesize student;
 
-- (id)init {
-    if (self = [super init]) {
+
+//- (id) init {
+- (id) initWithStudent:stu {
+   if (self = [super init]) {
         [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
 
         UIButton *backArrowButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -22,7 +23,7 @@
 		[backArrowButton addTarget:self action:@selector(popToRoot) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backArrowButton];
         self.navigationItem.leftBarButtonItem = back;
-
+        student = stu;
     }
     
     return self;
@@ -44,9 +45,14 @@
     [photoView addSubview:bgView];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(11, 11, 254, 254)];
-    imageView.image = [UIImage imageNamed:@"student-4.jpg"];
+//    imageView.image = [UIImage imageNamed:@"student-4.jpg"];
+    imageView.image = [UIImage imageNamed:student.imageName];
     imageView.backgroundColor = [UIColor blackColor];
     [photoView addSubview:imageView];
+    
+    commentView = [[CommentView alloc] initWithFrame:CGRectMake(690, 391, 300, 320) sim:student.imageName];
+    commentView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:commentView];
     
     [commentView createStudentDummyData];
     [notificationView createStudentDummyData];

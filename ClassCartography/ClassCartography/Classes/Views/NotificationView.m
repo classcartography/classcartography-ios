@@ -28,13 +28,13 @@
         
         notifications = [[NSMutableArray alloc] init];
         
-//        if ([dashbooardType isEqualToString:@"student"]) {
-//            [self createStudentDummyData];
-//            isStudent = YES;
-//        } else {
+        if ([dashbooardType isEqualToString:@"student"]) {
+            [self createStudentDummyData];
+            isStudent = YES;
+        } else {
 //            [self createDummyData];
-//            isStudent = NO;
-//        }
+            isStudent = NO;
+        }
     }
     return self;
 }
@@ -86,7 +86,7 @@
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
     [dict1 setObject:@"warning" forKey:@"imageName"];
     [dict1 setObject:@"Johnny had trouble with the last assignment." forKey:@"message"];
-    [dict1 setObject:@"Preston didn't understand the last 3 homework assignments." forKey:@"description"];
+    [dict1 setObject:@"Alton didn't understand the last 3 homework assignments." forKey:@"description"];
     [dict1 setObject:@"This was really difficult." forKey:@"comment"];
     [dict1 setObject:@"March 3, 2013 4:10pm" forKey:@"dateTime"];
     [notifications addObject:dict1];
@@ -94,7 +94,7 @@
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
     [dict2 setObject:@"warning" forKey:@"imageName"];
     [dict2 setObject:@"Johnny had trouble with the last assignment." forKey:@"message"];
-    [dict2 setObject:@"Preston grades have been dropping." forKey:@"description"];
+    [dict2 setObject:@"Alton grades have been dropping." forKey:@"description"];
     [dict2 setObject:@"This was really difficult." forKey:@"comment"];
     [dict2 setObject:@"Feb 20, 2013 4:10pm" forKey:@"dateTime"];
     [notifications addObject:dict1];
@@ -133,28 +133,31 @@
         }
     }
     
-//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-//    [dict addEntriesFromDictionary:[notifications objectAtIndex:[indexPath row]]];
-    NSString *d;
-    NSString *imgName;
-    if ([indexPath row] == 0) {
-        imgName = @"warning";
-        d = @"didn't understand the last 3 homework assignments.";
-    } else if ([indexPath row] == 1) {
-        imgName = @"warning";
-        d = @"had trouble with the last quiz. Her last comment was \"Too many questions!\"";
-    } else if ([indexPath row] == 2) {
-        imgName = @"warning";
-        d = @"did not hand in his last 3 homework assignments. His last comment was \"I didn't have enough time to finish.\"";
-    } else if ([indexPath row] == 3) {
-        imgName = @"star";
-        d = @"may need more challenging work. Her last comment was \"This quiz was really easy.\"";
-    } else if ([indexPath row] == 4) {
-        imgName = @"warning";
-        d = @"didn't understand the last 3 lessons.";
+    if (isStudent) {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        [dict addEntriesFromDictionary:[notifications objectAtIndex:[indexPath row]]];
+        [cell configureCell:dict forIndexPath:indexPath];
+    } else {
+        NSString *d;
+        NSString *imgName;
+        if ([indexPath row] == 0) {
+            imgName = @"warning";
+            d = @"didn't understand the last 3 homework assignments.";
+        } else if ([indexPath row] == 1) {
+            imgName = @"warning";
+            d = @"had trouble with the last quiz. Her last comment was \"Too many questions!\"";
+        } else if ([indexPath row] == 2) {
+            imgName = @"warning";
+            d = @"did not hand in his last 3 homework assignments. His last comment was \"I didn't have enough time to finish.\"";
+        } else if ([indexPath row] == 3) {
+            imgName = @"star";
+            d = @"may need more challenging work. Her last comment was \"This quiz was really easy.\"";
+        } else if ([indexPath row] == 4) {
+            imgName = @"warning";
+            d = @"didn't understand the last 3 lessons.";
+        }
+        [cell configureCell:[notifications objectAtIndex:[indexPath row]] message:d im:imgName forIndexPath:indexPath];
     }
-    [cell configureCell:[notifications objectAtIndex:[indexPath row]] message:d im:imgName forIndexPath:indexPath];
-    
     return cell;
 }
 

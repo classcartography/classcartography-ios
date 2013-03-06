@@ -20,6 +20,6 @@
     Student *student;
 }
 
-@property (nonatomic, copy) Student *student;
+- (id) initWithStudent:stu;
 
 @end

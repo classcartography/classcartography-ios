@@ -49,11 +49,11 @@
     message.text = [details objectForKey:@"message"];
     dateTime.text = [details objectForKey:@"dateTime"];
     description.text = [details objectForKey:@"description"];
-    CGSize descriptionMaximumSize = CGSizeMake(280, 36);
+    CGSize descriptionMaximumSize = CGSizeMake(280, 44);
     CGSize descriptionStringSize = [description.text sizeWithFont:description.font
                                                 constrainedToSize:descriptionMaximumSize
                                                     lineBreakMode:description.lineBreakMode];
-    description.frame = CGRectMake(0, 28, 280, descriptionStringSize.height);
+    description.frame = CGRectMake(0, 36, 280, descriptionStringSize.height);
     [description sizeToFit];
     
 }
