@@ -8,7 +8,7 @@
 
 #import "ShinobiChart+PieCharts.h"
 
-#define POSITIVE [UIColor colorWithRed:20.0/255.0 green:215.0/255.0 blue:168.0/255.0 alpha:1.0]
+#define POSITIVE [UIColor colorWithRed:20.0/255.0 green:165.0/255.0 blue:215.0/255.0 alpha:1.0]
 #define NEGATIVE [UIColor colorWithRed:215.0/255.0 green:20.0/255.0 blue:68.0/255.0 alpha:1.0]
 #define NEUTRAL [UIColor colorWithRed:20.0/255.0 green:68.0/255.0 blue:215.0/255.0 alpha:1.0]
 

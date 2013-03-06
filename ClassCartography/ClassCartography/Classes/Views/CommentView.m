@@ -118,11 +118,6 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     [dict addEntriesFromDictionary:[comments objectAtIndex:[indexPath row]]];
     [cell configureCell:dict forIndexPath:indexPath];
-    if ([indexPath row] == 1) {
-        cell.stars.hidden = NO;
-        cell.comment.hidden = YES;
-    }
-    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
