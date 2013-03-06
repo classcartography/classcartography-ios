@@ -13,7 +13,7 @@
 @end
 
 
-@interface AddInterventionView : UIView {
+@interface AddInterventionView : UIView <UITextViewDelegate> {
 
     UILabel *heading;
     UIImageView *bg;
