@@ -54,6 +54,10 @@
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
 		7C09404616E5658700055283 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404316E5657500055283 /* Security.framework */; };
+		7C0CAC9516E78DF1007B85DA /* button-add.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9416E78DF1007B85DA /* button-add.png */; };
+		7C0CAC9816E79C49007B85DA /* AddInterventionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9716E79C48007B85DA /* AddInterventionView.m */; };
+		7C0CAC9A16E7A01F007B85DA /* textview-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9916E7A01F007B85DA /* textview-bg@2x.png */; };
+		7C0CAC9C16E7A175007B85DA /* button-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9B16E7A175007B85DA /* button-close.png */; };
 		7C113EA116E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EA316E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA416E535FA005C0B65 /* CoreGraphics.framework */; };
@@ -202,6 +206,11 @@
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7C09404116E5656F00055283 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7C09404316E5657500055283 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7C0CAC9416E78DF1007B85DA /* button-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-add.png"; sourceTree = "<group>"; };
+		7C0CAC9616E79C48007B85DA /* AddInterventionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddInterventionView.h; sourceTree = "<group>"; };
+		7C0CAC9716E79C48007B85DA /* AddInterventionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddInterventionView.m; sourceTree = "<group>"; };
+		7C0CAC9916E7A01F007B85DA /* textview-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textview-bg@2x.png"; sourceTree = "<group>"; };
+		7C0CAC9B16E7A175007B85DA /* button-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-close.png"; sourceTree = "<group>"; };
 		7C113E9D16E535FA005C0B65 /* ClassCartography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCartography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C113EA016E535FA005C0B65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C113EA216E535FA005C0B65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -492,6 +501,8 @@
 				7CE7CD1516E77494005D5B5E /* StudentGraphView.m */,
 				598E633C16E777320098B574 /* StudentsTableView.h */,
 				598E633D16E777320098B574 /* StudentsTableView.m */,
+				7C0CAC9616E79C48007B85DA /* AddInterventionView.h */,
+				7C0CAC9716E79C48007B85DA /* AddInterventionView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -567,6 +578,9 @@
 		7CAF48D916E55E88004931D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7C0CAC9B16E7A175007B85DA /* button-close.png */,
+				7C0CAC9916E7A01F007B85DA /* textview-bg@2x.png */,
+				7C0CAC9416E78DF1007B85DA /* button-add.png */,
 				7CE7CD1A16E78229005D5B5E /* intervention1.png */,
 				7CE7CD1B16E78229005D5B5E /* intervention2.png */,
 				7CE7CD1C16E78229005D5B5E /* intervention3.png */,
@@ -703,6 +717,9 @@
 				7CE7CD1D16E78229005D5B5E /* intervention1.png in Resources */,
 				7CE7CD1E16E78229005D5B5E /* intervention2.png in Resources */,
 				7CE7CD1F16E78229005D5B5E /* intervention3.png in Resources */,
+				7C0CAC9516E78DF1007B85DA /* button-add.png in Resources */,
+				7C0CAC9A16E7A01F007B85DA /* textview-bg@2x.png in Resources */,
+				7C0CAC9C16E7A175007B85DA /* button-close.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +803,7 @@
 				7CE7CD1916E7750B005D5B5E /* SingleStudentData.m in Sources */,
 				598E633B16E776D60098B574 /* Slider.m in Sources */,
 				598E633E16E777320098B574 /* StudentsTableView.m in Sources */,
+				7C0CAC9816E79C49007B85DA /* AddInterventionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

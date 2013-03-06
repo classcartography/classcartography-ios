@@ -10,14 +10,25 @@
 
 @implementation InterventionView
 
+@synthesize delegate;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];
+        title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 20)];
         title.text = @"Interventions";
         title.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
         [self addSubview:title];
+
+        addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        addButton.frame = CGRectMake(240, 0, 60, 20);
+        [addButton addTarget:self action:@selector(showIntervention) forControlEvents:UIControlEventTouchDown];
+//        [addButton setTitle:@"Add" forState:UIControlStateNormal];
+//        addButton.titleLabel.font = [UIFont fontWithName:@"QuicksandBook-Bold" size:14];
+//        [addButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
+        [addButton setBackgroundImage:[UIImage imageNamed:@"button-add"] forState:UIControlStateNormal];
+        [self addSubview:addButton];
         
         interventionTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, 300, 300)];
         interventionTable.delegate = self;
@@ -26,9 +37,15 @@
         
         interventions = [[NSMutableArray alloc] init];
         [self createDummyData];
+        
     }
     return self;
 }
+
+- (void) showIntervention {
+    [delegate addIntervention];
+}
+
 
 - (void) createDummyData {
     

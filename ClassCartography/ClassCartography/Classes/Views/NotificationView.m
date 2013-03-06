@@ -43,9 +43,9 @@
     [notifications addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"star" forKey:@"imageName"];
+    [dict2 setObject:@"warning" forKey:@"imageName"];
     [dict2 setObject:@"Susie may need more challenging work." forKey:@"message"];
-    [dict2 setObject:@"Susie may need more challenging work. Her last comment was \"This quiz was really easy.\"" forKey:@"description"];
+    [dict2 setObject:@"Sally had trouble with the last quiz. Her last comment was \"Too many questions!\"" forKey:@"description"];
     [dict2 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict2];
     
@@ -57,9 +57,9 @@
     [notifications addObject:dict3];
 
     NSMutableDictionary *dict4 = [NSMutableDictionary dictionary];
-    [dict4 setObject:@"warning" forKey:@"imageName"];
+    [dict4 setObject:@"star" forKey:@"imageName"];
     [dict4 setObject:@"Susie may need more challenging work." forKey:@"message"];
-    [dict4 setObject:@"Sally had trouble with the last quiz. Her last comment was \"Too many questions!\"" forKey:@"description"];
+    [dict4 setObject:@"Susie may need more challenging work. Her last comment was \"This quiz was really easy.\"" forKey:@"description"];
     [dict4 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict4];
     
@@ -69,6 +69,27 @@
     [dict5 setObject:@"Danny didn't understand the last 3 lessons." forKey:@"description"];
     [dict5 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict5];
+    
+}
+
+- (void) createStudentDummyData {
+    
+    [notifications removeAllObjects];
+    NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
+    [dict1 setObject:@"warning" forKey:@"imageName"];
+    [dict1 setObject:@"Johnny had trouble with the last assignment." forKey:@"message"];
+    [dict1 setObject:@"Johnny didn't understand the last 3 homework assignments." forKey:@"description"];
+    [dict1 setObject:@"This was really difficult." forKey:@"comment"];
+    [dict1 setObject:@"March 3, 2013 4:10pm" forKey:@"dateTime"];
+    [notifications addObject:dict1];
+    
+    NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
+    [dict2 setObject:@"warning" forKey:@"imageName"];
+    [dict2 setObject:@"Johnny had trouble with the last assignment." forKey:@"message"];
+    [dict2 setObject:@"Johnny's grades have been dropping." forKey:@"description"];
+    [dict2 setObject:@"This was really difficult." forKey:@"comment"];
+    [dict2 setObject:@"Feb 20, 2013 4:10pm" forKey:@"dateTime"];
+    [notifications addObject:dict1];
     
 }
 
