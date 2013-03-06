@@ -7,12 +7,12 @@
 //
 
 #import "DashboardViewController.h"
-#import "GradeView.h"
+#import "InterventionView.h"
     
 
 @interface StudentDashboardViewController : DashboardViewController {
     
-    GradeView *_gradeView;
+    InterventionView *_interventionView;
 
 }
 
