@@ -139,11 +139,12 @@
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
-    
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].user.sections count]; }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[UserHandler sharedUserHandler].user.sections count];
+}
 
 
 #pragma mark
