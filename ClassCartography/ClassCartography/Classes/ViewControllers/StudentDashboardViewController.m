@@ -8,11 +8,14 @@
 
 #import "StudentDashboardViewController.h"
 
+
 @implementation StudentDashboardViewController
 
 - (id)init {
     if (self = [super init]) {
+        [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
     }
+    
     return self;
 }
 

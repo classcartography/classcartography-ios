@@ -13,7 +13,9 @@
 #import "CommentView.h"
 #import "NotificationView.h"
 
+
 @interface DashboardViewController : UIViewController <InBloomAPIHandlerDelegate> {
+    
     UILabel *helloLabel;
     PhotoView *photoView;
     GraphView *graphView;

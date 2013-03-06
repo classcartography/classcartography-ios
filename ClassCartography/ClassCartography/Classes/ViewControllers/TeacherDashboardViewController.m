@@ -16,6 +16,8 @@
 
 - (id)init {
     if (self = [super init]) {
+        [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
+        
         _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPopover)];
     }
     return self;
@@ -37,6 +39,23 @@
     _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(30, 391, 300, 350)];
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
+    
+    for(NSString *fontName in [UIFont familyNames]) {
+        NSLog(@"fontName => %@",fontName);
+        for(NSString *familyMemberName in [UIFont fontNamesForFamilyName:fontName]) {
+            NSLog(@"- familyMemberName => %@",familyMemberName);
+        }
+    }
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(920, 20, 104, 36);
+    [button setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];
+    [button setTitle:@"<< Students" forState:UIControlStateNormal];
+    [button setTitle:@">> Students" forState:UIControlStateSelected];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(4, 0, 0, 0)];
+    [self.view addSubview:button];
 }
 
 #pragma mark
