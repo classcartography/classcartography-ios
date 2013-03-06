@@ -18,10 +18,10 @@
         _osData = [NSMutableDictionary new];
         _versionData = [NSMutableDictionary new];
         _dataKeys = [NSArray arrayWithObjects:@"item", @"uptake_pct", nil];
-        _osTypes = [NSArray arrayWithObjects:@"No", @"Yes", nil];
+        _osTypes = [NSArray arrayWithObjects:@"Yes", @"No", nil];
         
-        [_osData setObject:[NSNumber numberWithFloat:62.0f] forKey:@"No"];
-        [_osData setObject:[NSNumber numberWithFloat:38.0f] forKey:@"Yes"];
+        [_osData setObject:[NSNumber numberWithFloat:62.0f] forKey:@"Yes"];
+        [_osData setObject:[NSNumber numberWithFloat:38.0f] forKey:@"No"];
 //        [_osData setObject:[NSNumber numberWithFloat:9.5f] forKey:@"BlackBerry"];
 //        [_osData setObject:[NSNumber numberWithFloat:3.6f] forKey:@"WindowsPhone"];
 //        [_osData setObject:[NSNumber numberWithFloat:0.8f] forKey:@"Symbian"];

@@ -37,7 +37,7 @@
     [dict1 setObject:@"temp" forKey:@"imageName"];
     [dict1 setObject:@"itemstars-4" forKey:@"starsName"];
     [dict1 setObject:@"John Smith" forKey:@"name"];
-    [dict1 setObject:@"Quiz #1" forKey:@"assignment"];
+    [dict1 setObject:@"Quiz #2" forKey:@"assignment"];
     [dict1 setObject:@"Can you go over question 5 in class tomorrow?" forKey:@"comment"];
     [dict1 setObject:@"March 4, 2013 4:34pm" forKey:@"dateTime"];
     [comments addObject:dict1];
@@ -46,7 +46,7 @@
     [dict2 setObject:@"temp2" forKey:@"imageName"];
     [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Jane Goodman" forKey:@"name"];
-    [dict2 setObject:@"Homework #1" forKey:@"assignment"];
+    [dict2 setObject:@"Homework #6" forKey:@"assignment"];
     [dict2 setObject:@"I didn't understand question 4." forKey:@"comment"];
     [dict2 setObject:@"March 4, 2013 2:20pm" forKey:@"dateTime"];
     [comments addObject:dict2];
@@ -55,7 +55,7 @@
     [dict3 setObject:@"temp3" forKey:@"imageName"];
     [dict3 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict3 setObject:@"Billy Joe" forKey:@"name"];
-    [dict3 setObject:@"Homework #1" forKey:@"assignment"];
+    [dict3 setObject:@"Homework #6" forKey:@"assignment"];
     [dict3 setObject:@"Is there a tutor that can help me with algebra??" forKey:@"comment"];
     [dict3 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
     [comments addObject:dict3];
@@ -65,7 +65,7 @@
     [dict4 setObject:@"temp" forKey:@"imageName"];
     [dict4 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict4 setObject:@"Billy Joe" forKey:@"name"];
-    [dict4 setObject:@"Homework #1" forKey:@"assignment"];
+    [dict4 setObject:@"Homework #6" forKey:@"assignment"];
     [dict4 setObject:@"This homework assignment was really difficult." forKey:@"comment"];
     [dict4 setObject:@"March 4, 2013 1:12pm" forKey:@"dateTime"];
     [comments addObject:dict4];

@@ -22,7 +22,7 @@
         CGRect pieFrame;
         pieFrame = CGRectMake(0,30,300,270);
         pieChart = [ShinobiChart pieChartForOSDataWithFrame:pieFrame];
-        pieChart.title = @"Did students understand Homework #1?";
+        pieChart.title = @"Did students understand Homework #7?";
         pieChart.licenseKey = licenseKey;
         pieChart.datasource = self;
         pieChart.delegate = self;

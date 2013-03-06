@@ -8,7 +8,7 @@
 
 #import "DashboardViewController.h"
 #import "UserHandler.h"
-
+#import "StudentDashboardViewController.h"
 
 @implementation DashboardViewController
 
@@ -55,6 +55,7 @@
     
     notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320)];
     notificationView.backgroundColor = [UIColor grayColor];
+    notificationView.delegate = self;
     [self.view addSubview:notificationView];
 }
 
@@ -66,5 +67,15 @@
 - (void)loginComplete { }
 
 - (void)getClassesComplete { }
+
+#pragma mark
+#pragma mark NotificationViewDelegate methods
+
+- (void)showStudentView {
+    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
+    
+    [self.navigationController pushViewController:svc animated:YES];
+}
+
 
 @end

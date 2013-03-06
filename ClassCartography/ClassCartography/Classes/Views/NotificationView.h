@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "NotificationTableViewCell.h"
 
+@protocol NotificationViewDelegate
+- (void)showStudentView;
+@end
+
 @interface NotificationView : UIView <UITableViewDataSource, UITableViewDelegate> {
+
+    __unsafe_unretained id <NotificationViewDelegate> delegate;
     UILabel *title;
     
     UITableView *notificationTable;
@@ -17,5 +23,6 @@
 
 }
 
+@property (nonatomic, assign) id <NotificationViewDelegate> delegate;
 
 @end

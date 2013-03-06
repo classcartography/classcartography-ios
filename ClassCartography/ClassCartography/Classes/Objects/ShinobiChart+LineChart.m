@@ -10,6 +10,7 @@
 + (ShinobiChart*)lineChartForBrowserUsageWithFrame:(CGRect)frame {
     
     ShinobiChart *chart = [[ShinobiChart alloc] initWithFrame:frame];
+    
     chart.autoresizingMask = ~UIViewAutoresizingNone;
     chart.clipsToBounds = NO;
     
@@ -42,7 +43,7 @@
 //    SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
 //    SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
 
-    SChartNumberRange *catRange = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:0] andMaximum:[NSNumber numberWithInt:6]];
+    SChartNumberRange *catRange = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:10] andMaximum:[NSNumber numberWithInt:15]];
     SChartCategoryAxis *xAxis = [[SChartCategoryAxis alloc] initWithRange:catRange];
     xAxis.title = @" ";
     xAxis.tickLabelClippingModeHigh = SChartTickLabelClippingModeTicksAndLabelsPersist; //keep tick marks at the right end

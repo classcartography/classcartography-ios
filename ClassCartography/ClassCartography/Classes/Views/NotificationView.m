@@ -9,6 +9,7 @@
 #import "NotificationView.h"
 
 @implementation NotificationView
+@synthesize delegate;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -36,7 +37,7 @@
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
     [dict1 setObject:@"warning" forKey:@"imageName"];
     [dict1 setObject:@"Johnny had trouble with the last assignment." forKey:@"message"];
-    [dict1 setObject:@"Johnny had trouble with the last assignment. His last comment was \"I didn't understand the last 3 questions\"" forKey:@"description"];
+    [dict1 setObject:@"Johnny didn't understand the last 3 homework assignments." forKey:@"description"];
     [dict1 setObject:@"This was really difficult." forKey:@"comment"];
     [dict1 setObject:@"March 3, 2013 4:10pm" forKey:@"dateTime"];
     [notifications addObject:dict1];
@@ -51,7 +52,7 @@
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
     [dict3 setObject:@"warning" forKey:@"imageName"];
     [dict3 setObject:@"Susie may need more challenging work." forKey:@"message"];
-    [dict3 setObject:@"Billy had trouble with the last quiz. His last comment was \"I didn't have enough time to finish.\"" forKey:@"description"];
+    [dict3 setObject:@"Billy did not hand in his last 3 homework assignments. His last comment was \"I didn't have enough time to finish.\"" forKey:@"description"];
     [dict3 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict3];
 
@@ -63,12 +64,16 @@
     [notifications addObject:dict4];
     
     NSMutableDictionary *dict5 = [NSMutableDictionary dictionary];
-    [dict5 setObject:@"star" forKey:@"imageName"];
+    [dict5 setObject:@"warning" forKey:@"imageName"];
     [dict5 setObject:@"Danny may need more challenging work." forKey:@"message"];
-    [dict5 setObject:@"Danny may not be challenged enough. His last comment was \"This quiz was really easy.\"" forKey:@"description"];
+    [dict5 setObject:@"Danny didn't understand the last 3 lessons." forKey:@"description"];
     [dict5 setObject:@"March 3, 2013 1:15pm" forKey:@"dateTime"];
     [notifications addObject:dict5];
     
+}
+
+- (void)studentView {
+    [delegate showStudentView];
 }
 
 
@@ -103,6 +108,7 @@
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
     [aTableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self studentView];
 }
 
 -(BOOL)tableView:(UITableView*)tv canEditRowAtIndexPath:(NSIndexPath*)indexPath {

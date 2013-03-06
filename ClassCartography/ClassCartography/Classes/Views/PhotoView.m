@@ -23,11 +23,11 @@
         imageView.backgroundColor = [UIColor blackColor];
         [self addSubview:imageView];
         
-        button = [UIButton buttonWithType:UIButtonTypeContactAdd];
-        button.titleLabel.text = @"Switch";
-        [button addTarget:self action:@selector(studentView) forControlEvents:UIControlEventTouchUpInside];
-        button.center = CGPointMake(20, 20);
-        [self addSubview:button];
+//        button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//        button.titleLabel.text = @"Switch";
+//        [button addTarget:self action:@selector(studentView) forControlEvents:UIControlEventTouchUpInside];
+//        button.center = CGPointMake(20, 20);
+//        [self addSubview:button];
     }
     
     return self;
