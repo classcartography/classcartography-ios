@@ -67,7 +67,7 @@
     addInterventionView.delegate = self;
     [self.view addSubview:addInterventionView];
     
-    helloLabel.text = [NSString stringWithFormat:@"%@ %@", student.firstName, student.lastName];;
+    helloLabel.text = [NSString stringWithFormat:@"%@%@%@%@", student.firstName, (student.middleName != nil) ? [NSString stringWithFormat:@" %@ ", student.middleName] : @" ", student.lastName, (student.suffix != nil) ? [NSString stringWithFormat:@" %@ ", student.suffix] : @""];
     
 
 }

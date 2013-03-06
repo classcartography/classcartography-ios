@@ -17,12 +17,12 @@
 
 @interface StudentsTableView : UITableView <UITableViewDataSource, UITableViewDelegate> {
 
-    __unsafe_unretained id <StudentsTableViewDelegate> delegate;
+    __unsafe_unretained id <StudentsTableViewDelegate> sDelegate;
     NSMutableArray *students;
 
 }
 
-@property (nonatomic, assign) id <StudentsTableViewDelegate> delegate;
+@property (nonatomic, assign) id <StudentsTableViewDelegate> sDelegate;
 @property (nonatomic, copy) NSMutableArray *students;
 
 @end

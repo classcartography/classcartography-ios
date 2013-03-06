@@ -10,7 +10,7 @@
 
 
 @implementation StudentsTableView
-@synthesize students;
+@synthesize students, sDelegate;
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -41,6 +41,10 @@
     
 }
 
+- (void)studentView:(Student *)student {
+    [sDelegate pushStudentViewController:student];
+}
+
 #pragma mark ----------------------
 #pragma mark Table Delegate Methods
 
@@ -69,7 +73,7 @@
     
     if (students != nil && [students count] > 0) {
         Student *student = [students objectAtIndex:[indexPath row]];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", student.firstName, student.lastName];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@%@%@%@", student.firstName, (student.middleName != nil) ? [NSString stringWithFormat:@" %@ ", student.middleName] : @" ", student.lastName, (student.suffix != nil) ? [NSString stringWithFormat:@" %@ ", student.suffix] : @""];
 //        cell.imageView.image = [UIImage imageNamed:student.imageName];
     }
     return cell;
@@ -77,7 +81,7 @@
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
     [aTableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    [self studentView:[students objectAtIndex:[indexPath row]]];
     
 }
 

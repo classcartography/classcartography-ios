@@ -12,7 +12,7 @@
 #import "Slider.h"
 #import "StudentsTableView.h"
 
-@interface TeacherDashboardViewController : DashboardViewController <UITableViewDataSource, PhotoViewDelegate> {
+@interface TeacherDashboardViewController : DashboardViewController <UITableViewDataSource, PhotoViewDelegate, StudentsTableViewDelegate> {
     
 @private
     UITapGestureRecognizer *_tap;

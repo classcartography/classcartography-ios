@@ -65,6 +65,7 @@
     studentsTableView.backgroundColor = [UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0];
     _studentsTableViewSlider = [[Slider alloc] initWithView:studentsTableView];
 	[_studentsTableViewSlider slideViewToVisible:NO withAnimation:NO];
+    studentsTableView.sDelegate = self;
     [self.view addSubview:studentsTableView];
     
     notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320) forDashboard:@"teacher"];
@@ -172,6 +173,12 @@
 
 - (void)showStudentView {
     StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];    
+    [self.navigationController pushViewController:svc animated:YES];
+}
+
+- (void)pushStudentViewController:(Student *)student {
+    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
+    svc.student = student;
     [self.navigationController pushViewController:svc animated:YES];
 }
 
