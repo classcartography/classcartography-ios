@@ -8,6 +8,7 @@
 
 #import "TeacherDashboardViewController.h"
 #import "ClassesPopoverBackgroundView.h"
+#import "Section.h"
 #import "StudentDashboardViewController.h"
 #import "UserHandler.h"
 
@@ -48,6 +49,7 @@
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
     [button setTitleEdgeInsets:UIEdgeInsetsMake(4, 0, 0, 0)];
+    [button addTarget:self action:@selector(showStudents) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
 
@@ -68,6 +70,10 @@
     [_classesPopoverController presentPopoverFromRect:frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
+- (void)showStudents {
+    
+}
+
 
 #pragma mark
 #pragma mark InBloomAPIHandlerDelegate methods
@@ -79,7 +85,7 @@
 }
 
 - (void)getSectionsComplete {
-    NSString *sectionName = [[[UserHandler sharedUserHandler].user.sections objectAtIndex:0] objectForKey:@"uniqueSectionCode"];
+    NSString *sectionName = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:0]).name;
     int l = [sectionName length];
     NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @1};
     const NSRange range = NSMakeRange(12,l);
@@ -101,7 +107,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [[[UserHandler sharedUserHandler].user.sections objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
+    cell.textLabel.text = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:indexPath.row]).name;
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];

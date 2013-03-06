@@ -10,6 +10,7 @@
 #import "AFJSONRequestOperation.h"
 #import "AFHTTPRequestOperation.h"
 #import "SBJson.h"
+#import "Section.h"
 #import "WebViewController.h"
 #import "UserHandler.h"
 
@@ -44,7 +45,8 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         SBJsonParser *json = [[SBJsonParser alloc] init];
         NSArray *sectionsResponse = [json objectWithString:operation.responseString];
         for(NSDictionary *d in sectionsResponse) {
-            [[UserHandler sharedUserHandler].user.sections addObject:d];
+            [Section generate:d];
+            [[UserHandler sharedUserHandler].user.sections addObject:[Section generate:d]];
         }
         
         [delegate getSectionsComplete];
