@@ -39,34 +39,34 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 #pragma mark -
 #pragma mark private methods
 
-- (void)getClasses:(NSString *)classesUrl {
-    [_httpClient getPath:classesUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+- (void)getSections:(NSString *)sectionsUrl {
+    [_httpClient getPath:sectionsUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         SBJsonParser *json = [[SBJsonParser alloc] init];
-        NSArray *classesResponse = [json objectWithString:operation.responseString];
-        for(NSDictionary *d in classesResponse) {
-            [[UserHandler sharedUserHandler].classes addObject:d];
+        NSArray *sectionsResponse = [json objectWithString:operation.responseString];
+        for(NSDictionary *d in sectionsResponse) {
+            [[UserHandler sharedUserHandler].user.sections addObject:d];
         }
         
-        [delegate getClassesComplete];
+        [delegate getSectionsComplete];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];
 }
 
-- (void)getClassesInfo {
+- (void)getSectionsInfo {
     [_httpClient getPath:@"/api/rest/v1.1/home" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         SBJsonParser *json = [[SBJsonParser alloc] init];
         
         NSDictionary *home = [json objectWithString:operation.responseString];
-        NSString *classesUrl;
+        NSString *sectionsUrl;
         NSArray *arr = [NSArray arrayWithArray:[home objectForKey:@"links"]];
         for (NSDictionary *d in arr) {
             if ([((NSString *)[d objectForKey:@"rel"]) isEqualToString:@"getSections"]) {
-                classesUrl = [d objectForKey:@"href"];
+                sectionsUrl = [d objectForKey:@"href"];
             }
         }
         
-        [self getClasses:classesUrl];
+        [self getSections:sectionsUrl];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];
@@ -106,8 +106,8 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         
         if ([d valueForKey:@"authenticated"] == [NSNumber numberWithBool:YES]) {
             [UserHandler sharedUserHandler].isLoggedIn = YES;
-            [UserHandler sharedUserHandler].name = [d objectForKey:@"full_name"];
-            [self getClassesInfo];
+            [UserHandler sharedUserHandler].user.name = [d objectForKey:@"full_name"];
+            [self getSectionsInfo];
             
             if (delegate)
                 [delegate loginComplete];

@@ -55,6 +55,7 @@
 		<string>Quicksand_Light.otf</string>
 		<string>Adamas-Regular.otf</string>
 		<string>Quicksand_Book.otf</string>
+		<string>Quicksand_Bold.otf</string>
 	</array>
 	<key>UIPrerenderedIcon</key>
 	<true/>

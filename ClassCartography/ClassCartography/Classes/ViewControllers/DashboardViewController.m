@@ -66,7 +66,7 @@
 
 - (void)loginComplete { }
 
-- (void)getClassesComplete { }
+- (void)getSectionsComplete { }
 
 #pragma mark
 #pragma mark NotificationViewDelegate methods

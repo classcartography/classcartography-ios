@@ -16,6 +16,8 @@
 
 - (id)init {
     if (self = [super init]) {
+        [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
+        
         _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPopover)];
     }
     return self;
@@ -37,6 +39,23 @@
     _feedbackView = [[FeedbackView alloc] initWithFrame:CGRectMake(30, 391, 300, 350)];
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
+    
+    for(NSString *fontName in [UIFont familyNames]) {
+        NSLog(@"fontName => %@",fontName);
+        for(NSString *familyMemberName in [UIFont fontNamesForFamilyName:fontName]) {
+            NSLog(@"- familyMemberName => %@",familyMemberName);
+        }
+    }
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(920, 20, 104, 36);
+    [button setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];
+    [button setTitle:@"<< Students" forState:UIControlStateNormal];
+    [button setTitle:@">> Students" forState:UIControlStateSelected];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(4, 0, 0, 0)];
+    [self.view addSubview:button];
 }
 
 #pragma mark
@@ -61,17 +80,17 @@
 #pragma mark InBloomAPIHandlerDelegate methods
 
 - (void)loginComplete {
-    helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].name];
+    helloLabel.text = [NSString stringWithFormat:@"Hello, %@", [UserHandler sharedUserHandler].user.name];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)getClassesComplete {
-    NSString *className = [[[UserHandler sharedUserHandler].classes objectAtIndex:0] objectForKey:@"uniqueSectionCode"];
-    int l = [className length];
+- (void)getSectionsComplete {
+    NSString *sectionName = [[[UserHandler sharedUserHandler].user.sections objectAtIndex:0] objectForKey:@"uniqueSectionCode"];
+    int l = [sectionName length];
     NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @1};
     const NSRange range = NSMakeRange(12,l);
-    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"How is your %@ class doing?", className]
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"How is your %@ class doing?", sectionName]
                                                              attributes:nil];
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
@@ -89,7 +108,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [[[UserHandler sharedUserHandler].classes objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
+    cell.textLabel.text = [[[UserHandler sharedUserHandler].user.sections objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
@@ -97,7 +116,7 @@
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].classes count]; }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return [[UserHandler sharedUserHandler].user.sections count]; }
 
 
 #pragma mark

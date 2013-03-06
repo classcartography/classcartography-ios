@@ -10,4 +10,15 @@
 
 @implementation User
 
+@synthesize name;
+@synthesize sections;
+
+- (id)init {
+    if (self = [super init]) {
+        sections = [[NSMutableArray alloc] initWithCapacity:0];
+    }
+    
+    return self;
+}
+
 @end
