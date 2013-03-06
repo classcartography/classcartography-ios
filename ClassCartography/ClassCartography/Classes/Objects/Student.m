@@ -19,7 +19,9 @@
 @synthesize imageName;
 
 - (id)init {
-    if (self = [super init]) { }
+    if (self = [super init]) {
+        interventions = [[NSMutableArray alloc] initWithCapacity:0];
+    }
     
     return self;
 }
@@ -33,6 +35,7 @@
     [studentCopy setSuffix:suffix];
     [studentCopy setGender:gender];
     [studentCopy setImageName:imageName];
+    [studentCopy setInterventions:interventions];
 	
     return studentCopy;
 }
