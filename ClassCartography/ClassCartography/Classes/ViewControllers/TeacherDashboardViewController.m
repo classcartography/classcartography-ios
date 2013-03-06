@@ -41,6 +41,11 @@
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
     
+    graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
+    graphView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:graphView];
+
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(920, 20, 104, 36);
     [button setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];

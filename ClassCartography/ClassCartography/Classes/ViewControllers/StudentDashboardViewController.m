@@ -22,9 +22,13 @@
 - (void)loadView {
     [super loadView];
     
-    _gradeView = [[GradeView alloc] initWithFrame:CGRectMake(30, 391, 300, 350)];
-    _gradeView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_gradeView];
+    _interventionView = [[InterventionView alloc] initWithFrame:CGRectMake(30, 391, 300, 300)];
+    _interventionView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_interventionView];
+    
+    graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
+    graphView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:graphView];
     
     UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo-bg"]];
     [photoView addSubview:bgView];

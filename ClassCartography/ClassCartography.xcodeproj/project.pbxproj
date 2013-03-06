@@ -65,6 +65,8 @@
 		7C36689516E58F230085FDBB /* StudentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36689216E58F230085FDBB /* StudentData.m */; };
 		7C68CB0216E5638600CD4AAC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CB0016E5638600CD4AAC /* Default-Landscape@2x~ipad.png */; };
 		7C68CB0316E5638600CD4AAC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CB0116E5638600CD4AAC /* Default-Landscape~ipad.png */; };
+		7C765CE816E76C6800721AAD /* InterventionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C765CE716E76C6800721AAD /* InterventionView.m */; };
+		7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */; };
 		7CAF48C816E55D5B004931D5 /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48C716E55D5B004931D5 /* PhotoView.m */; };
 		7CAF48CB16E55D72004931D5 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48CA16E55D72004931D5 /* GraphView.m */; };
 		7CAF48CE16E55D89004931D5 /* FeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48CD16E55D89004931D5 /* FeedbackView.m */; };
@@ -94,6 +96,7 @@
 		7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11816E683860047A2E3 /* warning@2x.png */; };
 		7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11F16E697F20047A2E3 /* GradeView.m */; };
 		7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */; };
+		7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1516E77494005D5B5E /* StudentGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +209,10 @@
 		7C36689216E58F230085FDBB /* StudentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentData.m; sourceTree = "<group>"; };
 		7C68CB0016E5638600CD4AAC /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		7C68CB0116E5638600CD4AAC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		7C765CE616E76C6800721AAD /* InterventionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterventionView.h; sourceTree = "<group>"; };
+		7C765CE716E76C6800721AAD /* InterventionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterventionView.m; sourceTree = "<group>"; };
+		7C765CE916E76F1900721AAD /* InterventionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterventionTableViewCell.h; sourceTree = "<group>"; };
+		7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterventionTableViewCell.m; sourceTree = "<group>"; };
 		7CAF48C616E55D5B004931D5 /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
 		7CAF48C716E55D5B004931D5 /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
 		7CAF48C916E55D72004931D5 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
@@ -247,6 +254,8 @@
 		7CBAB11F16E697F20047A2E3 /* GradeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradeView.m; sourceTree = "<group>"; };
 		7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDashboardViewController.h; sourceTree = "<group>"; };
 		7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDashboardViewController.m; sourceTree = "<group>"; };
+		7CE7CD1416E77494005D5B5E /* StudentGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentGraphView.h; sourceTree = "<group>"; };
+		7CE7CD1516E77494005D5B5E /* StudentGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +470,12 @@
 				7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */,
 				7CBAB11416E67DFB0047A2E3 /* NotificationTableViewCell.h */,
 				7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */,
+				7C765CE616E76C6800721AAD /* InterventionView.h */,
+				7C765CE716E76C6800721AAD /* InterventionView.m */,
+				7C765CE916E76F1900721AAD /* InterventionTableViewCell.h */,
+				7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */,
+				7CE7CD1416E77494005D5B5E /* StudentGraphView.h */,
+				7CE7CD1516E77494005D5B5E /* StudentGraphView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -743,7 +758,10 @@
 				59096E0C16E74DB200F9B970 /* Student.m in Sources */,
 				59096E0F16E74EEA00F9B970 /* Section.m in Sources */,
 				59096E1216E74EF800F9B970 /* User.m in Sources */,
+				7C765CE816E76C6800721AAD /* InterventionView.m in Sources */,
+				7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */,
 				59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */,
+				7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
