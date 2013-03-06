@@ -18,9 +18,14 @@
 - (void)getStudentsComplete:(NSMutableArray *)arr;
 @end
 
+@protocol InBloomAPIHandlerStudentDelegate
+- (void)getInterventionsComplete:(NSMutableArray *)arr;
+@end
+
 @interface InBloomAPIHandler : NSObject {
     
     __unsafe_unretained id <InBloomAPIHandlerDelegate> delegate;
+    __unsafe_unretained id <InBloomAPIHandlerStudentDelegate> studentDelegate;
     NSString *token;
     
 @private
@@ -30,12 +35,14 @@
 + (InBloomAPIHandler *)sharedInBloomAPIHandler;
 
 @property (nonatomic, assign) id <InBloomAPIHandlerDelegate> delegate;
+@property (nonatomic, assign) id <InBloomAPIHandlerStudentDelegate> studentDelegate;
 @property (nonatomic, copy) NSString *token;
 
 - (void)authenticate:(UIViewController *)viewController;
 - (void)saveSession:(NSString *)authorizationCode;
 - (BOOL)isSessionValid;
 - (void)getStudentsInfoForSection:(NSString *)sectionId;
+- (void)getInterventionsInfoForStudent:(NSString *)studentId;
 
 @end
 

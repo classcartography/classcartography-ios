@@ -13,7 +13,7 @@
 
 
 //- (id) init {
-- (id) initWithStudent:stu {
+- (id) initWithStudent:(Student *)stu {
    if (self = [super init]) {
         [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
 
@@ -24,6 +24,9 @@
         UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backArrowButton];
         self.navigationItem.leftBarButtonItem = back;
         student = stu;
+       
+       //now get students for that class
+       [[InBloomAPIHandler sharedInBloomAPIHandler] getInterventionsInfoForStudent:student.studentId];
     }
     
     return self;
@@ -81,6 +84,15 @@
 - (void) popToRoot {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
+
+
+#pragma mark
+#pragma mark InBloomAPIHandlerDelegate methods
+
+- (void)getInterventionsComplete:(NSMutableArray *)arr {
+    [student.interventions setArray:arr];
+}
+
 
 #pragma mark
 #pragma mark InterventionViewDelegate methods

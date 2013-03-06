@@ -10,8 +10,10 @@
 #import "InterventionView.h"
 #import "StudentGraphView.h"
 #import "AddInterventionView.h"
+#import "Student.h"
+#import "InBloomAPIHandler.h"
 
-@interface StudentDashboardViewController : DashboardViewController <InterventionViewDelegate, AddInterventionViewDelegate> {
+@interface StudentDashboardViewController : DashboardViewController <InterventionViewDelegate, AddInterventionViewDelegate, InBloomAPIHandlerStudentDelegate> {
     
     InterventionView *_interventionView;
     StudentGraphView *graphView;
@@ -20,6 +22,6 @@
     Student *student;
 }
 
-- (id) initWithStudent:stu;
+- (id) initWithStudent:(Student *)stu;
 
 @end
