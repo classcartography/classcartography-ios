@@ -53,7 +53,7 @@
 
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
     [dict3 setObject:@"Intervention #3" forKey:@"message"];
-    [dict3 setObject:@"Assigned Tommy to tutor Johnny." forKey:@"description"];
+    [dict3 setObject:@"Assigned Tommy to tutor Alton." forKey:@"description"];
     [dict3 setObject:@"March 1, 2013 1:15pm" forKey:@"dateTime"];
     [interventions addObject:dict3];
 
@@ -65,7 +65,7 @@
     
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
     [dict1 setObject:@"Intervention #1" forKey:@"message"];
-    [dict1 setObject:@"Spoke with Johnny's parents about more study at home." forKey:@"description"];
+    [dict1 setObject:@"Spoke with Alton's parents about more study at home." forKey:@"description"];
     [dict1 setObject:@"February 15, 2013 1:15pm" forKey:@"dateTime"];
     [interventions addObject:dict1];
     
