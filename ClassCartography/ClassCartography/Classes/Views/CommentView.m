@@ -34,7 +34,7 @@
     
     [comments removeAllObjects];
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
-    [dict1 setObject:@"temp" forKey:@"imageName"];
+    [dict1 setObject:@"student-4.jpg" forKey:@"imageName"];
     [dict1 setObject:@"itemstars-4" forKey:@"starsName"];
     [dict1 setObject:@"John Smith" forKey:@"name"];
     [dict1 setObject:@"Quiz #2" forKey:@"assignment"];
@@ -43,7 +43,7 @@
     [comments addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"temp2" forKey:@"imageName"];
+    [dict2 setObject:@"student-2.jpg" forKey:@"imageName"];
     [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Jane Goodman" forKey:@"name"];
     [dict2 setObject:@"Homework #6" forKey:@"assignment"];
@@ -52,7 +52,7 @@
     [comments addObject:dict2];
     
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
-    [dict3 setObject:@"temp3" forKey:@"imageName"];
+    [dict3 setObject:@"student-3.jpg" forKey:@"imageName"];
     [dict3 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict3 setObject:@"Billy Joe" forKey:@"name"];
     [dict3 setObject:@"Homework #6" forKey:@"assignment"];
@@ -62,7 +62,7 @@
     
     
     NSMutableDictionary *dict4 = [NSMutableDictionary dictionary];
-    [dict4 setObject:@"temp" forKey:@"imageName"];
+    [dict4 setObject:@"student-4.jpg" forKey:@"imageName"];
     [dict4 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict4 setObject:@"Billy Joe" forKey:@"name"];
     [dict4 setObject:@"Homework #6" forKey:@"assignment"];
@@ -76,7 +76,7 @@
     
     [comments removeAllObjects];
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
-    [dict1 setObject:@"temp" forKey:@"imageName"];
+    [dict1 setObject:@"student-4.jpg" forKey:@"imageName"];
     [dict1 setObject:@"itemstars-4" forKey:@"starsName"];
     [dict1 setObject:@"John Smith" forKey:@"name"];
     [dict1 setObject:@"Homework #1" forKey:@"assignment"];
@@ -85,7 +85,7 @@
     [comments addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"temp" forKey:@"imageName"];
+    [dict2 setObject:@"student-4.jpg" forKey:@"imageName"];
     [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Billy Joe" forKey:@"name"];
     [dict2 setObject:@"Homework #1" forKey:@"assignment"];
