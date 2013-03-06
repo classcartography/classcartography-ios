@@ -11,8 +11,9 @@
 
 @implementation Section
 
+@synthesize sectionId;
 @synthesize name;
-@synthesize lastAssignment;
+@synthesize students;
 
 - (id)init {
     if (self = [super init]) { }
@@ -23,8 +24,9 @@
 - (id)copyWithZone:(NSZone *)zone {
 	Section *sectionCopy = [[[self class] allocWithZone:zone] init];
 	
+    [sectionCopy setSectionId:sectionId];
     [sectionCopy setName:name];
-    [sectionCopy setLastAssignment:lastAssignment];
+    [sectionCopy setStudents:students];
 	
     return sectionCopy;
 }
@@ -44,6 +46,7 @@
 #pragma mark public methods
 
 - (void)buildFromDictionary:(NSDictionary *)d {
+    sectionId = [[d objectForKey:@"id"] intValue];
     name = [[d objectForKey:@"uniqueSectionCode"] copy];
 }
         

@@ -48,7 +48,7 @@
 		5923591516E5E846008CD31F /* stock-img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5923591416E5E846008CD31F /* stock-img.jpg */; };
 		5980FA2E16E697D100213F67 /* SectionsPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980FA2D16E697D100213F67 /* SectionsPopoverBackgroundView.m */; };
 		598E633B16E776D60098B574 /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E633A16E776D60098B574 /* Slider.m */; };
-		598E633E16E777320098B574 /* StudentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E633D16E777320098B574 /* StudentsView.m */; };
+		598E633E16E777320098B574 /* StudentsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E633D16E777320098B574 /* StudentsTableView.m */; };
 		59AD0E9C16E7651700C612DE /* Quicksand_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
@@ -194,8 +194,8 @@
 		5980FA2D16E697D100213F67 /* SectionsPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionsPopoverBackgroundView.m; path = ../Objects/SectionsPopoverBackgroundView.m; sourceTree = "<group>"; };
 		598E633916E776D60098B574 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
 		598E633A16E776D60098B574 /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
-		598E633C16E777320098B574 /* StudentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsView.h; sourceTree = "<group>"; };
-		598E633D16E777320098B574 /* StudentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsView.m; sourceTree = "<group>"; };
+		598E633C16E777320098B574 /* StudentsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsTableView.h; sourceTree = "<group>"; };
+		598E633D16E777320098B574 /* StudentsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsTableView.m; sourceTree = "<group>"; };
 		59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Bold.otf; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -490,8 +490,8 @@
 				5980FA2D16E697D100213F67 /* SectionsPopoverBackgroundView.m */,
 				7CE7CD1416E77494005D5B5E /* StudentGraphView.h */,
 				7CE7CD1516E77494005D5B5E /* StudentGraphView.m */,
-				598E633C16E777320098B574 /* StudentsView.h */,
-				598E633D16E777320098B574 /* StudentsView.m */,
+				598E633C16E777320098B574 /* StudentsTableView.h */,
+				598E633D16E777320098B574 /* StudentsTableView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -785,7 +785,7 @@
 				7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */,
 				7CE7CD1916E7750B005D5B5E /* SingleStudentData.m in Sources */,
 				598E633B16E776D60098B574 /* Slider.m in Sources */,
-				598E633E16E777320098B574 /* StudentsView.m in Sources */,
+				598E633E16E777320098B574 /* StudentsTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

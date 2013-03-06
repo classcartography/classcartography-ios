@@ -68,6 +68,8 @@
 
 - (void)getSectionsComplete { }
 
+- (void)getStudentsComplete { }
+
 #pragma mark
 #pragma mark NotificationViewDelegate methods
 

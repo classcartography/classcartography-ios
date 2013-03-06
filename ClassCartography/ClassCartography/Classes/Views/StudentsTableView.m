@@ -1,15 +1,15 @@
 //
-//  StudentsView.m
+//  StudentsTableView.m
 //  ClassCartography
 //
 //  Created by Chamara Paul on 3/6/13.
 //
 //
 
-#import "StudentsView.h"
+#import "StudentsTableView.h"
 
 
-@implementation StudentsView
+@implementation StudentsTableView
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) { }

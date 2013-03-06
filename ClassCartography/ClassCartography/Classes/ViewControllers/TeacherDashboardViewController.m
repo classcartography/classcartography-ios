@@ -10,6 +10,7 @@
 #import "Section.h"
 #import "SectionsPopoverBackgroundView.h"
 #import "StudentDashboardViewController.h"
+#import "StudentsTableView.h"
 #import "UserHandler.h"
 
 
@@ -59,7 +60,7 @@
     [_studentsButtonSlider slideButtonToVisible:NO withAnimation:NO];
     [self.view addSubview:_studentsButton];
     
-    UITableView *studentsTableView = [[UITableView alloc] initWithFrame:CGRectMake(724, 0, 300, 724)];
+    StudentsTableView *studentsTableView = [[StudentsTableView alloc] initWithFrame:CGRectMake(724, 0, 300, 724)];
     studentsTableView.backgroundColor = [UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0];
     _studentsTableViewSlider = [[Slider alloc] initWithView:studentsTableView];
 	[_studentsTableViewSlider slideViewToVisible:NO withAnimation:NO];
@@ -116,6 +117,10 @@
                                                              attributes:nil];
     [attributedText setAttributes:underlineAttribute range:range];
     _howLabel.attributedText = attributedText;
+}
+
+- (void)getStudentsComplete {
+    
 }
 
 

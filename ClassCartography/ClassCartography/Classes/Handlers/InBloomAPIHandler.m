@@ -48,7 +48,6 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
             [Section generate:d];
             [[UserHandler sharedUserHandler].user.sections addObject:[Section generate:d]];
         }
-        
         [delegate getSectionsComplete];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);

@@ -1,5 +1,5 @@
 //
-//  StudentsView.h
+//  StudentsTableView.h
 //  ClassCartography
 //
 //  Created by Chamara Paul on 3/6/13.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface StudentsView : UITableView
+@interface StudentsTableView : UITableView
 
 @end
