@@ -12,6 +12,7 @@
 //A line series styled and ready for the data source to link to
 //the browser data
 - (SChartSeries*)lineSeriesForKey:(NSString*)key;
+- (SChartSeries*)scatterSeriesForKey:(NSString*)key;
 
 
 @end

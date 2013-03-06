@@ -97,6 +97,10 @@
 		7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11F16E697F20047A2E3 /* GradeView.m */; };
 		7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */; };
 		7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1516E77494005D5B5E /* StudentGraphView.m */; };
+		7CE7CD1916E7750B005D5B5E /* SingleStudentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1816E7750B005D5B5E /* SingleStudentData.m */; };
+		7CE7CD1D16E78229005D5B5E /* intervention1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1A16E78229005D5B5E /* intervention1.png */; };
+		7CE7CD1E16E78229005D5B5E /* intervention2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1B16E78229005D5B5E /* intervention2.png */; };
+		7CE7CD1F16E78229005D5B5E /* intervention3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1C16E78229005D5B5E /* intervention3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +260,11 @@
 		7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDashboardViewController.m; sourceTree = "<group>"; };
 		7CE7CD1416E77494005D5B5E /* StudentGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentGraphView.h; sourceTree = "<group>"; };
 		7CE7CD1516E77494005D5B5E /* StudentGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGraphView.m; sourceTree = "<group>"; };
+		7CE7CD1716E7750B005D5B5E /* SingleStudentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleStudentData.h; sourceTree = "<group>"; };
+		7CE7CD1816E7750B005D5B5E /* SingleStudentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleStudentData.m; sourceTree = "<group>"; };
+		7CE7CD1A16E78229005D5B5E /* intervention1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intervention1.png; sourceTree = "<group>"; };
+		7CE7CD1B16E78229005D5B5E /* intervention2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intervention2.png; sourceTree = "<group>"; };
+		7CE7CD1C16E78229005D5B5E /* intervention3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intervention3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +431,8 @@
 				7C36689216E58F230085FDBB /* StudentData.m */,
 				59096E1016E74EF800F9B970 /* User.h */,
 				59096E1116E74EF800F9B970 /* User.m */,
+				7CE7CD1716E7750B005D5B5E /* SingleStudentData.h */,
+				7CE7CD1816E7750B005D5B5E /* SingleStudentData.m */,
 			);
 			name = Objects;
 			path = Classes/Objects;
@@ -551,6 +562,9 @@
 		7CAF48D916E55E88004931D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7CE7CD1A16E78229005D5B5E /* intervention1.png */,
+				7CE7CD1B16E78229005D5B5E /* intervention2.png */,
+				7CE7CD1C16E78229005D5B5E /* intervention3.png */,
 				7CAF841616E6A9DA00C0212D /* temp2@2x.png */,
 				7CAF841716E6A9DA00C0212D /* temp3@2x.png */,
 				7CAF841416E6A8D300C0212D /* haku@2x.png */,
@@ -681,6 +695,9 @@
 				59015ADB16E6A88000FDA4E0 /* popover-arrow.png in Resources */,
 				59015ADC16E6A88000FDA4E0 /* popover-bg.png in Resources */,
 				59AD0E9C16E7651700C612DE /* Quicksand_Bold.otf in Resources */,
+				7CE7CD1D16E78229005D5B5E /* intervention1.png in Resources */,
+				7CE7CD1E16E78229005D5B5E /* intervention2.png in Resources */,
+				7CE7CD1F16E78229005D5B5E /* intervention3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +779,7 @@
 				7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */,
 				59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */,
 				7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */,
+				7CE7CD1916E7750B005D5B5E /* SingleStudentData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

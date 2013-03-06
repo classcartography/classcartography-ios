@@ -3,7 +3,7 @@
 //  LineChart
 
 #import "ShinobiChart+LineChart.h"
-#import "GraphData.h"
+//#import "GraphData.h"
 
 @implementation ShinobiChart (LineChart)
 
@@ -43,7 +43,7 @@
 //    SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
 //    SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
 
-    SChartNumberRange *catRange = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:10] andMaximum:[NSNumber numberWithInt:15]];
+    SChartNumberRange *catRange = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:0] andMaximum:[NSNumber numberWithInt:5]];
     SChartCategoryAxis *xAxis = [[SChartCategoryAxis alloc] initWithRange:catRange];
     xAxis.title = @" ";
     xAxis.tickLabelClippingModeHigh = SChartTickLabelClippingModeTicksAndLabelsPersist; //keep tick marks at the right end
@@ -88,6 +88,25 @@
     l.title = key;
     return l;
 
+}
+
+- (SChartSeries*)scatterSeriesForKey:(NSString*)key {
+    
+    SChartScatterSeries *s = [SChartScatterSeries new];
+    s.style.pointStyle.showPoints = YES;
+    s.style.pointStyle.radius = [NSNumber numberWithFloat:14.0f];
+    s.style.pointStyle.innerColor = [UIColor colorWithRed:59.0/255.0 green:172.0/255.0 blue:200.0/255.0 alpha:1.0];
+    s.style.pointStyle.innerColor = [UIColor colorWithRed:215.0/255.0 green:70.0/255.0 blue:20.0/255.0 alpha:1.0];
+    s.selectedStyle.pointStyle.radius = [NSNumber numberWithFloat:14.0f];
+    s.selectedStyle.pointStyle.innerColor = [UIColor colorWithRed:59.0/255.0 green:172.0/255.0 blue:200.0/255.0 alpha:1.0];
+    s.selectedStyle.pointStyle.innerColor = [UIColor colorWithRed:215.0/255.0 green:70.0/255.0 blue:20.0/255.0 alpha:1.0];
+    s.selectionMode = SChartSelectionPoint;
+    s.toggleSelection = YES;
+    s.togglePointSelection = YES;
+    s.crosshairEnabled = YES;
+    s.title = key;
+    return s;
+    
 }
 
 

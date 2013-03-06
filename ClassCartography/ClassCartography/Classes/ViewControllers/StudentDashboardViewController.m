@@ -26,7 +26,7 @@
     _interventionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_interventionView];
     
-    graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
+    graphView = [[StudentGraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
     graphView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:graphView];
     

@@ -10,7 +10,7 @@
 #import <ShinobiCharts/ShinobiChart.h>
 #import "ShinobiChart+LineChart.h"
 #import "StudentData.h"
-#import "GraphData.h"
+//#import "GraphData.h"
 
 
 @interface GraphView : UIView <SChartDelegate, SChartDatasource> {
@@ -20,6 +20,7 @@
 
     UILabel *graphTitle;
 }
-@property (nonatomic) id<GraphData> graphData;
+//@property (nonatomic) id<GraphData> graphData;
+//@property (nonatomic) StudentData *studentData;
 
 @end
