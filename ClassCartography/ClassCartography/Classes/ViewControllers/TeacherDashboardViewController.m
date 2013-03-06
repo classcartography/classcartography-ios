@@ -40,13 +40,6 @@
     _feedbackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_feedbackView];
     
-    for(NSString *fontName in [UIFont familyNames]) {
-        NSLog(@"fontName => %@",fontName);
-        for(NSString *familyMemberName in [UIFont fontNamesForFamilyName:fontName]) {
-            NSLog(@"- familyMemberName => %@",familyMemberName);
-        }
-    }
-    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(920, 20, 104, 36);
     [button setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];

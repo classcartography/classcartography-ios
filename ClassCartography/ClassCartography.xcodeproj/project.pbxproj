@@ -48,6 +48,7 @@
 		5923591516E5E846008CD31F /* stock-img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5923591416E5E846008CD31F /* stock-img.jpg */; };
 		5980FA2E16E697D100213F67 /* ClassesPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */; };
 		59AD0E9C16E7651700C612DE /* Quicksand_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */; };
+		59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AD0E9E16E76CF200C612DE /* StudentsViewController.m */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
@@ -186,6 +187,8 @@
 		5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassesPopoverBackgroundView.h; path = ../Objects/ClassesPopoverBackgroundView.h; sourceTree = "<group>"; };
 		5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassesPopoverBackgroundView.m; path = ../Objects/ClassesPopoverBackgroundView.m; sourceTree = "<group>"; };
 		59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Bold.otf; sourceTree = "<group>"; };
+		59AD0E9D16E76CF200C612DE /* StudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsViewController.h; sourceTree = "<group>"; };
+		59AD0E9E16E76CF200C612DE /* StudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsViewController.m; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -404,12 +407,12 @@
 				7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */,
 				7C36688E16E58F230085FDBB /* GraphData.h */,
 				7CBAB10016E5C4A60047A2E3 /* PieData.h */,
+				59096E0D16E74EEA00F9B970 /* Section.h */,
+				59096E0E16E74EEA00F9B970 /* Section.m */,
 				7C36688F16E58F230085FDBB /* ShinobiChart+LineChart.h */,
 				7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */,
 				7CBAB0FD16E5C48A0047A2E3 /* ShinobiChart+PieCharts.h */,
 				7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */,
-				59096E0D16E74EEA00F9B970 /* Section.h */,
-				59096E0E16E74EEA00F9B970 /* Section.m */,
 				59096E0A16E74DB200F9B970 /* Student.h */,
 				59096E0B16E74DB200F9B970 /* Student.m */,
 				7C36689116E58F230085FDBB /* StudentData.h */,
@@ -428,12 +431,14 @@
 				5923435516E559B1008E4AEE /* DashboardViewController.m */,
 				5923435616E559B1008E4AEE /* LoginViewController.h */,
 				5923435716E559B1008E4AEE /* LoginViewController.m */,
+				7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */,
+				7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */,
+				59AD0E9D16E76CF200C612DE /* StudentsViewController.h */,
+				59AD0E9E16E76CF200C612DE /* StudentsViewController.m */,
 				5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */,
 				5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */,
 				59D722BD16E57A5F002D6B0A /* WebViewController.h */,
 				59D722BE16E57A5F002D6B0A /* WebViewController.m */,
-				7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */,
-				7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -750,6 +755,7 @@
 				59096E1216E74EF800F9B970 /* User.m in Sources */,
 				7C765CE816E76C6800721AAD /* InterventionView.m in Sources */,
 				7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */,
+				59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
