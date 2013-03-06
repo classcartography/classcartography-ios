@@ -171,8 +171,7 @@
 #pragma mark PhotoViewDelegate methods
 
 - (void)showStudentView {
-    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
-    
+    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];    
     [self.navigationController pushViewController:svc animated:YES];
 }
 

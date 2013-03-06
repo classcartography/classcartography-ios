@@ -101,8 +101,8 @@
     
 }
 
-- (void)studentView {
-    [delegate showStudentView];
+- (void)studentView:(Student *)student {
+    [delegate showStudentView:student];
 }
 
 
@@ -161,7 +161,7 @@
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
     if (!isStudent) {
         [aTableView deselectRowAtIndexPath:indexPath animated:YES];
-        [self studentView];
+        [self studentView:[notifications objectAtIndex:[indexPath row]]];
     }
 }
 

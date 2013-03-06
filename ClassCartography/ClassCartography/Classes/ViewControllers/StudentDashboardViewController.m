@@ -10,6 +10,7 @@
 
 
 @implementation StudentDashboardViewController
+@synthesize student;
 
 - (id)init {
     if (self = [super init]) {
@@ -20,7 +21,6 @@
         [backArrowButton setBackgroundImage:[UIImage imageNamed:@"button-back"] forState:UIControlStateNormal];
 		[backArrowButton addTarget:self action:@selector(popToRoot) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backArrowButton];
-//        self.navigationItem.backBarButtonItem = back;
         self.navigationItem.leftBarButtonItem = back;
 
     }
@@ -66,7 +66,9 @@
     addInterventionView.backgroundColor = [UIColor whiteColor];
     addInterventionView.delegate = self;
     [self.view addSubview:addInterventionView];
-
+    
+    helloLabel.text = [NSString stringWithFormat:@"%@ %@", student.firstName, student.lastName];;
+    
 
 }
 

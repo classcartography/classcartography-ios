@@ -17,6 +17,9 @@
     StudentGraphView *graphView;
     AddInterventionView *addInterventionView;
     UIView *opaqueView;
+    Student *student;
 }
+
+@property (nonatomic, copy) Student *student;
 
 @end

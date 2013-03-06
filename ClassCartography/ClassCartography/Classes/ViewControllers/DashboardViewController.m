@@ -69,9 +69,9 @@
 #pragma mark
 #pragma mark NotificationViewDelegate methods
 
-- (void)showStudentView {
+- (void)showStudentView:(Student *)student {
     StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
-    
+    svc.student = student;
     [self.navigationController pushViewController:svc animated:YES];
 }
 

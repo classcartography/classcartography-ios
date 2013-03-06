@@ -10,7 +10,7 @@
 #import "NotificationTableViewCell.h"
 
 @protocol NotificationViewDelegate
-- (void)showStudentView;
+- (void)showStudentView:(Student *)student;
 @end
 
 @interface NotificationView : UIView <UITableViewDataSource, UITableViewDelegate> {

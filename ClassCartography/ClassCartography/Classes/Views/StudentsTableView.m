@@ -76,7 +76,9 @@
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
-    //    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
+    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    
 }
 
 -(BOOL)tableView:(UITableView*)tv canEditRowAtIndexPath:(NSIndexPath*)indexPath {
