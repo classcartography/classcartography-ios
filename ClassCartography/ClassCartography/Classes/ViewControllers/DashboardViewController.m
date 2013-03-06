@@ -52,11 +52,6 @@
     commentView = [[CommentView alloc] initWithFrame:CGRectMake(690, 391, 300, 320)];
     commentView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:commentView];
-    
-    notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320)];
-    notificationView.backgroundColor = [UIColor grayColor];
-    notificationView.delegate = self;
-    [self.view addSubview:notificationView];
 }
 
 
