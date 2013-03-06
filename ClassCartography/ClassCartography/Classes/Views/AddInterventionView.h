@@ -19,6 +19,7 @@
     UIImageView *bg;
     UITextView *textView;
     UIButton *dismissButton;
+    UIButton *submitButton;
     __unsafe_unretained id <AddInterventionViewDelegate> delegate;
     
 }

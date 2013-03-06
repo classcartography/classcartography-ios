@@ -48,7 +48,7 @@
 //    opaqueView.hidden = YES;
     [self.view addSubview:opaqueView];
     
-    addInterventionView = [[AddInterventionView alloc] initWithFrame:CGRectMake(200, -700, 600, 400)];
+    addInterventionView = [[AddInterventionView alloc] initWithFrame:CGRectMake(200, -700, 600, 360)];
     addInterventionView.backgroundColor = [UIColor whiteColor];
     addInterventionView.delegate = self;
     [self.view addSubview:addInterventionView];
@@ -67,7 +67,7 @@
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(animationDidStop:finished:context:)];
     opaqueView.alpha = 0.6;
-    addInterventionView.frame = CGRectMake(200, 160, 600, 400);
+    addInterventionView.frame = CGRectMake(200, 100, 600, 360);
     [UIView commitAnimations];
 }
 
@@ -80,7 +80,7 @@
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(animationDidStop:finished:context:)];
     opaqueView.alpha = 0;
-    addInterventionView.frame = CGRectMake(200, -700, 600, 400);
+    addInterventionView.frame = CGRectMake(200, -700, 600, 360);
     [UIView commitAnimations];
 
 }
