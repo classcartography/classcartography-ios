@@ -9,6 +9,7 @@
 #import "InBloomAPIHandler.h"
 #import "AFJSONRequestOperation.h"
 #import "AFHTTPRequestOperation.h"
+#import "Intervention.h"
 #import "SBJson.h"
 #import "Section.h"
 #import "Student.h"
@@ -21,6 +22,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
 @implementation InBloomAPIHandler
 
 @synthesize delegate;
+@synthesize studentDelegate;
 @synthesize token;
 
 
@@ -83,6 +85,20 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
             [arr addObject:[Student generate:d]];
         }
         [delegate getStudentsComplete:arr];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+- (void)getInterventions:(NSString *)interventionsUrl {
+    [_httpClient getPath:interventionsUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        NSArray *interventionsResponse = [json objectWithString:operation.responseString];
+        NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:0];
+        for(NSDictionary *d in interventionsResponse) {
+            [arr addObject:[Intervention generate:d]];
+        }
+        [studentDelegate getInterventionsComplete:arr];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];
@@ -152,6 +168,25 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         }
         
         [self getStudents:studentsUrl];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+- (void)getInterventionsInfoForStudent:(NSString *)studentId {
+    [_httpClient getPath:[NSString stringWithFormat:@"/api/rest/v1.1/students/%@", studentId] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        SBJsonParser *json = [[SBJsonParser alloc] init];
+        
+        NSDictionary *student = [json objectWithString:operation.responseString];
+        NSString *customUrl;
+        NSArray *arr = [NSArray arrayWithArray:[student objectForKey:@"links"]];
+        for (NSDictionary *d in arr) {
+            if ([((NSString *)[d objectForKey:@"rel"]) isEqualToString:@"custom"]) {
+                customUrl = [d objectForKey:@"href"];
+            }
+        }
+        
+        [self getInterventions:customUrl];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
     }];

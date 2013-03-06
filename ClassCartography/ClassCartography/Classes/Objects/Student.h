@@ -11,6 +11,7 @@
 
 @interface Student : NSObject <NSCopying> {
     
+    NSString *studentId;
     NSString *firstName;
     NSString *middleName;
     NSString *lastName;
@@ -20,6 +21,7 @@
     NSMutableArray *interventions;
 }
 
+@property (nonatomic, copy) NSString *studentId;
 @property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *middleName;
 @property (nonatomic, copy) NSString *lastName;

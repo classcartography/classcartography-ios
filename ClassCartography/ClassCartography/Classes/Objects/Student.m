@@ -11,12 +11,14 @@
 
 @implementation Student
 
+@synthesize studentId;
 @synthesize firstName;
 @synthesize middleName;
 @synthesize lastName;
 @synthesize suffix;
 @synthesize gender;
 @synthesize imageName;
+@synthesize interventions;
 
 - (id)init {
     if (self = [super init]) {
@@ -29,6 +31,7 @@
 - (id)copyWithZone:(NSZone *)zone {
 	Student *studentCopy = [[[self class] allocWithZone:zone] init];
 	
+    [studentCopy setStudentId:studentId];
     [studentCopy setFirstName:firstName];
     [studentCopy setMiddleName:middleName];
     [studentCopy setLastName:lastName];
@@ -55,6 +58,7 @@
 #pragma mark public methods
 
 - (void)buildFromDictionary:(NSDictionary *)d {
+    studentId = [[d objectForKey:@"id"] copy];
     firstName = [[[d objectForKey:@"name"] objectForKey:@"firstName"] copy];
     middleName = [[[d objectForKey:@"name"] objectForKey:@"middleName"] copy];
     lastName =[[[d objectForKey:@"name"] objectForKey:@"lastSurname"] copy];
