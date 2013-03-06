@@ -60,7 +60,7 @@
     [_studentsButtonSlider slideButtonToVisible:NO withAnimation:NO];
     [self.view addSubview:_studentsButton];
     
-    StudentsTableView *studentsTableView = [[StudentsTableView alloc] initWithFrame:CGRectMake(724, 0, 300, 724)];
+    StudentsTableView *studentsTableView = [[StudentsTableView alloc] initWithFrame:CGRectMake(804, 0, 220, 724)];
     studentsTableView.backgroundColor = [UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0];
     _studentsTableViewSlider = [[Slider alloc] initWithView:studentsTableView];
 	[_studentsTableViewSlider slideViewToVisible:NO withAnimation:NO];

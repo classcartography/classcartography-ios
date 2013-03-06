@@ -91,6 +91,7 @@
     InterventionTableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:interventionCell];
     if (cell == nil) {
         cell = [[InterventionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:interventionCell];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -100,7 +101,7 @@
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
-    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
+//    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 -(BOOL)tableView:(UITableView*)tv canEditRowAtIndexPath:(NSIndexPath*)indexPath {

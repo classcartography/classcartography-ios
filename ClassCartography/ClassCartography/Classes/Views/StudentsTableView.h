@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@interface StudentsTableView : UITableView <UITableViewDataSource, UITableViewDelegate> {
 
-@interface StudentsTableView : UITableView
+    NSMutableArray *students;
+}
 
 @end

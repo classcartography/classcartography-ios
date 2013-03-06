@@ -59,6 +59,7 @@
 		7C0CAC9A16E7A01F007B85DA /* textview-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9916E7A01F007B85DA /* textview-bg@2x.png */; };
 		7C0CAC9C16E7A175007B85DA /* button-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9B16E7A175007B85DA /* button-close.png */; };
 		7C0CAC9E16E7A450007B85DA /* button-submit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9D16E7A450007B85DA /* button-submit@2x.png */; };
+		7C0CACA016E7B79D007B85DA /* gray-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0CAC9F16E7B79D007B85DA /* gray-bg@2x.png */; };
 		7C113EA116E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EA316E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA416E535FA005C0B65 /* CoreGraphics.framework */; };
@@ -213,6 +214,7 @@
 		7C0CAC9916E7A01F007B85DA /* textview-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textview-bg@2x.png"; sourceTree = "<group>"; };
 		7C0CAC9B16E7A175007B85DA /* button-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-close.png"; sourceTree = "<group>"; };
 		7C0CAC9D16E7A450007B85DA /* button-submit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-submit@2x.png"; sourceTree = "<group>"; };
+		7C0CAC9F16E7B79D007B85DA /* gray-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-bg@2x.png"; sourceTree = "<group>"; };
 		7C113E9D16E535FA005C0B65 /* ClassCartography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCartography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C113EA016E535FA005C0B65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C113EA216E535FA005C0B65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -580,6 +582,7 @@
 		7CAF48D916E55E88004931D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7C0CAC9F16E7B79D007B85DA /* gray-bg@2x.png */,
 				7C0CAC9D16E7A450007B85DA /* button-submit@2x.png */,
 				7C0CAC9B16E7A175007B85DA /* button-close.png */,
 				7C0CAC9916E7A01F007B85DA /* textview-bg@2x.png */,
@@ -724,6 +727,7 @@
 				7C0CAC9A16E7A01F007B85DA /* textview-bg@2x.png in Resources */,
 				7C0CAC9C16E7A175007B85DA /* button-close.png in Resources */,
 				7C0CAC9E16E7A450007B85DA /* button-submit@2x.png in Resources */,
+				7C0CACA016E7B79D007B85DA /* gray-bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

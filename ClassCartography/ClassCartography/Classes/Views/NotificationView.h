@@ -20,7 +20,7 @@
     
     UITableView *notificationTable;
     NSMutableArray *notifications;
-
+    BOOL isStudent;
 }
 
 @property (nonatomic, assign) id <NotificationViewDelegate> delegate;

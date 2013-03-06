@@ -27,7 +27,14 @@
         [self addSubview:notificationTable];
         
         notifications = [[NSMutableArray alloc] init];
-        [self createDummyData];
+        
+        if ([dashbooardType isEqualToString:@"student"]) {
+            [self createStudentDummyData];
+            isStudent = YES;
+        } else {
+            [self createDummyData];
+            isStudent = NO;
+        }
     }
     return self;
 }
@@ -120,6 +127,10 @@
     NotificationTableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:showCell];
     if (cell == nil) {
         cell = [[NotificationTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:showCell];
+        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"gray-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]];
+        if (isStudent) {
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
     }
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -129,8 +140,10 @@
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
-    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self studentView];
+    if (!isStudent) {
+        [aTableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self studentView];
+    }
 }
 
 -(BOOL)tableView:(UITableView*)tv canEditRowAtIndexPath:(NSIndexPath*)indexPath {

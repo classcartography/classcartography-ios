@@ -28,7 +28,7 @@
 }
 
 - (CGRect)buttonFrameWhenVisible { //hard-coded, bad i know... 
-    return CGRectMake(_visibleFrameOfButtonToSlide.origin.x-300, _visibleFrameOfButtonToSlide.origin.y, _visibleFrameOfButtonToSlide.size.width, _visibleFrameOfButtonToSlide.size.height);
+    return CGRectMake(_visibleFrameOfButtonToSlide.origin.x-220, _visibleFrameOfButtonToSlide.origin.y, _visibleFrameOfButtonToSlide.size.width, _visibleFrameOfButtonToSlide.size.height);
 }
 
 - (CGRect)viewFrameWhenHidden {
