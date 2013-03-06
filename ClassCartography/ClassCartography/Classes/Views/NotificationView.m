@@ -9,7 +9,7 @@
 #import "NotificationView.h"
 
 @implementation NotificationView
-@synthesize delegate;
+@synthesize delegate, notificationTable, notifications;
 
 
 - (id)initWithFrame:(CGRect)frame forDashboard:(NSString *)dashbooardType
@@ -28,13 +28,13 @@
         
         notifications = [[NSMutableArray alloc] init];
         
-        if ([dashbooardType isEqualToString:@"student"]) {
-            [self createStudentDummyData];
-            isStudent = YES;
-        } else {
-            [self createDummyData];
-            isStudent = NO;
-        }
+//        if ([dashbooardType isEqualToString:@"student"]) {
+//            [self createStudentDummyData];
+//            isStudent = YES;
+//        } else {
+//            [self createDummyData];
+//            isStudent = NO;
+//        }
     }
     return self;
 }
@@ -133,9 +133,28 @@
         }
     }
     
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    [dict addEntriesFromDictionary:[notifications objectAtIndex:[indexPath row]]];
-    [cell configureCell:dict forIndexPath:indexPath];
+//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//    [dict addEntriesFromDictionary:[notifications objectAtIndex:[indexPath row]]];
+    NSString *d;
+    NSString *imgName;
+    if ([indexPath row] == 0) {
+        imgName = @"warning";
+        d = @"didn't understand the last 3 homework assignments.";
+    } else if ([indexPath row] == 1) {
+        imgName = @"warning";
+        d = @"had trouble with the last quiz. Her last comment was \"Too many questions!\"";
+    } else if ([indexPath row] == 2) {
+        imgName = @"warning";
+        d = @"did not hand in his last 3 homework assignments. His last comment was \"I didn't have enough time to finish.\"";
+    } else if ([indexPath row] == 3) {
+        imgName = @"star";
+        d = @"may need more challenging work. Her last comment was \"This quiz was really easy.\"";
+    } else if ([indexPath row] == 4) {
+        imgName = @"warning";
+        d = @"didn't understand the last 3 lessons.";
+    }
+    [cell configureCell:[notifications objectAtIndex:[indexPath row]] message:d im:imgName forIndexPath:indexPath];
+    
     return cell;
 }
 

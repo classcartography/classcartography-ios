@@ -50,20 +50,21 @@
 - (void) createDummyData {
     
     [interventions removeAllObjects];
-    NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
-    [dict1 setObject:@"Intervention #3" forKey:@"message"];
-    [dict1 setObject:@"Recommended after school study program." forKey:@"description"];
-    [dict1 setObject:@"March 1, 2013 3:40pm" forKey:@"dateTime"];
-    [interventions addObject:dict1];
-    
+
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"Intervention #2" forKey:@"message"];
+    [dict2 setObject:@"Intervention #1" forKey:@"message"];
     [dict2 setObject:@"Spoke with Johnny's parents about more study at home." forKey:@"description"];
     [dict2 setObject:@"February 21, 2013 1:15pm" forKey:@"dateTime"];
     [interventions addObject:dict2];
     
+    NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
+    [dict1 setObject:@"Intervention #2" forKey:@"message"];
+    [dict1 setObject:@"Recommended after school study program." forKey:@"description"];
+    [dict1 setObject:@"March 1, 2013 3:40pm" forKey:@"dateTime"];
+    [interventions addObject:dict1];
+    
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
-    [dict3 setObject:@"Intervention #1" forKey:@"message"];
+    [dict3 setObject:@"Intervention #3" forKey:@"message"];
     [dict3 setObject:@"Assigned Tommy to tutor Johnny." forKey:@"description"];
     [dict3 setObject:@"February 15, 2013 1:15pm" forKey:@"dateTime"];
     [interventions addObject:dict3];

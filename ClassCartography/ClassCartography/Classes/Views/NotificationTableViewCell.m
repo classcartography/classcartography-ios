@@ -47,6 +47,17 @@
     return self;
 }
 
+- (void)configureCell:(Student *)student message:(NSString *)mess im:(NSString *)imgName forIndexPath:(NSIndexPath *)indexPath {
+    description.text = [NSString stringWithFormat:@"%@ %@", student.firstName, mess];
+    CGSize descriptionMaximumSize = CGSizeMake(260, 50);
+    CGSize descriptionStringSize = [description.text sizeWithFont:description.font
+                                                constrainedToSize:descriptionMaximumSize
+                                                    lineBreakMode:description.lineBreakMode];
+    description.frame = CGRectMake(40, 8, 260, descriptionStringSize.height);    
+    [description sizeToFit];
+    icon.image = [UIImage imageNamed:imgName];
+    
+}
 
 - (void)configureCell:(NSDictionary *)details forIndexPath:(NSIndexPath *)indexPath {
     dict = [NSDictionary dictionaryWithDictionary:details];

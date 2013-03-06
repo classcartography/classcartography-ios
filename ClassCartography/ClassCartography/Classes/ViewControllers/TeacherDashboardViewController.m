@@ -134,6 +134,10 @@
     NSArray *s = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students;
     [studentsTableView.students setArray:s];
     [studentsTableView reloadData];
+    
+    [notificationView.notifications setArray:s];
+    [notificationView.notificationTable reloadData];
+
 }
 
 

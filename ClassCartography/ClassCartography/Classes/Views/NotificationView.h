@@ -24,6 +24,8 @@
 }
 
 @property (nonatomic, assign) id <NotificationViewDelegate> delegate;
+@property (nonatomic, copy) NSMutableArray *notifications;
+@property (nonatomic, copy) UITableView *notificationTable;
 
 - (id)initWithFrame:(CGRect)frame forDashboard:(NSString *)dashbooardType;
 - (void) createStudentDummyData;

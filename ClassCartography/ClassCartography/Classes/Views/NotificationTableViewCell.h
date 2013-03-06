@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Student.h"
 @interface NotificationTableViewCell : UITableViewCell {
 
 @private
@@ -19,6 +19,7 @@
 
 }
 
+- (void)configureCell:(Student *)student message:(NSString *)mess im:(NSString *)imgName forIndexPath:(NSIndexPath *)indexPath;
 - (void)configureCell:(NSDictionary *)details forIndexPath:(NSIndexPath *)indexPath;
 
 @end
