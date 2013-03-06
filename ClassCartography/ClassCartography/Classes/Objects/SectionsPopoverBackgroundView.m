@@ -1,15 +1,15 @@
 //
-//  ClassesPopoverBackgroundView.m
+//  SectionsPopoverBackgroundView.m
 //  ClassCartography
 //
 //  Created by Chamara Paul on 3/5/13.
 //
 //
 
-#import "ClassesPopoverBackgroundView.h"
+#import "SectionsPopoverBackgroundView.h"
 
 
-@implementation ClassesPopoverBackgroundView
+@implementation SectionsPopoverBackgroundView
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {

@@ -1,5 +1,5 @@
 //
-//  ClassesPopoverBackgroundView.h
+//  SectionsPopoverBackgroundView.h
 //  ClassCartography
 //
 //  Created by Chamara Paul on 3/5/13.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ClassesPopoverBackgroundView : UIPopoverBackgroundView {
+@interface SectionsPopoverBackgroundView : UIPopoverBackgroundView {
     
 @private
     UIImageView *_borderImageView;

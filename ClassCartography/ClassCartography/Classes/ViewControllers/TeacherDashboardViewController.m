@@ -7,8 +7,8 @@
 //
 
 #import "TeacherDashboardViewController.h"
-#import "ClassesPopoverBackgroundView.h"
 #import "Section.h"
+#import "SectionsPopoverBackgroundView.h"
 #import "StudentDashboardViewController.h"
 #import "UserHandler.h"
 
@@ -66,13 +66,13 @@
     tableViewController.tableView.dataSource = self;
     tableViewController.contentSizeForViewInPopover = CGSizeMake(320, 210);
     
-    _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];    
-    _classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
+    _sectionsPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
+    _sectionsPopoverController.popoverBackgroundViewClass = [SectionsPopoverBackgroundView class];
     
     CGRect frame = _howLabel.frame;
     frame.origin.y = _howLabel.frame.origin.y - 20;
 
-    [_classesPopoverController presentPopoverFromRect:frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    [_sectionsPopoverController presentPopoverFromRect:frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 - (void)showStudents {
