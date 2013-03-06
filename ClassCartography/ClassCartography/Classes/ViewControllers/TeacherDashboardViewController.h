@@ -8,7 +8,7 @@
 
 #import "DashboardViewController.h"
 #import "FeedbackView.h"
-
+#import "GraphView.h"
 
 @interface TeacherDashboardViewController : DashboardViewController <UITableViewDataSource, PhotoViewDelegate> {
     
@@ -17,6 +17,7 @@
     UILabel *_howLabel;
     UIPopoverController *_classesPopoverController;
     FeedbackView *_feedbackView;
+    GraphView *graphView;
 }
 
 @end

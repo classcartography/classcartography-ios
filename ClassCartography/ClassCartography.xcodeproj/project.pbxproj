@@ -96,6 +96,7 @@
 		7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11816E683860047A2E3 /* warning@2x.png */; };
 		7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11F16E697F20047A2E3 /* GradeView.m */; };
 		7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */; };
+		7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7CD1516E77494005D5B5E /* StudentGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,6 +254,8 @@
 		7CBAB11F16E697F20047A2E3 /* GradeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradeView.m; sourceTree = "<group>"; };
 		7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDashboardViewController.h; sourceTree = "<group>"; };
 		7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDashboardViewController.m; sourceTree = "<group>"; };
+		7CE7CD1416E77494005D5B5E /* StudentGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentGraphView.h; sourceTree = "<group>"; };
+		7CE7CD1516E77494005D5B5E /* StudentGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +474,8 @@
 				7C765CE716E76C6800721AAD /* InterventionView.m */,
 				7C765CE916E76F1900721AAD /* InterventionTableViewCell.h */,
 				7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */,
+				7CE7CD1416E77494005D5B5E /* StudentGraphView.h */,
+				7CE7CD1516E77494005D5B5E /* StudentGraphView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -756,6 +761,7 @@
 				7C765CE816E76C6800721AAD /* InterventionView.m in Sources */,
 				7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */,
 				59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */,
+				7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
