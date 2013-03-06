@@ -65,6 +65,11 @@
     _studentsTableViewSlider = [[Slider alloc] initWithView:studentsTableView];
 	[_studentsTableViewSlider slideViewToVisible:NO withAnimation:NO];
     [self.view addSubview:studentsTableView];
+    
+    notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320) forDashboard:@"teacher"];
+    notificationView.backgroundColor = [UIColor grayColor];
+    notificationView.delegate = self;
+    [self.view addSubview:notificationView];
 }
 
 #pragma mark

@@ -25,6 +25,7 @@
 
 @property (nonatomic, assign) id <NotificationViewDelegate> delegate;
 
+- (id)initWithFrame:(CGRect)frame forDashboard:(NSString *)dashbooardType;
 - (void) createStudentDummyData;
 
 @end

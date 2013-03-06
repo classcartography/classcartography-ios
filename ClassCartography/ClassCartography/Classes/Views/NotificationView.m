@@ -11,7 +11,8 @@
 @implementation NotificationView
 @synthesize delegate;
 
-- (id)initWithFrame:(CGRect)frame
+
+- (id)initWithFrame:(CGRect)frame forDashboard:(NSString *)dashbooardType
 {
     self = [super initWithFrame:frame];
     if (self) {

@@ -53,7 +53,10 @@
     addInterventionView.delegate = self;
     [self.view addSubview:addInterventionView];
 
-    
+    notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320) forDashboard:@"student"];
+    notificationView.backgroundColor = [UIColor grayColor];
+    notificationView.delegate = self;
+    [self.view addSubview:notificationView];
     
 }
 
