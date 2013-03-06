@@ -14,6 +14,15 @@
 - (id)init {
     if (self = [super init]) {
         [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"classcart-logo"]]];
+
+        UIButton *backArrowButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        backArrowButton.frame = CGRectMake(0, 0, 30, 24);
+        [backArrowButton setBackgroundImage:[UIImage imageNamed:@"button-back"] forState:UIControlStateNormal];
+		[backArrowButton addTarget:self action:@selector(popToRoot) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backArrowButton];
+//        self.navigationItem.backBarButtonItem = back;
+        self.navigationItem.leftBarButtonItem = back;
+
     }
     
     return self;
@@ -58,6 +67,11 @@
     notificationView.delegate = self;
     [self.view addSubview:notificationView];
     
+
+}
+
+- (void) popToRoot {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark
