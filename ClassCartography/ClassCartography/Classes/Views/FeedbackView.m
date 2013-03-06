@@ -22,7 +22,7 @@
         CGRect pieFrame;
         pieFrame = CGRectMake(0,30,300,270);
         pieChart = [ShinobiChart pieChartForOSDataWithFrame:pieFrame];
-        pieChart.title = @"";
+        pieChart.title = @"Did students understand Homework #1?";
         pieChart.licenseKey = licenseKey;
         pieChart.datasource = self;
         pieChart.delegate = self;
@@ -32,7 +32,7 @@
         [self addSubview:pieChart];
         
         graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];
-        graphTitle.text = @"Homework #1 Feedback";
+        graphTitle.text = @"Student Understanding";
         graphTitle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
         [self addSubview:graphTitle];
     }

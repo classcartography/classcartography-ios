@@ -13,9 +13,9 @@
 
 @required
 
-- (NSMutableDictionary*) attendanceData;
+- (NSMutableDictionary*) understandingData;
 - (NSMutableDictionary*) gradeData;
-- (NSArray*) attendanceDays;
-- (NSArray*) gradeDays;
+- (NSMutableArray*) understandingDays;
+- (NSMutableArray*) gradeDays;
 
 @end

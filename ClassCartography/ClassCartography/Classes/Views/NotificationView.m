@@ -19,7 +19,7 @@
         title.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
         [self addSubview:title];
         
-        notificationTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, 300, 280)];
+        notificationTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, 300, 300)];
         notificationTable.delegate = self;
         notificationTable.dataSource = self;
         [self addSubview:notificationTable];

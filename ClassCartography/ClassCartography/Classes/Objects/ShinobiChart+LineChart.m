@@ -35,19 +35,21 @@
     
     //Our xAxis is a category to take the discrete month data
 
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSDate *startDate = [formatter dateFromString:@"2012-02-01"];
-    NSDate *endDate = [formatter dateFromString:@"2012-09-01"];
-    SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
-    SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//    [formatter setDateFormat:@"yyyy-MM-dd"];
+//    NSDate *startDate = [formatter dateFromString:@"2012-02-01"];
+//    NSDate *endDate = [formatter dateFromString:@"2012-09-01"];
+//    SChartDateRange *dr = [[SChartDateRange alloc] initWithDateMinimum:startDate andDateMaximum:endDate];
+//    SChartDateTimeAxis *xAxis = [[SChartDateTimeAxis alloc] initWithRange:dr];
+
+    SChartNumberRange *catRange = [[SChartNumberRange alloc] initWithMinimum:[NSNumber numberWithInt:0] andMaximum:[NSNumber numberWithInt:6]];
+    SChartCategoryAxis *xAxis = [[SChartCategoryAxis alloc] initWithRange:catRange];
     xAxis.title = @" ";
     xAxis.tickLabelClippingModeHigh = SChartTickLabelClippingModeTicksAndLabelsPersist; //keep tick marks at the right end
-    xAxis.majorTickFrequency = [SChartDateFrequency dateFrequencyWithMonth:1];
-    xAxis.minorTickFrequency = [SChartDateFrequency dateFrequencyWithDay:1];
-    //Make some space at the axis limits to prevent clipping of the datapoints
-    xAxis.rangePaddingHigh = [SChartDateFrequency dateFrequencyWithMonth:1]; //[NSNumber numberWithFloat:0.25f];
-    xAxis.rangePaddingLow =  [SChartDateFrequency dateFrequencyWithDay:1]; //[NSNumber numberWithFloat:0.25f];
+//    xAxis.majorTickFrequency = [SChartDateFrequency dateFrequencyWithMonth:1];
+//    xAxis.minorTickFrequency = [SChartDateFrequency dateFrequencyWithDay:1];
+//    xAxis.rangePaddingHigh = [SChartDateFrequency dateFrequencyWithMonth:1]; //[NSNumber numberWithFloat:0.25f];
+//    xAxis.rangePaddingLow =  [SChartDateFrequency dateFrequencyWithDay:1]; //[NSNumber numberWithFloat:0.25f];
     //allow zooming and panning
     xAxis.enableGesturePanning = YES;
     xAxis.enableGestureZooming = YES;
@@ -81,7 +83,7 @@
 - (SChartSeries*)lineSeriesForKey:(NSString*)key {
     
     SChartLineSeries *l = [SChartLineSeries new];
-    l.style.pointStyle.showPoints = NO;
+    l.style.pointStyle.showPoints = YES;
     l.title = key;
     return l;
 

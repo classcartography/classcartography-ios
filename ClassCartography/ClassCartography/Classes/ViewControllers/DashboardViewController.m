@@ -49,11 +49,11 @@
     graphView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:graphView];
     
-    commentView = [[CommentView alloc] initWithFrame:CGRectMake(690, 391, 300, 300)];
+    commentView = [[CommentView alloc] initWithFrame:CGRectMake(690, 391, 300, 320)];
     commentView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:commentView];
     
-    notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 300)];
+    notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320)];
     notificationView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:notificationView];
 }
