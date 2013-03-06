@@ -85,6 +85,16 @@
     
     SChartLineSeries *l = [SChartLineSeries new];
     l.style.pointStyle.showPoints = YES;
+    
+    if ([key isEqualToString:@"Understanding"]) {
+        l.style.lineColor = [UIColor colorWithRed:(20.0/255.0) green:(165.0/255.0) blue:(215.0/255.0) alpha:1.0];
+        l.style.pointStyle.color = [UIColor colorWithRed:(20.0/255.0) green:(165.0/255.0) blue:(215.0/255.0) alpha:1.0];
+    }
+    if ([key isEqualToString:@"Grade"]) {
+        l.style.lineColor = [UIColor colorWithRed:(165.0/255.0) green:(215.0/255.0) blue:(20.0/255.0) alpha:1.0];
+        l.style.pointStyle.color = [UIColor colorWithRed:(165.0/255.0) green:(215.0/255.0) blue:(20.0/255.0) alpha:1.0];
+    }
+    
     l.title = key;
     return l;
 
