@@ -14,8 +14,11 @@
     UILabel *graphTitle;
     UITableView *commentTable;
     NSMutableArray *comments;
+    NSString *studentImageName;
 }
 
 - (void) createStudentDummyData;
+@property (nonatomic, copy) NSString *studentImageName;
+- (id)initWithFrame:(CGRect)frame sim:(NSString *) sim;
 
 @end

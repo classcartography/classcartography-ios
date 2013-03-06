@@ -63,7 +63,7 @@
     }
     
     if ([gender isEqualToString:@"Male"]) {
-        imageName = [NSString stringWithFormat:@"female-%d.jpg", arc4random_uniform(3)];
+        imageName = [NSString stringWithFormat:@"male-%d.jpg", arc4random_uniform(3)];
     }
 }
 

@@ -9,6 +9,7 @@
 #import "CommentView.h"
 
 @implementation CommentView
+@synthesize studentImageName;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -26,6 +27,28 @@
         
         comments = [[NSMutableArray alloc] init];
         [self createDummyData];
+        
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame sim:(NSString *) sim {
+    self = [super initWithFrame:frame];
+    if (self) {
+        graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];
+        graphTitle.text = @"Most Recent Comments";
+        graphTitle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
+        [self addSubview:graphTitle];
+        
+        commentTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, 300, 300)];
+        commentTable.delegate = self;
+        commentTable.dataSource = self;
+        [self addSubview:commentTable];
+        
+        comments = [[NSMutableArray alloc] initWithCapacity:0];
+        studentImageName = sim;
+        [self createStudentDummyData];
+        
     }
     return self;
 }
@@ -43,7 +66,7 @@
     [comments addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"female-2.jpg" forKey:@"imageName"];
+    [dict2 setObject:@"female-1.jpg" forKey:@"imageName"];
     [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Jane Goodman" forKey:@"name"];
     [dict2 setObject:@"Homework #6" forKey:@"assignment"];
@@ -52,7 +75,7 @@
     [comments addObject:dict2];
     
     NSMutableDictionary *dict3 = [NSMutableDictionary dictionary];
-    [dict3 setObject:@"female-3.jpg" forKey:@"imageName"];
+    [dict3 setObject:@"female-2.jpg" forKey:@"imageName"];
     [dict3 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict3 setObject:@"Billy Joe" forKey:@"name"];
     [dict3 setObject:@"Homework #6" forKey:@"assignment"];
@@ -62,7 +85,7 @@
     
     
     NSMutableDictionary *dict4 = [NSMutableDictionary dictionary];
-    [dict4 setObject:@"male-2.jpg" forKey:@"imageName"];
+    [dict4 setObject:@"male-1.jpg" forKey:@"imageName"];
     [dict4 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict4 setObject:@"Billy Joe" forKey:@"name"];
     [dict4 setObject:@"Homework #6" forKey:@"assignment"];
@@ -76,7 +99,7 @@
     
     [comments removeAllObjects];
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
-    [dict1 setObject:@"male-1.jpg" forKey:@"imageName"];
+    [dict1 setObject:studentImageName forKey:@"imageName"];
     [dict1 setObject:@"itemstars-4" forKey:@"starsName"];
     [dict1 setObject:@"John Smith" forKey:@"name"];
     [dict1 setObject:@"Homework #1" forKey:@"assignment"];
@@ -85,7 +108,7 @@
     [comments addObject:dict1];
     
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:@"male-1.jpg" forKey:@"imageName"];
+    [dict2 setObject:studentImageName forKey:@"imageName"];
     [dict2 setObject:@"itemstars-5" forKey:@"starsName"];
     [dict2 setObject:@"Billy Joe" forKey:@"name"];
     [dict2 setObject:@"Homework #1" forKey:@"assignment"];

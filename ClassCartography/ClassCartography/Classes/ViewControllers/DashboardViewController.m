@@ -50,9 +50,6 @@
 //    graphView.backgroundColor = [UIColor whiteColor];
 //    [self.view addSubview:graphView];
     
-    commentView = [[CommentView alloc] initWithFrame:CGRectMake(690, 391, 300, 320)];
-    commentView.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:commentView];
 }
 
 
@@ -70,8 +67,7 @@
 #pragma mark NotificationViewDelegate methods
 
 - (void)showStudentView:(Student *)student {
-    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
-    svc.student = student;
+    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] initWithStudent:student];
     [self.navigationController pushViewController:svc animated:YES];
 }
 

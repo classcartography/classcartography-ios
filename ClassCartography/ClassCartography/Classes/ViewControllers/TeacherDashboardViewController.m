@@ -47,7 +47,11 @@
     graphView = [[GraphView alloc] initWithFrame:CGRectMake(320, 85, 670, 290)];
     graphView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:graphView];
-    
+
+    commentView = [[CommentView alloc] initWithFrame:CGRectMake(690, 391, 300, 320)];
+    commentView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:commentView];
+
     _studentsButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _studentsButton.frame = CGRectMake(920, 20, 104, 36);
     [_studentsButton setBackgroundColor:[UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0]];
@@ -177,8 +181,7 @@
 }
 
 - (void)pushStudentViewController:(Student *)student {
-    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] init];
-    svc.student = student;
+    StudentDashboardViewController *svc = [[StudentDashboardViewController alloc] initWithStudent:student];
     [self.navigationController pushViewController:svc animated:YES];
 }
 
