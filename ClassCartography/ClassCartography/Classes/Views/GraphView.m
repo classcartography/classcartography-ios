@@ -40,7 +40,7 @@
 
 - (SChartSeries*)sChart:(ShinobiChart *)chart seriesAtIndex:(int)index {
     if (index == 0) {
-        return [chart lineSeriesForKey:@"Attendance"];
+        return [chart lineSeriesForKey:@"Understanding"];
     } else {
         return [chart lineSeriesForKey:@"Grade"];
     }
@@ -48,8 +48,8 @@
 
 - (int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
     if (seriesIndex == 0) {
-        NSLog(@"attendance count: %d", [[[_graphData attendanceData] allKeys] count]);
-        return [[[_graphData attendanceData] allKeys] count];
+        NSLog(@"attendance count: %d", [[[_graphData understandingData] allKeys] count]);
+        return [[[_graphData understandingData] allKeys] count];
     } else {
         NSLog(@"grade count: %d", [[[_graphData gradeData] allKeys] count]);
         return [[[_graphData gradeData] allKeys] count];
@@ -61,9 +61,9 @@
 
     if (seriesIndex == 0) {
         NSLog(@"Data index: %d", dataIndex);
-        dp.xValue = [[_graphData attendanceDays] objectAtIndex:dataIndex];
+        dp.xValue = [[_graphData understandingDays] objectAtIndex:dataIndex];
         NSLog(@"dx value: %@", dp.xValue);
-        dp.yValue = [[_graphData attendanceData] objectForKey:dp.xValue];
+        dp.yValue = [[_graphData understandingData] objectForKey:dp.xValue];
         NSLog(@"dy value: %@", dp.yValue);
     } else {
         NSLog(@"Data index: %d", dataIndex);
