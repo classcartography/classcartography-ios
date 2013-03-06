@@ -46,9 +46,10 @@
 		5923591216E5E0D2008CD31F /* photo-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5923591016E5E0D2008CD31F /* photo-bg.png */; };
 		5923591316E5E0D2008CD31F /* photo-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5923591116E5E0D2008CD31F /* photo-bg@2x.png */; };
 		5923591516E5E846008CD31F /* stock-img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5923591416E5E846008CD31F /* stock-img.jpg */; };
-		5980FA2E16E697D100213F67 /* ClassesPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */; };
+		5980FA2E16E697D100213F67 /* SectionsPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980FA2D16E697D100213F67 /* SectionsPopoverBackgroundView.m */; };
+		598E633B16E776D60098B574 /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E633A16E776D60098B574 /* Slider.m */; };
+		598E633E16E777320098B574 /* StudentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E633D16E777320098B574 /* StudentsView.m */; };
 		59AD0E9C16E7651700C612DE /* Quicksand_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */; };
-		59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AD0E9E16E76CF200C612DE /* StudentsViewController.m */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
@@ -189,11 +190,13 @@
 		5923591016E5E0D2008CD31F /* photo-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-bg.png"; sourceTree = "<group>"; };
 		5923591116E5E0D2008CD31F /* photo-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-bg@2x.png"; sourceTree = "<group>"; };
 		5923591416E5E846008CD31F /* stock-img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stock-img.jpg"; sourceTree = "<group>"; };
-		5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassesPopoverBackgroundView.h; path = ../Objects/ClassesPopoverBackgroundView.h; sourceTree = "<group>"; };
-		5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassesPopoverBackgroundView.m; path = ../Objects/ClassesPopoverBackgroundView.m; sourceTree = "<group>"; };
+		5980FA2C16E697D100213F67 /* SectionsPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionsPopoverBackgroundView.h; path = ../Objects/SectionsPopoverBackgroundView.h; sourceTree = "<group>"; };
+		5980FA2D16E697D100213F67 /* SectionsPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionsPopoverBackgroundView.m; path = ../Objects/SectionsPopoverBackgroundView.m; sourceTree = "<group>"; };
+		598E633916E776D60098B574 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
+		598E633A16E776D60098B574 /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
+		598E633C16E777320098B574 /* StudentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsView.h; sourceTree = "<group>"; };
+		598E633D16E777320098B574 /* StudentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsView.m; sourceTree = "<group>"; };
 		59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Bold.otf; sourceTree = "<group>"; };
-		59AD0E9D16E76CF200C612DE /* StudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsViewController.h; sourceTree = "<group>"; };
-		59AD0E9E16E76CF200C612DE /* StudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsViewController.m; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -425,6 +428,8 @@
 				7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */,
 				7CBAB0FD16E5C48A0047A2E3 /* ShinobiChart+PieCharts.h */,
 				7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */,
+				598E633916E776D60098B574 /* Slider.h */,
+				598E633A16E776D60098B574 /* Slider.m */,
 				59096E0A16E74DB200F9B970 /* Student.h */,
 				59096E0B16E74DB200F9B970 /* Student.m */,
 				7C36689116E58F230085FDBB /* StudentData.h */,
@@ -447,8 +452,6 @@
 				5923435716E559B1008E4AEE /* LoginViewController.m */,
 				7CBAB12416E69EC30047A2E3 /* StudentDashboardViewController.h */,
 				7CBAB12516E69EC40047A2E3 /* StudentDashboardViewController.m */,
-				59AD0E9D16E76CF200C612DE /* StudentsViewController.h */,
-				59AD0E9E16E76CF200C612DE /* StudentsViewController.m */,
 				5923435B16E559B1008E4AEE /* TeacherDashboardViewController.h */,
 				5923435C16E559B1008E4AEE /* TeacherDashboardViewController.m */,
 				59D722BD16E57A5F002D6B0A /* WebViewController.h */,
@@ -461,32 +464,34 @@
 		5923435E16E559B1008E4AEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */,
-				5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */,
 				5923435F16E559B1008E4AEE /* LoginView.xib */,
 				5923436116E559B1008E4AEE /* TeacherDashboardView.xib */,
-				7CAF48C616E55D5B004931D5 /* PhotoView.h */,
-				7CAF48C716E55D5B004931D5 /* PhotoView.m */,
-				7CAF48C916E55D72004931D5 /* GraphView.h */,
-				7CAF48CA16E55D72004931D5 /* GraphView.m */,
-				7CBAB11E16E697F10047A2E3 /* GradeView.h */,
-				7CBAB11F16E697F20047A2E3 /* GradeView.m */,
 				7CAF48CC16E55D89004931D5 /* FeedbackView.h */,
 				7CAF48CD16E55D89004931D5 /* FeedbackView.m */,
-				7CAF48CF16E55D99004931D5 /* CommentView.h */,
-				7CAF48D016E55D9A004931D5 /* CommentView.m */,
-				7CAF48D216E55DA6004931D5 /* NotificationView.h */,
-				7CAF48D316E55DA6004931D5 /* NotificationView.m */,
+				7CBAB11E16E697F10047A2E3 /* GradeView.h */,
+				7CBAB11F16E697F20047A2E3 /* GradeView.m */,
+				7CAF48C916E55D72004931D5 /* GraphView.h */,
+				7CAF48CA16E55D72004931D5 /* GraphView.m */,
 				7CBAB10716E5FEF70047A2E3 /* CommentTableViewCell.h */,
 				7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */,
-				7CBAB11416E67DFB0047A2E3 /* NotificationTableViewCell.h */,
-				7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */,
-				7C765CE616E76C6800721AAD /* InterventionView.h */,
-				7C765CE716E76C6800721AAD /* InterventionView.m */,
+				7CAF48CF16E55D99004931D5 /* CommentView.h */,
+				7CAF48D016E55D9A004931D5 /* CommentView.m */,
 				7C765CE916E76F1900721AAD /* InterventionTableViewCell.h */,
 				7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */,
+				7C765CE616E76C6800721AAD /* InterventionView.h */,
+				7C765CE716E76C6800721AAD /* InterventionView.m */,
+				7CAF48D216E55DA6004931D5 /* NotificationView.h */,
+				7CAF48D316E55DA6004931D5 /* NotificationView.m */,
+				7CBAB11416E67DFB0047A2E3 /* NotificationTableViewCell.h */,
+				7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */,
+				7CAF48C616E55D5B004931D5 /* PhotoView.h */,
+				7CAF48C716E55D5B004931D5 /* PhotoView.m */,
+				5980FA2C16E697D100213F67 /* SectionsPopoverBackgroundView.h */,
+				5980FA2D16E697D100213F67 /* SectionsPopoverBackgroundView.m */,
 				7CE7CD1416E77494005D5B5E /* StudentGraphView.h */,
 				7CE7CD1516E77494005D5B5E /* StudentGraphView.m */,
+				598E633C16E777320098B574 /* StudentsView.h */,
+				598E633D16E777320098B574 /* StudentsView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -771,15 +776,16 @@
 				7CBAB11616E67DFC0047A2E3 /* NotificationTableViewCell.m in Sources */,
 				7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */,
 				7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */,
-				5980FA2E16E697D100213F67 /* ClassesPopoverBackgroundView.m in Sources */,
+				5980FA2E16E697D100213F67 /* SectionsPopoverBackgroundView.m in Sources */,
 				59096E0C16E74DB200F9B970 /* Student.m in Sources */,
 				59096E0F16E74EEA00F9B970 /* Section.m in Sources */,
 				59096E1216E74EF800F9B970 /* User.m in Sources */,
 				7C765CE816E76C6800721AAD /* InterventionView.m in Sources */,
 				7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */,
-				59AD0E9F16E76CF200C612DE /* StudentsViewController.m in Sources */,
 				7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */,
 				7CE7CD1916E7750B005D5B5E /* SingleStudentData.m in Sources */,
+				598E633B16E776D60098B574 /* Slider.m in Sources */,
+				598E633E16E777320098B574 /* StudentsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

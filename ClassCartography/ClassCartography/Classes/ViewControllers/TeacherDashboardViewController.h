@@ -15,7 +15,7 @@
 @private
     UITapGestureRecognizer *_tap;
     UILabel *_howLabel;
-    UIPopoverController *_classesPopoverController;
+    UIPopoverController *_sectionsPopoverController;
     FeedbackView *_feedbackView;
     GraphView *graphView;
 }
