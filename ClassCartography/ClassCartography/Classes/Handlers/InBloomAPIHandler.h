@@ -15,7 +15,7 @@
 @protocol InBloomAPIHandlerDelegate
 - (void)loginComplete;
 - (void)getSectionsComplete;
-- (void)getStudentsComplete;
+- (void)getStudentsComplete:(NSMutableArray *)arr;
 @end
 
 @interface InBloomAPIHandler : NSObject {
@@ -35,6 +35,7 @@
 - (void)authenticate:(UIViewController *)viewController;
 - (void)saveSession:(NSString *)authorizationCode;
 - (BOOL)isSessionValid;
+- (void)getStudentsInfoForSection:(NSString *)sectionId;
 
 @end
 

@@ -9,11 +9,22 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Student : NSObject {
+@interface Student : NSObject <NSCopying> {
     
-    NSString *name;
+    NSString *firstName;
+    NSString *middleName;
+    NSString *lastName;
+    NSString *suffix;
+    NSString *imageName;
 }
 
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSString *middleName;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *suffix;
+@property (nonatomic, copy) NSString *imageName;
+
++ (id)generate:(NSDictionary *)d;
+- (void)buildFromDictionary:(NSDictionary *)d;
 
 @end
