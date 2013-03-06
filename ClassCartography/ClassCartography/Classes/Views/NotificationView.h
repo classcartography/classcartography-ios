@@ -25,4 +25,6 @@
 
 @property (nonatomic, assign) id <NotificationViewDelegate> delegate;
 
+- (void) createStudentDummyData;
+
 @end

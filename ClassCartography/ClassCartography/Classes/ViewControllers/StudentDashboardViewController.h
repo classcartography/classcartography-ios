@@ -8,13 +8,15 @@
 
 #import "DashboardViewController.h"
 #import "InterventionView.h"
-#import "StudentGraphView.h" 
+#import "StudentGraphView.h"
+#import "AddInterventionView.h"
 
-@interface StudentDashboardViewController : DashboardViewController {
+@interface StudentDashboardViewController : DashboardViewController <InterventionViewDelegate, AddInterventionViewDelegate>{
     
     InterventionView *_interventionView;
     StudentGraphView *graphView;
-
+    AddInterventionView *addInterventionView;
+    UIView *opaqueView;
 }
 
 @end

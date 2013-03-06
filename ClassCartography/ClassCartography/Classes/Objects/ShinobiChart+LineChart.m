@@ -94,12 +94,10 @@
     
     SChartScatterSeries *s = [SChartScatterSeries new];
     s.style.pointStyle.showPoints = YES;
-    s.style.pointStyle.radius = [NSNumber numberWithFloat:14.0f];
+    s.style.pointStyle.radius = [NSNumber numberWithFloat:16.0f];
     s.style.pointStyle.innerColor = [UIColor colorWithRed:59.0/255.0 green:172.0/255.0 blue:200.0/255.0 alpha:1.0];
-    s.style.pointStyle.innerColor = [UIColor colorWithRed:215.0/255.0 green:70.0/255.0 blue:20.0/255.0 alpha:1.0];
     s.selectedStyle.pointStyle.radius = [NSNumber numberWithFloat:14.0f];
     s.selectedStyle.pointStyle.innerColor = [UIColor colorWithRed:59.0/255.0 green:172.0/255.0 blue:200.0/255.0 alpha:1.0];
-    s.selectedStyle.pointStyle.innerColor = [UIColor colorWithRed:215.0/255.0 green:70.0/255.0 blue:20.0/255.0 alpha:1.0];
     s.selectionMode = SChartSelectionPoint;
     s.toggleSelection = YES;
     s.togglePointSelection = YES;
