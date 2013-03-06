@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		59015ADB16E6A88000FDA4E0 /* popover-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 59015AD916E6A88000FDA4E0 /* popover-arrow.png */; };
 		59015ADC16E6A88000FDA4E0 /* popover-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 59015ADA16E6A88000FDA4E0 /* popover-bg.png */; };
+		59096E0C16E74DB200F9B970 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 59096E0B16E74DB200F9B970 /* Student.m */; };
+		59096E0F16E74EEA00F9B970 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 59096E0E16E74EEA00F9B970 /* Section.m */; };
+		59096E1216E74EF800F9B970 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 59096E1116E74EF800F9B970 /* User.m */; };
 		592342C416E5586C008E4AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342C216E5586C008E4AEE /* main.m */; };
 		592342CC16E558FD008E4AEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592342CB16E558FD008E4AEE /* AppDelegate.m */; };
 		5923433816E55970008E4AEE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923431016E55970008E4AEE /* AFHTTPClient.m */; };
@@ -104,6 +107,12 @@
 /* Begin PBXFileReference section */
 		59015AD916E6A88000FDA4E0 /* popover-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow.png"; sourceTree = "<group>"; };
 		59015ADA16E6A88000FDA4E0 /* popover-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-bg.png"; sourceTree = "<group>"; };
+		59096E0A16E74DB200F9B970 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		59096E0B16E74DB200F9B970 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		59096E0D16E74EEA00F9B970 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		59096E0E16E74EEA00F9B970 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		59096E1016E74EF800F9B970 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		59096E1116E74EF800F9B970 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5923429016E5545C008E4AEE /* ClassCartographyTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClassCartographyTests-Info.plist"; sourceTree = "<group>"; };
 		5923429416E5545C008E4AEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		592342BA16E557C0008E4AEE /* ClassCartography.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassCartography.xcdatamodel; sourceTree = "<group>"; };
@@ -387,12 +396,18 @@
 				7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */,
 				7C36688E16E58F230085FDBB /* GraphData.h */,
 				7CBAB10016E5C4A60047A2E3 /* PieData.h */,
-				7C36689116E58F230085FDBB /* StudentData.h */,
-				7C36689216E58F230085FDBB /* StudentData.m */,
 				7C36688F16E58F230085FDBB /* ShinobiChart+LineChart.h */,
 				7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */,
 				7CBAB0FD16E5C48A0047A2E3 /* ShinobiChart+PieCharts.h */,
 				7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */,
+				59096E0D16E74EEA00F9B970 /* Section.h */,
+				59096E0E16E74EEA00F9B970 /* Section.m */,
+				59096E0A16E74DB200F9B970 /* Student.h */,
+				59096E0B16E74DB200F9B970 /* Student.m */,
+				7C36689116E58F230085FDBB /* StudentData.h */,
+				7C36689216E58F230085FDBB /* StudentData.m */,
+				59096E1016E74EF800F9B970 /* User.h */,
+				59096E1116E74EF800F9B970 /* User.m */,
 			);
 			name = Objects;
 			path = Classes/Objects;
@@ -716,6 +731,9 @@
 				7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */,
 				7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */,
 				5980FA2E16E697D100213F67 /* ClassesPopoverBackgroundView.m in Sources */,
+				59096E0C16E74DB200F9B970 /* Student.m in Sources */,
+				59096E0F16E74EEA00F9B970 /* Section.m in Sources */,
+				59096E1216E74EF800F9B970 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
