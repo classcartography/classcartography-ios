@@ -15,6 +15,7 @@
 @synthesize middleName;
 @synthesize lastName;
 @synthesize suffix;
+@synthesize gender;
 @synthesize imageName;
 
 - (id)init {
@@ -30,6 +31,7 @@
     [studentCopy setMiddleName:middleName];
     [studentCopy setLastName:lastName];
     [studentCopy setSuffix:suffix];
+    [studentCopy setGender:gender];
     [studentCopy setImageName:imageName];
 	
     return studentCopy;
@@ -54,6 +56,15 @@
     middleName = [[[d objectForKey:@"name"] objectForKey:@"middleName"] copy];
     lastName =[[[d objectForKey:@"name"] objectForKey:@"lastSurname"] copy];
     suffix = [[[d objectForKey:@"name"] objectForKey:@"generationCodeSuffix"] copy];
+    gender = [[d objectForKey:@"sex"] copy];
+    
+    if ([gender isEqualToString:@"Female"]) {
+        imageName = [NSString stringWithFormat:@"female-%d.jpg", arc4random_uniform(3)];
+    }
+    
+    if ([gender isEqualToString:@"Male"]) {
+        imageName = [NSString stringWithFormat:@"female-%d.jpg", arc4random_uniform(3)];
+    }
 }
 
 @end

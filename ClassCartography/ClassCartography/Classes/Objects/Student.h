@@ -15,6 +15,7 @@
     NSString *middleName;
     NSString *lastName;
     NSString *suffix;
+    NSString *gender;
     NSString *imageName;
 }
 
@@ -22,6 +23,7 @@
 @property (nonatomic, copy) NSString *middleName;
 @property (nonatomic, copy) NSString *lastName;
 @property (nonatomic, copy) NSString *suffix;
+@property (nonatomic, copy) NSString *gender;
 @property (nonatomic, copy) NSString *imageName;
 
 + (id)generate:(NSDictionary *)d;
