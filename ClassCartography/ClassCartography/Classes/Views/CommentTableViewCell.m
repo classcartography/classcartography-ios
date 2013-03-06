@@ -46,7 +46,7 @@
         assignment.hidden = NO;
         [self.contentView addSubview:assignment];
         
-        comment = [[UILabel alloc] initWithFrame:CGRectMake(70, 28, 250, 24)];
+        comment = [[UILabel alloc] initWithFrame:CGRectMake(70, 32, 250, 30)];
         comment.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
         comment.textAlignment = NSTextAlignmentLeft;
         comment.textColor = [UIColor blackColor];
