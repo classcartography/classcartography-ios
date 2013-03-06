@@ -63,6 +63,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:studentCell];
         cell.textLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
         cell.textLabel.textColor = [UIColor whiteColor];
+        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"gray-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]];
     }
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];

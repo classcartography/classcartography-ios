@@ -143,6 +143,7 @@
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"gray-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]];
     }
     cell.textLabel.text = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:indexPath.row]).name;
     cell.textLabel.backgroundColor = [UIColor clearColor];
