@@ -22,6 +22,7 @@
         
         _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPopover)];
         _studentsTableViewIsVisible = NO;
+
     }
     return self;
 }
@@ -60,7 +61,7 @@
     [_studentsButtonSlider slideButtonToVisible:NO withAnimation:NO];
     [self.view addSubview:_studentsButton];
     
-    StudentsTableView *studentsTableView = [[StudentsTableView alloc] initWithFrame:CGRectMake(804, 0, 220, 724)];
+    studentsTableView = [[StudentsTableView alloc] initWithFrame:CGRectMake(804, 0, 220, 724)];
     studentsTableView.backgroundColor = [UIColor colorWithRed:(51.0/255.0) green:(51.0/255.0) blue:(51.0/255.0) alpha:1.0];
     _studentsTableViewSlider = [[Slider alloc] initWithView:studentsTableView];
 	[_studentsTableViewSlider slideViewToVisible:NO withAnimation:NO];
@@ -130,6 +131,9 @@
 
 - (void)getStudentsComplete:(NSMutableArray *)arr {
     [((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students setArray:arr];
+    NSArray *s = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students;
+    [studentsTableView.students setArray:s];
+    [studentsTableView reloadData];
 }
 
 
@@ -149,6 +153,8 @@
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
+    cell.textLabel.highlightedTextColor = [UIColor blackColor];
+
     return cell;
 }
 

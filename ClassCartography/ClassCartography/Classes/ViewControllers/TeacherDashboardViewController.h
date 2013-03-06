@@ -10,6 +10,7 @@
 #import "FeedbackView.h"
 #import "GraphView.h"
 #import "Slider.h"
+#import "StudentsTableView.h"
 
 @interface TeacherDashboardViewController : DashboardViewController <UITableViewDataSource, PhotoViewDelegate> {
     
@@ -23,6 +24,9 @@
     Slider *_studentsButtonSlider;
     BOOL _studentsTableViewIsVisible;
     Slider *_studentsTableViewSlider;
+    StudentsTableView *studentsTableView;
 }
+
+//@property (nonatomic, assign) id <InterventionViewDelegate> delegate;
 
 @end

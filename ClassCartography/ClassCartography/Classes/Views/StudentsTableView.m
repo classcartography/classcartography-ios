@@ -10,13 +10,13 @@
 
 
 @implementation StudentsTableView
+@synthesize students;
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.delegate = self;
         self.dataSource = self;
         students = [[NSMutableArray alloc] init];
-        [self createDummyData];
     }
     return self;
 }
@@ -64,12 +64,14 @@
         cell.textLabel.font = [UIFont fontWithName:@"QuicksandBold-Regular" size:14];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"gray-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]];
+        cell.textLabel.highlightedTextColor = [UIColor blackColor];
     }
     
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    [dict addEntriesFromDictionary:[students objectAtIndex:[indexPath row]]];
-    cell.textLabel.text = [dict objectForKey:@"description"];
-    cell.imageView.image = [UIImage imageNamed:[dict objectForKey:@"image"]];
+    if (students != nil && [students count] > 0) {
+        Student *student = [students objectAtIndex:[indexPath row]];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", student.firstName, student.lastName];
+//        cell.imageView.image = [UIImage imageNamed:student.imageName];
+    }
     return cell;
 }
 

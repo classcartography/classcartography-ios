@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Section.h"
+#import "Student.h"
+#import "UserHandler.h"
 
 @interface StudentsTableView : UITableView <UITableViewDataSource, UITableViewDelegate> {
 
     NSMutableArray *students;
+
 }
+
+@property (nonatomic, copy) NSMutableArray *students;
 
 @end
