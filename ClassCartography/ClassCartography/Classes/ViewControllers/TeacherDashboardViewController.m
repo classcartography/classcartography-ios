@@ -47,10 +47,13 @@
     tableViewController.tableView.dataSource = self;
     tableViewController.contentSizeForViewInPopover = CGSizeMake(320, 210);
     
-    _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
-    
+    _classesPopoverController = [[UIPopoverController alloc] initWithContentViewController:tableViewController];    
     _classesPopoverController.popoverBackgroundViewClass = [ClassesPopoverBackgroundView class];
-    [_classesPopoverController presentPopoverFromRect:_howLabel.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    
+    CGRect frame = _howLabel.frame;
+    frame.origin.y = _howLabel.frame.origin.y - 20;
+
+    [_classesPopoverController presentPopoverFromRect:frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 
@@ -89,7 +92,7 @@
     cell.textLabel.text = [[[UserHandler sharedUserHandler].classes objectAtIndex:indexPath.row] objectForKey:@"uniqueSectionCode"];
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor blackColor];
-    cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:18];
+    cell.textLabel.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:16];
     
     return cell;
 }

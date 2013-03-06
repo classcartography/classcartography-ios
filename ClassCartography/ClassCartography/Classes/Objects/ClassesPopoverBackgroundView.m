@@ -29,7 +29,7 @@
 }
 
 +(UIEdgeInsets)contentViewInsets{
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    return UIEdgeInsetsMake(1, 1, 1, 1);
 }
 
 +(CGFloat)arrowHeight{

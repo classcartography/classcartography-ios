@@ -171,8 +171,8 @@
 		5923591016E5E0D2008CD31F /* photo-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-bg.png"; sourceTree = "<group>"; };
 		5923591116E5E0D2008CD31F /* photo-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-bg@2x.png"; sourceTree = "<group>"; };
 		5923591416E5E846008CD31F /* stock-img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stock-img.jpg"; sourceTree = "<group>"; };
-		5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesPopoverBackgroundView.h; sourceTree = "<group>"; };
-		5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesPopoverBackgroundView.m; sourceTree = "<group>"; };
+		5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassesPopoverBackgroundView.h; path = ../Objects/ClassesPopoverBackgroundView.h; sourceTree = "<group>"; };
+		5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassesPopoverBackgroundView.m; path = ../Objects/ClassesPopoverBackgroundView.m; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -383,8 +383,6 @@
 		5923434E16E5598B008E4AEE /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */,
-				5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */,
 				7CBAB10416E5C5CC0047A2E3 /* FeedbackData.h */,
 				7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */,
 				7C36688E16E58F230085FDBB /* GraphData.h */,
@@ -421,6 +419,8 @@
 		5923435E16E559B1008E4AEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5980FA2C16E697D100213F67 /* ClassesPopoverBackgroundView.h */,
+				5980FA2D16E697D100213F67 /* ClassesPopoverBackgroundView.m */,
 				5923435F16E559B1008E4AEE /* LoginView.xib */,
 				5923436116E559B1008E4AEE /* TeacherDashboardView.xib */,
 				7CAF48C616E55D5B004931D5 /* PhotoView.h */,
