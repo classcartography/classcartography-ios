@@ -63,6 +63,8 @@
 		59B13F1416FBC28E00FD75D4 /* Appirater.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 59B13EF616FBC28D00FD75D4 /* Appirater.podspec */; };
 		59B13F1516FBC28E00FD75D4 /* AppiraterLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59B13EF816FBC28D00FD75D4 /* AppiraterLocalizable.strings */; };
 		59B13F1616FBC28E00FD75D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 59B13F0B16FBC28D00FD75D4 /* README.md */; };
+		59B13F1816FBC49300FD75D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B13F1716FBC49300FD75D4 /* StoreKit.framework */; };
+		59B13F1A16FBC52300FD75D4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B13F1916FBC52300FD75D4 /* MobileCoreServices.framework */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		59E9BF4F16FB8ECB00489D0F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E9BF4E16FB8ECB00489D0F /* libFlurry.a */; };
 		59E9BF5716FB90A500489D0F /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9BF5216FB90A500489D0F /* CommentTableViewCell.m */; };
@@ -267,6 +269,8 @@
 		59B13F1016FBC28E00FD75D4 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/AppiraterLocalizable.strings; sourceTree = "<group>"; };
 		59B13F1116FBC28E00FD75D4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
 		59B13F1216FBC28E00FD75D4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
+		59B13F1716FBC49300FD75D4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		59B13F1916FBC52300FD75D4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		59E9BF4D16FB8ECB00489D0F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
@@ -374,6 +378,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B13F1A16FBC52300FD75D4 /* MobileCoreServices.framework in Frameworks */,
+				59B13F1816FBC49300FD75D4 /* StoreKit.framework in Frameworks */,
 				59E9BF8716FB9B9000489D0F /* SystemConfiguration.framework in Frameworks */,
 				59E9BF8516FB9B5500489D0F /* CFNetwork.framework in Frameworks */,
 				7C36688816E566BA0085FDBB /* ShinobiCharts.framework in Frameworks */,
@@ -714,10 +720,12 @@
 				7C113EA616E535FA005C0B65 /* CoreData.framework */,
 				7C113EA416E535FA005C0B65 /* CoreGraphics.framework */,
 				7C113EA216E535FA005C0B65 /* Foundation.framework */,
+				59B13F1916FBC52300FD75D4 /* MobileCoreServices.framework */,
 				7C09404116E5656F00055283 /* OpenGLES.framework */,
 				7C09403E16E5655600055283 /* QuartzCore.framework */,
 				7C09404316E5657500055283 /* Security.framework */,
 				7C36688616E566A70085FDBB /* ShinobiCharts.framework */,
+				59B13F1716FBC49300FD75D4 /* StoreKit.framework */,
 				59E9BF8616FB9B8E00489D0F /* SystemConfiguration.framework */,
 				7C113EA016E535FA005C0B65 /* UIKit.framework */,
 			);

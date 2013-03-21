@@ -34,7 +34,6 @@
 }
 
 - (IBAction)getTest:(id)sender {
-    NSLog(@"testing");
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"class://test_page/one?token=12345&domain=foo.com"]];
 }
 

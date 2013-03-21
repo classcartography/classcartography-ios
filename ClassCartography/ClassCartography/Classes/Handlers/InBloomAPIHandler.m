@@ -58,7 +58,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         
         [self getSections:sectionsUrl];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 
@@ -72,7 +72,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         }
         [delegate getSectionsComplete];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 
@@ -86,7 +86,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         }
         [delegate getStudentsComplete:arr];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 
@@ -100,7 +100,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         }
         [studentDelegate getInterventionsComplete:arr];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 
@@ -126,7 +126,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         
         [self isSessionValid];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 
@@ -148,7 +148,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
             [_httpClient clearAuthorizationHeader];
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
     
     return [UserHandler sharedUserHandler].isLoggedIn;
@@ -169,7 +169,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         
         [self getStudents:studentsUrl];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 
@@ -188,7 +188,7 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
         
         [self getInterventions:customUrl];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
+        ELOG(@"%@", [error localizedDescription]);
     }];
 }
 

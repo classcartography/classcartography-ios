@@ -38,7 +38,7 @@
         
         description = [[UILabel alloc] init];
         description.backgroundColor = [UIColor clearColor];
-        description.lineBreakMode = UILineBreakModeWordWrap;
+        description.lineBreakMode = NSLineBreakByWordWrapping;
         description.numberOfLines = 0;
         description.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
         [self.contentView addSubview:description];
