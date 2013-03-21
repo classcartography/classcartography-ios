@@ -90,8 +90,8 @@
     
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-    UIColor *pink = [UIColor colorWithRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
-    [[DDTTYLogger sharedInstance] setForegroundColor:pink backgroundColor:nil forFlag:LOG_LEVEL_INFO];
+    UIColor *pink = [UIColor colorWithRed:(80.0/255.0) green:(80.0/255.0) blue:(80.0/255.0) alpha:1.0];
+    [[DDTTYLogger sharedInstance] setForegroundColor:pink backgroundColor:nil forFlag:LOG_FLAG_VERBOSE];
     
     if ([[fileLogger.logFileManager unsortedLogFilePaths] count] == 0) {
         ELOG(@"Init"); // Make sure log file exists
