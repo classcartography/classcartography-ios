@@ -60,6 +60,7 @@
 		598E633E16E777320098B574 /* StudentsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E633D16E777320098B574 /* StudentsTableView.m */; };
 		59AD0E9C16E7651700C612DE /* Quicksand_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
+		59E9BF4F16FB8ECB00489D0F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E9BF4E16FB8ECB00489D0F /* libFlurry.a */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
 		7C09404616E5658700055283 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404316E5657500055283 /* Security.framework */; };
@@ -226,6 +227,8 @@
 		59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Bold.otf; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		59E9BF4D16FB8ECB00489D0F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		59E9BF4E16FB8ECB00489D0F /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7C09404116E5656F00055283 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7C09404316E5657500055283 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -319,6 +322,7 @@
 				7C113EA316E535FA005C0B65 /* Foundation.framework in Frameworks */,
 				7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */,
 				7C113EA716E535FA005C0B65 /* CoreData.framework in Frameworks */,
+				59E9BF4F16FB8ECB00489D0F /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				5923430E16E55970008E4AEE /* AFNetworking */,
+				59E9BF4C16FB8ECB00489D0F /* Flurry */,
 				5923432216E55970008E4AEE /* SBJson */,
 			);
 			name = External;
@@ -535,6 +540,15 @@
 			);
 			name = Views;
 			path = Classes/Views;
+			sourceTree = "<group>";
+		};
+		59E9BF4C16FB8ECB00489D0F /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				59E9BF4D16FB8ECB00489D0F /* Flurry.h */,
+				59E9BF4E16FB8ECB00489D0F /* libFlurry.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		7C113E9416E535FA005C0B65 = {
@@ -969,8 +983,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
 				INFOPLIST_FILE = "ClassCartography/ClassCartography-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ClassCartography/Classes/External/Flurry\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
+				PROVISIONING_PROFILE = "49813157-4EC8-4627-AE3C-6E897C8A0AD4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -988,6 +1006,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
 				INFOPLIST_FILE = "ClassCartography/ClassCartography-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ClassCartography/Classes/External/Flurry\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
 				WRAPPER_EXTENSION = app;

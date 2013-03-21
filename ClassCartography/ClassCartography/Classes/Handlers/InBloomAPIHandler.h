@@ -43,6 +43,7 @@
 - (BOOL)isSessionValid;
 - (void)getStudentsInfoForSection:(NSString *)sectionId;
 - (void)getInterventionsInfoForStudent:(NSString *)studentId;
+- (void)saveIntervention:(NSDictionary *)d forStudent:(NSString *)studentId;
 
 @end
 

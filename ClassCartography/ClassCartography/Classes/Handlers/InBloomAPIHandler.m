@@ -192,6 +192,13 @@ static InBloomAPIHandler *sharedInBloomAPIHandler;
     }];
 }
 
+- (void)saveIntervention:(NSDictionary *)d forStudent:(NSString *)studentId {
+    [_httpClient setParameterEncoding:AFJSONParameterEncoding];
+    [_httpClient requestWithMethod:@"POST"
+                              path:@"/api/rest/v1.1/students/%@/custom"
+                        parameters:d];
+}
+
 
 #pragma mark -
 #pragma mark sharedInBloomAPIHandler methods
