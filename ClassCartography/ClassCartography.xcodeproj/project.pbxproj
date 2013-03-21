@@ -61,6 +61,9 @@
 		59AD0E9C16E7651700C612DE /* Quicksand_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E9B16E7651700C612DE /* Quicksand_Bold.otf */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		59E9BF4F16FB8ECB00489D0F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E9BF4E16FB8ECB00489D0F /* libFlurry.a */; };
+		59E9BF5716FB90A500489D0F /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9BF5216FB90A500489D0F /* CommentTableViewCell.m */; };
+		59E9BF5816FB90A500489D0F /* InterventionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9BF5416FB90A500489D0F /* InterventionTableViewCell.m */; };
+		59E9BF5916FB90A500489D0F /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9BF5616FB90A500489D0F /* NotificationTableViewCell.m */; };
 		7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09403E16E5655600055283 /* QuartzCore.framework */; };
 		7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404116E5656F00055283 /* OpenGLES.framework */; };
 		7C09404616E5658700055283 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C09404316E5657500055283 /* Security.framework */; };
@@ -85,7 +88,6 @@
 		7C68CB0216E5638600CD4AAC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CB0016E5638600CD4AAC /* Default-Landscape@2x~ipad.png */; };
 		7C68CB0316E5638600CD4AAC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CB0116E5638600CD4AAC /* Default-Landscape~ipad.png */; };
 		7C765CE816E76C6800721AAD /* InterventionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C765CE716E76C6800721AAD /* InterventionView.m */; };
-		7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */; };
 		7CAF48C816E55D5B004931D5 /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48C716E55D5B004931D5 /* PhotoView.m */; };
 		7CAF48CB16E55D72004931D5 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48CA16E55D72004931D5 /* GraphView.m */; };
 		7CAF48CE16E55D89004931D5 /* FeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF48CD16E55D89004931D5 /* FeedbackView.m */; };
@@ -104,13 +106,11 @@
 		7CBAB0FC16E5C25E0047A2E3 /* login-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB0F916E5C25E0047A2E3 /* login-logo@2x.png */; };
 		7CBAB0FF16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB0FE16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m */; };
 		7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */; };
-		7CBAB10916E5FEF80047A2E3 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */; };
 		7CBAB10B16E604FC0047A2E3 /* temp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB10A16E604FC0047A2E3 /* temp@2x.png */; };
 		7CBAB10D16E66D850047A2E3 /* itemstars-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB10C16E66D850047A2E3 /* itemstars-4.png */; };
 		7CBAB11016E66FCA0047A2E3 /* itemstars-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB10E16E66FCA0047A2E3 /* itemstars-3.png */; };
 		7CBAB11116E66FCA0047A2E3 /* itemstars-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB10F16E66FCA0047A2E3 /* itemstars-5.png */; };
 		7CBAB11316E6729A0047A2E3 /* itemstars-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11216E6729A0047A2E3 /* itemstars-5@2x.png */; };
-		7CBAB11616E67DFC0047A2E3 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */; };
 		7CBAB11916E683860047A2E3 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11716E683860047A2E3 /* star@2x.png */; };
 		7CBAB11A16E683860047A2E3 /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB11816E683860047A2E3 /* warning@2x.png */; };
 		7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB11F16E697F20047A2E3 /* GradeView.m */; };
@@ -229,6 +229,12 @@
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		59E9BF4D16FB8ECB00489D0F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		59E9BF4E16FB8ECB00489D0F /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		59E9BF5116FB90A500489D0F /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		59E9BF5216FB90A500489D0F /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		59E9BF5316FB90A500489D0F /* InterventionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterventionTableViewCell.h; sourceTree = "<group>"; };
+		59E9BF5416FB90A500489D0F /* InterventionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterventionTableViewCell.m; sourceTree = "<group>"; };
+		59E9BF5516FB90A500489D0F /* NotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
+		59E9BF5616FB90A500489D0F /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
 		7C09403E16E5655600055283 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7C09404116E5656F00055283 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7C09404316E5657500055283 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -257,8 +263,6 @@
 		7C68CB0116E5638600CD4AAC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		7C765CE616E76C6800721AAD /* InterventionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterventionView.h; sourceTree = "<group>"; };
 		7C765CE716E76C6800721AAD /* InterventionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterventionView.m; sourceTree = "<group>"; };
-		7C765CE916E76F1900721AAD /* InterventionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterventionTableViewCell.h; sourceTree = "<group>"; };
-		7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterventionTableViewCell.m; sourceTree = "<group>"; };
 		7CAF48C616E55D5B004931D5 /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
 		7CAF48C716E55D5B004931D5 /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
 		7CAF48C916E55D72004931D5 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
@@ -285,15 +289,11 @@
 		7CBAB10016E5C4A60047A2E3 /* PieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieData.h; sourceTree = "<group>"; };
 		7CBAB10416E5C5CC0047A2E3 /* FeedbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackData.h; sourceTree = "<group>"; };
 		7CBAB10516E5C5CC0047A2E3 /* FeedbackData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackData.m; sourceTree = "<group>"; };
-		7CBAB10716E5FEF70047A2E3 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
-		7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
 		7CBAB10A16E604FC0047A2E3 /* temp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temp@2x.png"; sourceTree = "<group>"; };
 		7CBAB10C16E66D850047A2E3 /* itemstars-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemstars-4.png"; sourceTree = "<group>"; };
 		7CBAB10E16E66FCA0047A2E3 /* itemstars-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemstars-3.png"; sourceTree = "<group>"; };
 		7CBAB10F16E66FCA0047A2E3 /* itemstars-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemstars-5.png"; sourceTree = "<group>"; };
 		7CBAB11216E6729A0047A2E3 /* itemstars-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemstars-5@2x.png"; sourceTree = "<group>"; };
-		7CBAB11416E67DFB0047A2E3 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
-		7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
 		7CBAB11716E683860047A2E3 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		7CBAB11816E683860047A2E3 /* warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning@2x.png"; sourceTree = "<group>"; };
 		7CBAB11E16E697F10047A2E3 /* GradeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradeView.h; sourceTree = "<group>"; };
@@ -373,6 +373,7 @@
 				5923430D16E55970008E4AEE /* External */,
 				5923434B16E5598B008E4AEE /* Handlers */,
 				5923434E16E5598B008E4AEE /* Objects */,
+				59E9BF5016FB90A500489D0F /* TableViewCells */,
 				5923435316E559B1008E4AEE /* ViewControllers */,
 				5923435E16E559B1008E4AEE /* Views */,
 			);
@@ -509,24 +510,20 @@
 			children = (
 				5923435F16E559B1008E4AEE /* LoginView.xib */,
 				5923436116E559B1008E4AEE /* TeacherDashboardView.xib */,
+				7C0CAC9616E79C48007B85DA /* AddInterventionView.h */,
+				7C0CAC9716E79C48007B85DA /* AddInterventionView.m */,
+				7CAF48CF16E55D99004931D5 /* CommentView.h */,
+				7CAF48D016E55D9A004931D5 /* CommentView.m */,
 				7CAF48CC16E55D89004931D5 /* FeedbackView.h */,
 				7CAF48CD16E55D89004931D5 /* FeedbackView.m */,
 				7CBAB11E16E697F10047A2E3 /* GradeView.h */,
 				7CBAB11F16E697F20047A2E3 /* GradeView.m */,
 				7CAF48C916E55D72004931D5 /* GraphView.h */,
 				7CAF48CA16E55D72004931D5 /* GraphView.m */,
-				7CBAB10716E5FEF70047A2E3 /* CommentTableViewCell.h */,
-				7CBAB10816E5FEF70047A2E3 /* CommentTableViewCell.m */,
-				7CAF48CF16E55D99004931D5 /* CommentView.h */,
-				7CAF48D016E55D9A004931D5 /* CommentView.m */,
-				7C765CE916E76F1900721AAD /* InterventionTableViewCell.h */,
-				7C765CEA16E76F1900721AAD /* InterventionTableViewCell.m */,
 				7C765CE616E76C6800721AAD /* InterventionView.h */,
 				7C765CE716E76C6800721AAD /* InterventionView.m */,
 				7CAF48D216E55DA6004931D5 /* NotificationView.h */,
 				7CAF48D316E55DA6004931D5 /* NotificationView.m */,
-				7CBAB11416E67DFB0047A2E3 /* NotificationTableViewCell.h */,
-				7CBAB11516E67DFC0047A2E3 /* NotificationTableViewCell.m */,
 				7CAF48C616E55D5B004931D5 /* PhotoView.h */,
 				7CAF48C716E55D5B004931D5 /* PhotoView.m */,
 				5980FA2C16E697D100213F67 /* SectionsPopoverBackgroundView.h */,
@@ -535,8 +532,6 @@
 				7CE7CD1516E77494005D5B5E /* StudentGraphView.m */,
 				598E633C16E777320098B574 /* StudentsTableView.h */,
 				598E633D16E777320098B574 /* StudentsTableView.m */,
-				7C0CAC9616E79C48007B85DA /* AddInterventionView.h */,
-				7C0CAC9716E79C48007B85DA /* AddInterventionView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -549,6 +544,20 @@
 				59E9BF4E16FB8ECB00489D0F /* libFlurry.a */,
 			);
 			path = Flurry;
+			sourceTree = "<group>";
+		};
+		59E9BF5016FB90A500489D0F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				59E9BF5116FB90A500489D0F /* CommentTableViewCell.h */,
+				59E9BF5216FB90A500489D0F /* CommentTableViewCell.m */,
+				59E9BF5316FB90A500489D0F /* InterventionTableViewCell.h */,
+				59E9BF5416FB90A500489D0F /* InterventionTableViewCell.m */,
+				59E9BF5516FB90A500489D0F /* NotificationTableViewCell.h */,
+				59E9BF5616FB90A500489D0F /* NotificationTableViewCell.m */,
+			);
+			name = TableViewCells;
+			path = Classes/TableViewCells;
 			sourceTree = "<group>";
 		};
 		7C113E9416E535FA005C0B65 = {
@@ -856,8 +865,6 @@
 				5923590916E59B07008CD31F /* UserHandler.m in Sources */,
 				7CBAB0FF16E5C48A0047A2E3 /* ShinobiChart+PieCharts.m in Sources */,
 				7CBAB10616E5C5CC0047A2E3 /* FeedbackData.m in Sources */,
-				7CBAB10916E5FEF80047A2E3 /* CommentTableViewCell.m in Sources */,
-				7CBAB11616E67DFC0047A2E3 /* NotificationTableViewCell.m in Sources */,
 				7CBAB12016E697F30047A2E3 /* GradeView.m in Sources */,
 				7CBAB12616E69EC40047A2E3 /* StudentDashboardViewController.m in Sources */,
 				5980FA2E16E697D100213F67 /* SectionsPopoverBackgroundView.m in Sources */,
@@ -865,13 +872,15 @@
 				59096E0F16E74EEA00F9B970 /* Section.m in Sources */,
 				59096E1216E74EF800F9B970 /* User.m in Sources */,
 				7C765CE816E76C6800721AAD /* InterventionView.m in Sources */,
-				7C765CEB16E76F1900721AAD /* InterventionTableViewCell.m in Sources */,
 				7CE7CD1616E77494005D5B5E /* StudentGraphView.m in Sources */,
 				7CE7CD1916E7750B005D5B5E /* SingleStudentData.m in Sources */,
 				598E633B16E776D60098B574 /* Slider.m in Sources */,
 				598E633E16E777320098B574 /* StudentsTableView.m in Sources */,
 				7C0CAC9816E79C49007B85DA /* AddInterventionView.m in Sources */,
 				592D16E416E7EC32000E72F4 /* Intervention.m in Sources */,
+				59E9BF5716FB90A500489D0F /* CommentTableViewCell.m in Sources */,
+				59E9BF5816FB90A500489D0F /* InterventionTableViewCell.m in Sources */,
+				59E9BF5916FB90A500489D0F /* NotificationTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

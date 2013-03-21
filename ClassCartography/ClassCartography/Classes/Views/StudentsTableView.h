@@ -11,6 +11,7 @@
 #import "Student.h"
 #import "UserHandler.h"
 
+
 @protocol StudentsTableViewDelegate
 - (void)pushStudentViewController:(Student *)student;
 @end
@@ -19,7 +20,6 @@
 
     __unsafe_unretained id <StudentsTableViewDelegate> sDelegate;
     NSMutableArray *students;
-
 }
 
 @property (nonatomic, assign) id <StudentsTableViewDelegate> sDelegate;
