@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DDFileLogger.h"
+#import "DDNSLoggerLogger.h"
 #import "InBloomAPIHandler.h"
 #import "LoginViewController.h"
 #import "TeacherDashboardViewController.h"
@@ -20,6 +22,9 @@
 @synthesize navController = _navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self configureExternalLibraries];
     
     TeacherDashboardViewController *teacherDashboardViewController = [[TeacherDashboardViewController alloc] init];
     _navController = [[UINavigationController alloc] initWithRootViewController:teacherDashboardViewController];
@@ -27,7 +32,6 @@
     UIImage *bg = [[UIImage imageNamed:@"nav-bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
 
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = _navController;
     [self.window makeKeyAndVisible];
     
@@ -75,6 +79,40 @@
             abort();
         } 
     }
+}
+
+- (void)configureExternalLibraries {
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 1;
+    [DDLog addLogger:fileLogger];
+    [DDLog addLogger:[DDNSLoggerLogger sharedInstance]];
+    
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    UIColor *pink = [UIColor colorWithRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
+    [[DDTTYLogger sharedInstance] setForegroundColor:pink backgroundColor:nil forFlag:LOG_LEVEL_INFO];
+    
+    if ([[fileLogger.logFileManager unsortedLogFilePaths] count] == 0) {
+        ELOG(@"Init"); // Make sure log file exists
+        _logFilePath = [[fileLogger.logFileManager unsortedLogFilePaths] objectAtIndex:0];
+    } else {
+        for (NSString *s in [fileLogger.logFileManager unsortedLogFilePaths]) {
+            if ([s rangeOfString:@"archived"].location == NSNotFound) {
+                _logFilePath = s;
+            }
+        }
+    }
+    DLOG(@"Logging: %@", _logFilePath);
+    
+    NSString *appVersion = [NSString stringWithFormat:@"%@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
+#ifdef DEBUG
+    ILOG(@"app version = %@", appVersion);
+#elif DISTRIBUTION
+    ILOG(@"app version = %@", appVersion);
+#else //RELEASE
+    ELOG(@"app version = %@", appVersion);
+#endif
 }
 
 

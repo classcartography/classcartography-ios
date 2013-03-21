@@ -48,10 +48,10 @@
 
 - (int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
     if (seriesIndex == 0) {
-        NSLog(@"attendance count: %d", [[[studentData understandingData] allKeys] count]);
+        DLOG(@"attendance count: %d", [[[studentData understandingData] allKeys] count]);
         return [[[studentData understandingData] allKeys] count];
     } else {
-        NSLog(@"grade count: %d", [[[studentData gradeData] allKeys] count]);
+        DLOG(@"grade count: %d", [[[studentData gradeData] allKeys] count]);
         return [[[studentData gradeData] allKeys] count];
     }
 }
