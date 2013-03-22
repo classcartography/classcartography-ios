@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DDFileLogger.h"
 #import "DDNSLoggerLogger.h"
+#import <HockeySDK/HockeySDK.h>
 #import "InBloomAPIHandler.h"
 #import "LoginViewController.h"
 #import "TeacherDashboardViewController.h"
@@ -110,14 +111,27 @@
     ILOG(@"app version = %@", appVersion);
 #elif DISTRIBUTION
     ILOG(@"app version = %@", appVersion);
+    
+    //hockeyapp beta builds
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"7ac26ea46f855aaafb95bd075959ad04"
+                                                           delegate:self];
+    [[BITHockeyManager sharedHockeyManager] startManager];
 #else //RELEASE
     ELOG(@"app version = %@", appVersion);
 #endif
 }
 
+- (NSString *)customDeviceIdentifierForUpdateManager:(BITUpdateManager *)updateManager {
+#ifndef RELEASE
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
+        return [[UIDevice currentDevice] performSelector:@selector(uniqueIdentifier)];
+#endif
+    return nil;
+}
+
 
 #pragma mark -
-#pragma mark - Core Data stack
+#pragma mark Core Data stack
 
 // Returns the managed object context for the application.
 // If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
@@ -190,7 +204,7 @@
 
 
 #pragma mark -
-#pragma mark - Application's Documents directory
+#pragma mark Application's Documents directory
 
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory {
