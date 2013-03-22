@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NotificationTableViewCell.h"
 
+
 @protocol NotificationViewDelegate
 - (void)showStudentView:(Student *)student;
 @end
@@ -16,18 +17,18 @@
 @interface NotificationView : UIView <UITableViewDataSource, UITableViewDelegate> {
 
     __unsafe_unretained id <NotificationViewDelegate> delegate;
-    UILabel *title;
     
-    UITableView *notificationTable;
     NSMutableArray *notifications;
-    BOOL isStudent;
+    UITableView *notificationTable;
+    
+@private
+    BOOL _isStudent;
 }
 
 @property (nonatomic, assign) id <NotificationViewDelegate> delegate;
-@property (nonatomic, copy) NSMutableArray *notifications;
-@property (nonatomic, copy) UITableView *notificationTable;
+@property (nonatomic, retain) NSMutableArray *notifications;
+@property (nonatomic, retain) UITableView *notificationTable;
 
-- (id)initWithFrame:(CGRect)frame forDashboard:(NSString *)dashbooardType;
-- (void) createStudentDummyData;
+- (id)initWithFrame:(CGRect)frame forDashboard:(NSString *)dashboardType;
 
 @end

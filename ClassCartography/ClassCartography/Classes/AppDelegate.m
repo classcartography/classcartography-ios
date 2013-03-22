@@ -82,6 +82,10 @@
     }
 }
 
+
+#pragma mark -
+#pragma mark private methods
+
 - (void)configureExternalLibraries {
     DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
     fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling

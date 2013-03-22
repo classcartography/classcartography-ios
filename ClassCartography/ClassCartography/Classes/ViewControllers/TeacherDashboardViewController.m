@@ -136,13 +136,18 @@
 
 - (void)getStudentsComplete:(NSMutableArray *)arr {
     [((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students setArray:arr];
-    NSArray *s = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students;
-    [studentsTableView.students setArray:s];
+    NSArray *students = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students;
+    [studentsTableView.students setArray:students];
     [studentsTableView reloadData];
     
-    [notificationView.notifications setArray:s];
+    
+    //test data: get first 5 students in array
+    NSRange range;
+    range.location = 0;
+    range.length = 5;
+    
+    [notificationView.notifications setArray:[students subarrayWithRange:range]];
     [notificationView.notificationTable reloadData];
-
 }
 
 

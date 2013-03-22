@@ -9,10 +9,11 @@
 #import "CommentView.h"
 
 @implementation CommentView
+
 @synthesize studentImageName;
 
-- (id)initWithFrame:(CGRect)frame
-{
+
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         graphTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 20)];

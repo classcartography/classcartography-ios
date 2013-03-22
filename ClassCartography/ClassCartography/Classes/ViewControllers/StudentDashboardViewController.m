@@ -48,7 +48,6 @@
     [photoView addSubview:bgView];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(11, 11, 254, 254)];
-//    imageView.image = [UIImage imageNamed:@"student-4.jpg"];
     imageView.image = [UIImage imageNamed:student.imageName];
     imageView.backgroundColor = [UIColor blackColor];
     [photoView addSubview:imageView];
@@ -58,7 +57,6 @@
     [self.view addSubview:commentView];
     
     [commentView createStudentDummyData];
-    [notificationView createStudentDummyData];
 
     notificationView = [[NotificationView alloc] initWithFrame:CGRectMake(360, 391, 300, 320) forDashboard:@"student"];
     notificationView.backgroundColor = [UIColor grayColor];
