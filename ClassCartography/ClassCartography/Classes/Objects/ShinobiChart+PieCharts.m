@@ -31,7 +31,7 @@
     chart.legend.hidden = NO;
     chart.legend.position = SChartLegendPositionBottomMiddle;
     chart.legend.maxSeriesPerLine = 2;
-    chart.legend.style.font = [UIFont systemFontOfSize:10];
+    chart.legend.style.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:10];
     chart.legend.style.marginWidth = [NSNumber numberWithFloat:0.55f];
     chart.legend.style.areaColor = [UIColor clearColor];
     chart.legend.cornerRadius = [NSNumber numberWithInt:10];

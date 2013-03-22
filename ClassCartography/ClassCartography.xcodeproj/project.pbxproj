@@ -1229,7 +1229,7 @@
 					"\"$(SRCROOT)/ClassCartography/Classes/External/Flurry\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1BBDB960-80DC-496C-946A-8E2D66133E51";
+				PROVISIONING_PROFILE = "49813157-4EC8-4627-AE3C-6E897C8A0AD4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;

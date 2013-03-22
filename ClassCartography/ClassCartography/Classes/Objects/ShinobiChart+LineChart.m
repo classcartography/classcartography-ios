@@ -16,18 +16,18 @@
     
     SChartLightTheme *theme = [SChartLightTheme new];
     
-    theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
+    theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:14];
     theme.chartTitleStyle.position = SChartTitlePositionBottomOrLeft;
     theme.chartStyle.backgroundColor = [UIColor whiteColor];
     theme.chartStyle.backgroundColorGradient = [UIColor whiteColor];
     theme.yAxisStyle.titleStyle.position = SChartTitlePositionCenter;
-    theme.yAxisStyle.titleStyle.font = [UIFont systemFontOfSize:12];
-    theme.xAxisStyle.titleStyle.font = [UIFont systemFontOfSize:12];
+    theme.yAxisStyle.titleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
+    theme.xAxisStyle.titleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
     theme.xAxisStyle.titleStyle.position = SChartTitlePositionCenter;
-    theme.yAxisStyle.majorTickStyle.labelFont = [UIFont systemFontOfSize:10];
-    theme.yAxisStyle.minorTickStyle.labelFont = [UIFont systemFontOfSize:10];
-    theme.xAxisStyle.majorTickStyle.labelFont = [UIFont systemFontOfSize:10];
-    theme.xAxisStyle.minorTickStyle.labelFont = [UIFont systemFontOfSize:10];
+    theme.yAxisStyle.majorTickStyle.labelFont = [UIFont fontWithName:@"QuicksandBook-Regular" size:10];
+    theme.yAxisStyle.minorTickStyle.labelFont = [UIFont fontWithName:@"QuicksandBook-Regular" size:10];
+    theme.xAxisStyle.majorTickStyle.labelFont = [UIFont fontWithName:@"QuicksandBook-Regular" size:10];
+    theme.xAxisStyle.minorTickStyle.labelFont = [UIFont fontWithName:@"QuicksandBook-Regular" size:10];
     chart.theme = theme;
     //chart.theme.chartTitleStyle.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:12];
     
@@ -73,7 +73,7 @@
     chart.legend.hidden = NO;
     chart.legend.position = SChartLegendPositionBottomMiddle;
     chart.legend.maxSeriesPerLine = 2;
-    chart.legend.style.font = [UIFont systemFontOfSize:10];
+    chart.legend.style.font = [UIFont fontWithName:@"QuicksandBook-Regular" size:10];
     chart.legend.style.marginWidth = [NSNumber numberWithFloat:0.55f];
     chart.legend.style.areaColor = [UIColor clearColor];
     chart.legend.cornerRadius = [NSNumber numberWithInt:10];
