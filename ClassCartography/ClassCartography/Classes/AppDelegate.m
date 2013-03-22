@@ -86,7 +86,7 @@
     fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
     fileLogger.logFileManager.maximumNumberOfLogFiles = 1;
     [DDLog addLogger:fileLogger];
-    [DDLog addLogger:[DDNSLoggerLogger sharedInstance]];
+    //[DDLog addLogger:[DDNSLoggerLogger sharedInstance]];
     
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];

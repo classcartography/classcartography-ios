@@ -65,6 +65,7 @@
 		59B13F1616FBC28E00FD75D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 59B13F0B16FBC28D00FD75D4 /* README.md */; };
 		59B13F1816FBC49300FD75D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B13F1716FBC49300FD75D4 /* StoreKit.framework */; };
 		59B13F1A16FBC52300FD75D4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B13F1916FBC52300FD75D4 /* MobileCoreServices.framework */; };
+		59B13F2616FBF53400FD75D4 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B13F2516FBF53400FD75D4 /* ShinobiCharts.framework */; };
 		59D722BF16E57A5F002D6B0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D722BE16E57A5F002D6B0A /* WebViewController.m */; };
 		59E9BF4F16FB8ECB00489D0F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E9BF4E16FB8ECB00489D0F /* libFlurry.a */; };
 		59E9BF5716FB90A500489D0F /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9BF5216FB90A500489D0F /* CommentTableViewCell.m */; };
@@ -100,7 +101,6 @@
 		7C113EC516E535FA005C0B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA016E535FA005C0B65 /* UIKit.framework */; };
 		7C113EC616E535FA005C0B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA216E535FA005C0B65 /* Foundation.framework */; };
 		7C113EC716E535FA005C0B65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C113EA616E535FA005C0B65 /* CoreData.framework */; };
-		7C36688816E566BA0085FDBB /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36688616E566A70085FDBB /* ShinobiCharts.framework */; };
 		7C36689416E58F230085FDBB /* ShinobiChart+LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */; };
 		7C36689516E58F230085FDBB /* StudentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36689216E58F230085FDBB /* StudentData.m */; };
 		7C68CB0216E5638600CD4AAC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68CB0016E5638600CD4AAC /* Default-Landscape@2x~ipad.png */; };
@@ -271,6 +271,7 @@
 		59B13F1216FBC28E00FD75D4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
 		59B13F1716FBC49300FD75D4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		59B13F1916FBC52300FD75D4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		59B13F2516FBF53400FD75D4 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ClassCartography/Classes/Frameworks/ShinobiCharts.embeddedframework/ShinobiCharts.framework; sourceTree = "<group>"; };
 		59D722BD16E57A5F002D6B0A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		59D722BE16E57A5F002D6B0A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		59E9BF4D16FB8ECB00489D0F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
@@ -321,7 +322,6 @@
 		7C113EA416E535FA005C0B65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7C113EA616E535FA005C0B65 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7C113EC216E535FA005C0B65 /* ClassCartographyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassCartographyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C36688616E566A70085FDBB /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ClassCartography/Classes/Frameworks/ShinobiCharts.framework; sourceTree = "<group>"; };
 		7C36688E16E58F230085FDBB /* GraphData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphData.h; sourceTree = "<group>"; };
 		7C36688F16E58F230085FDBB /* ShinobiChart+LineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+LineChart.h"; sourceTree = "<group>"; };
 		7C36689016E58F230085FDBB /* ShinobiChart+LineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+LineChart.m"; sourceTree = "<group>"; };
@@ -382,7 +382,6 @@
 				59B13F1816FBC49300FD75D4 /* StoreKit.framework in Frameworks */,
 				59E9BF8716FB9B9000489D0F /* SystemConfiguration.framework in Frameworks */,
 				59E9BF8516FB9B5500489D0F /* CFNetwork.framework in Frameworks */,
-				7C36688816E566BA0085FDBB /* ShinobiCharts.framework in Frameworks */,
 				7C09404616E5658700055283 /* Security.framework in Frameworks */,
 				7C09404516E5658200055283 /* OpenGLES.framework in Frameworks */,
 				7C09404016E5656500055283 /* QuartzCore.framework in Frameworks */,
@@ -391,6 +390,7 @@
 				7C113EA516E535FA005C0B65 /* CoreGraphics.framework in Frameworks */,
 				7C113EA716E535FA005C0B65 /* CoreData.framework in Frameworks */,
 				59E9BF4F16FB8ECB00489D0F /* libFlurry.a in Frameworks */,
+				59B13F2616FBF53400FD75D4 /* ShinobiCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,7 +724,7 @@
 				7C09404116E5656F00055283 /* OpenGLES.framework */,
 				7C09403E16E5655600055283 /* QuartzCore.framework */,
 				7C09404316E5657500055283 /* Security.framework */,
-				7C36688616E566A70085FDBB /* ShinobiCharts.framework */,
+				59B13F2516FBF53400FD75D4 /* ShinobiCharts.framework */,
 				59B13F1716FBC49300FD75D4 /* StoreKit.framework */,
 				59E9BF8616FB9B8E00489D0F /* SystemConfiguration.framework */,
 				7C113EA016E535FA005C0B65 /* UIKit.framework */,
@@ -1154,8 +1154,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-					"\"$(SRCROOT)/../../../../Downloads/ShinobiCharts Trial/ShinobiCharts.embeddedframework\"",
 					"\"$(SRCROOT)/ClassCartography/Classes/Frameworks\"",
+					"\"$(SRCROOT)/ClassCartography/Classes/Frameworks/ShinobiCharts.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
@@ -1253,8 +1253,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-					"\"$(SRCROOT)/../../../../Downloads/ShinobiCharts Trial/ShinobiCharts.embeddedframework\"",
 					"\"$(SRCROOT)/ClassCartography/Classes/Frameworks\"",
+					"\"$(SRCROOT)/ClassCartography/Classes/Frameworks/ShinobiCharts.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
@@ -1277,8 +1277,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-					"\"$(SRCROOT)/../../../../Downloads/ShinobiCharts Trial/ShinobiCharts.embeddedframework\"",
 					"\"$(SRCROOT)/ClassCartography/Classes/Frameworks\"",
+					"\"$(SRCROOT)/ClassCartography/Classes/Frameworks/ShinobiCharts.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassCartography/ClassCartography-Prefix.pch";
