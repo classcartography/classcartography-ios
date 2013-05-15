@@ -120,8 +120,8 @@
 }
 
 - (void)getSectionsComplete {
-    NSString *sectionId = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).sectionId;
-    NSString *sectionName = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).name;
+    NSString *sectionId = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:0]).sectionId;
+    NSString *sectionName = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:0]).name;
     int l = [sectionName length];
     NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @1};
     const NSRange range = NSMakeRange(12,l);
@@ -135,8 +135,8 @@
 }
 
 - (void)getStudentsComplete:(NSMutableArray *)arr {
-    [((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students setArray:arr];
-    NSArray *students = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:1]).students;
+    [((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:0]).students setArray:arr];
+    NSArray *students = ((Section *)[[UserHandler sharedUserHandler].user.sections objectAtIndex:0]).students;
     [studentsTableView.students setArray:students];
     [studentsTableView reloadData];
     
