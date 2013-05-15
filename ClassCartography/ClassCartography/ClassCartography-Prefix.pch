@@ -23,14 +23,6 @@
 #define INBLOOM_SHARED_SECRET @"lGYKd65KRFUmyunmo3hU48RZBWP0R4GoEVwtU3dSKVvMegWR"
 
 #ifdef DEBUG
-
-#elif DISTRIBUTION
-
-#else //RELEASE
-
-#endif
-
-#ifdef DEBUG
 #define _AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES_ = YES;
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #elif DISTRIBUTION

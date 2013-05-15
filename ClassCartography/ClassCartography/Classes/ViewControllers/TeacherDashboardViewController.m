@@ -140,7 +140,6 @@
     [studentsTableView.students setArray:students];
     [studentsTableView reloadData];
     
-    
     //test data: get first 5 students in array
     NSRange range;
     range.location = 0;
